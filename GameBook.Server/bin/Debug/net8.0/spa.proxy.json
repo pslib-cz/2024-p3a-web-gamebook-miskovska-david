@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:54079",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\ttomi\\source\\repos\\GameBook\\GameBook.Server\\..\\gamebook.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
