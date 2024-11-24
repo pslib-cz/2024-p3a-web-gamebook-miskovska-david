@@ -484,11 +484,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ttomi\\source\\repos\\GameBook\\GameBook.Server\\GameBook.Server.csproj",
+      "projectUniqueName": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\GameBook.Server.csproj",
       "projectName": "GameBook.Server",
-      "projectPath": "C:\\Users\\ttomi\\source\\repos\\GameBook\\GameBook.Server\\GameBook.Server.csproj",
+      "projectPath": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\GameBook.Server.csproj",
       "packagesPath": "C:\\Users\\ttomi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ttomi\\source\\repos\\GameBook\\GameBook.Server\\obj\\",
+      "outputPath": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
