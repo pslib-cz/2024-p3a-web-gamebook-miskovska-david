@@ -28,7 +28,7 @@
 
 - Puzzly – React DnD
   
-- Pohybliví text react-type-animation
+- Pohybliví text - react-type-animation
 
 - Obrázky – Stable Diffusion + úprava v externím programu
 
