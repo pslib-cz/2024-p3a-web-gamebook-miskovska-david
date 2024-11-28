@@ -27,6 +27,8 @@
 - Databáze – SQLite (viz. Diagram)
 
 - Puzzly – React DnD
+  
+- Pohybliví text react-type-animation
 
 - Obrázky – Stable Diffusion + úprava v externím programu
 
