@@ -1,6 +1,6 @@
 
 import './App.css';
-import Login from "./pages/Login/login";
+import Login from "./pages/Login/Login";
 
 
 
