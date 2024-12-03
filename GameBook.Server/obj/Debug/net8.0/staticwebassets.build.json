@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "I7VOOvJPb/vPATXrCVJDGWfJQnvFmaqimtn/f2lUSoc=",
+  "Hash": "Hspi9KYKFLUaSlRUWK/xrLBLnEL8WyT2u8mpo+66nMo=",
   "Source": "GameBook.Server",
   "BasePath": "_content/GameBook.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\ttomi\\source\\repos\\GameBook\\gamebook.client\\gamebook.client.esproj",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\gamebook.client\\gamebook.client.esproj",
       "Version": 2,
       "Source": "gamebook.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
