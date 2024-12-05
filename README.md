@@ -41,3 +41,5 @@
 
 ![GameBook_Database](https://github.com/user-attachments/assets/3c5592ef-9557-4d43-8347-27844e050de6)
 
+### Grafický návrh https://www.figma.com/design/bfqsaH7uw94mTkH9yZcu6I/GameBook?node-id=0-1&t=W71pg04fLa6HTVcJ-1
+
