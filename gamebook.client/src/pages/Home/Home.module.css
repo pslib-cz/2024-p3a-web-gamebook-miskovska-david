@@ -1,19 +1,11 @@
-
-.login__container{
+.container{
     display: flex;
     flex-direction: column;
-    background-color: var(--brown);
-    padding: .5rem 1rem .5rem 1rem;
     border-radius: .5rem;
+    gap: 2rem;
 }
 
-.login__form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.login__screen{
+.homeScreen{
     width: 100vw;
     height: 100vh;
     background-size: cover;

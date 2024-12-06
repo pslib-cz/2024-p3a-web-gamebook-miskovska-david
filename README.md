@@ -34,8 +34,6 @@
 
 - Poslední pozice + inventář uloženo v localstoreage
 
-- Api – pomocí návrhového vzoru Repository
-
   Figma: https://www.figma.com/design/bfqsaH7uw94mTkH9yZcu6I/GameBook?m=auto&t=4so3FT5xDfs5sS20-6
 
 

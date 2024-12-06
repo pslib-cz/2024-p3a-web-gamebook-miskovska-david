@@ -1,0 +1,6 @@
+.btn{
+    background-color: var(--brown);
+    color: var(--white);
+    padding: .5rem 1rem;
+    font-size: 2rem;
+}
