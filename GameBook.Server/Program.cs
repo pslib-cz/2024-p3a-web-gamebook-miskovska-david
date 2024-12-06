@@ -1,5 +1,8 @@
 using GameBook.Server.Data;
 using Microsoft.EntityFrameworkCore;
+using GameBook.Server.Repository;
+using GameBook.Server.Interfaces;
+using GameBook.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +14,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(
         options => options.UseSqlite("Data Source=gamebook.db")
-    );
+);
 
+builder.Services.AddScoped(typeof(IBaseReposity<>), typeof(BaseRepository<>));
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddAutoMapper(typeof(AutomapperConfigurationProfile));
 var app = builder.Build();
 
 app.UseDefaultFiles();
