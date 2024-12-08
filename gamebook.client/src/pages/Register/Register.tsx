@@ -1,13 +1,14 @@
 import style from "./Register.module.css";
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../components/Button/ButtonLB";
 import Input from "../../components/input/Input";
 
-type LoginProps = {
+type RegisterProps = {
     title: string;
 }
 
-const Login: React.FC<LoginProps> = ({title}) =>{
+const Register: React.FC<RegisterProps> = ({title}) => {
     return (
         <div className={style.register__screen}>
             <div className={style.register__container}>
@@ -18,12 +19,11 @@ const Login: React.FC<LoginProps> = ({title}) =>{
                     <Input placeholder="Heslo"></Input>
                     <Input placeholder="Zopakovat heslo"></Input>
                 </form>
-                  <Button btnText="Registrovat se"></Button>
-                  <p className={style.text}>Už máte účet? Přihlásit se</p>
+                <Link to="/login"><Button btnText="Registrovat se" /></Link>
+                <p className={style.text}>Už máte účet? <Link to="/login">Přihlásit se</Link></p>
             </div>
         </div>
     )
 }
-export default Login;
 
-
+export default Register;
