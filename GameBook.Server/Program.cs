@@ -11,7 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(
         options => options.UseSqlite("Data Source=gamebook.db")
-    );
+);
+
 
 var app = builder.Build();
 

@@ -183,3 +183,4 @@ C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Serve
 C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\obj\Debug\net8.0\GameBook.Server.pdb
 C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\obj\Debug\net8.0\GameBook.Server.genruntimeconfig.cache
 C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\obj\Debug\net8.0\ref\GameBook.Server.dll
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\bin\Debug\net8.0\AutoMapper.dll
