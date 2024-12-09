@@ -2,7 +2,7 @@
     background-color: var(--light-brown);
     color: var(--brown);
     display: flex;
-    align-self: end;
+    justify-self: self-end;
     margin-top: 1rem;
     font-size: .8rem;
 }

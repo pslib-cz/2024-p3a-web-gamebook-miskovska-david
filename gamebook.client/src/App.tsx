@@ -1,6 +1,5 @@
-
 import './App.css';
-import{
+import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -9,32 +8,25 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register"; 
 import Home from "./pages/Home/Home";
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home ></Home>,
-    children: [
-      {
-        path: "/Register",
-        element: <Register title='Registrovat se'></Register>,
-      }
-    ]
-  }
+    element: <Register title='Registrovat se' />,
+  },
+  {
+    path: "/login",
+    element: <Login title='Přihlásit se' />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
+  },
 ]);
-
 
 function App() {
     return (
-     /*   <Login title='Přihlásit se'></Login> *
-       <Register title='Registrovat se'></Register>
-       <Home></Home> */
-
-        <RouterProvider router={router}></RouterProvider>
-       
+        <RouterProvider router={router} />
     )
-
 }
 
 export default App;
