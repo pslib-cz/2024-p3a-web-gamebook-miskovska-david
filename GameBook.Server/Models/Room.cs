@@ -3,7 +3,7 @@
     public class Room
     {
         public int RoomId { get; set; }
-        public string? Background { get; set; }
+        public required string Background { get; set; }
         public ICollection<string>? Dialogs { get; set; }
 
         //cizí klíč
