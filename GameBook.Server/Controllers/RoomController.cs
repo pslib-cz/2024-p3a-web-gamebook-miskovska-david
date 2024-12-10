@@ -33,6 +33,20 @@ namespace GameBook.Server.Controllers
             return Ok(room);
         }
 
+        [HttpPut("rooms/{id}")]
+        public IActionResult Update(int id, Room room)
+        {
+            var roomToUpdate = _context.Rooms.FirstOrDefault(r => r.RoomId == id);
+            if (roomToUpdate == null)
+            {
+                return NotFound();
+            }
+            roomToUpdate.Background = room.Background;
+            roomToUpdate.Dialogs = room.Dialogs;
+            _context.SaveChanges();
+            return Ok();
+        }
+
         [HttpPost("rooms")]
         public async Task<IActionResult> Upload(IFormFile file, List<string> dialogs)
         {
@@ -58,6 +72,19 @@ namespace GameBook.Server.Controllers
             await _context.SaveChangesAsync();
 
 
+            return Ok();
+        }
+
+        [HttpDelete("rooms/{id}")]
+        public IActionResult Delete(int id)
+        {
+            var room = _context.Rooms.FirstOrDefault(r => r.RoomId == id);
+            if (room == null)
+            {
+                return NotFound();
+            }
+            _context.Rooms.Remove(room);
+            _context.SaveChanges();
             return Ok();
         }
     }

@@ -20,11 +20,13 @@ namespace GameBook.Server.Controllers
         }
 
         [HttpGet("items")]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             var items = _context.Items.ToList();
             return Ok(items);
         }
+
+        
 
         [HttpGet("items/{id}")]
         public IActionResult GetById(int id) {
@@ -34,6 +36,25 @@ namespace GameBook.Server.Controllers
                 return NotFound();
             }
             return Ok(item);
+        }
+        [HttpPut("items/{id}")]
+        public async Task<IActionResult> Update(int id, Item item)
+        {
+            if (id != item.ItemId)
+            {
+                return BadRequest();
+            }
+            _context.Items.Update(item);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch
+            {
+
+                return BadRequest();
+            }
+            return Ok();
         }
 
         [HttpPost("items")]
@@ -66,6 +87,20 @@ namespace GameBook.Server.Controllers
             await _context.SaveChangesAsync();
 
 
+            return Ok();
+        }
+
+
+        [HttpDelete("items/{id}")]
+        public IActionResult Delete(int id)
+        {
+            var item = _context.Items.FirstOrDefault(i => i.ItemId == id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            _context.Items.Remove(item);
+            _context.SaveChanges();
             return Ok();
         }
     }

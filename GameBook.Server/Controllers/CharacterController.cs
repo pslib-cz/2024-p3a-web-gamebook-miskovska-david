@@ -33,6 +33,20 @@ namespace GameBook.Server.Controllers
             return Ok(character);
         }
 
+        [HttpPut("characters/{id}")]
+        public IActionResult Update(Character character) {
+            var characterToUpdate = _context.Characters.FirstOrDefault(c => c.CharacterId == character.CharacterId);
+            if (characterToUpdate == null)
+            {
+                return NotFound();
+            }
+            characterToUpdate.Name = character.Name;
+            characterToUpdate.Bio = character.Bio;
+            characterToUpdate.CharImg = character.CharImg;
+            _context.SaveChanges();
+            return Ok(characterToUpdate);
+        }
+
         [HttpPost("characters")]
         public async Task<IActionResult> Upload(IFormFile file, string name, string bio)
         {
@@ -56,6 +70,17 @@ namespace GameBook.Server.Controllers
             return Ok(character);
         }
 
-
+        [HttpDelete("characters/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var character = _context.Characters.FirstOrDefault(c => c.CharacterId == id);
+            if (character == null)
+            {
+                return NotFound();
+            }
+            _context.Characters.Remove(character);
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
     }
 }
