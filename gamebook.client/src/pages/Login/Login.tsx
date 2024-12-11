@@ -17,7 +17,7 @@ const Login: React.FC<LoginProps> = ({title}) => {
                     <Input placeholder="Uživatelské jméno/Email"></Input>
                     <Input placeholder="Heslo"></Input>
                 </form>
-                <Link to="/home"><Button btnText="Přihlásit se" /></Link>
+                <Link to="/"><Button btnText="Přihlásit se" /></Link>
             </div>
         </div>
     )
