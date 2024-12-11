@@ -3,4 +3,5 @@
     color: var(--white);
     padding: .5rem 1rem;
     font-size: 2rem;
+    width: 100%;
 }
