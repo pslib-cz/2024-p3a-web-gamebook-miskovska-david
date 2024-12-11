@@ -11,7 +11,7 @@ import Home from "./pages/Home/Home";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Register title='Registrovat se' />,
+    element: <Home />,
   },
   {
     path: "/login",
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/home",
-    element: <Home />,
+    element: <Register title='Registrovat se' />,
   },
 ]);
 
