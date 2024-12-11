@@ -12,24 +12,53 @@ namespace GameBook.Server.Controllers
     public class ItemController : ControllerBase
     {
 
-        private const string _folder = "Uploads";
-        private readonly ILogger _logger;
+        private const string _folder = "Uploads/Items";
         private readonly ApplicationDbContext _context;
         public ItemController(ApplicationDbContext context)
         {
-
             _context = context;
         }
 
         [HttpGet("items")]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             var items = _context.Items.ToList();
             return Ok(items);
         }
 
+        
+
+        [HttpGet("items/{id}")]
+        public IActionResult GetById(int id) {
+            var item = _context.Items.FirstOrDefault(i => i.ItemId == id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return Ok(item);
+        }
+        [HttpPut("items/{id}")]
+        public async Task<IActionResult> Update(int id, Item item)
+        {
+            if (id != item.ItemId)
+            {
+                return BadRequest();
+            }
+            _context.Items.Update(item);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch
+            {
+
+                return BadRequest();
+            }
+            return Ok();
+        }
+
         [HttpPost("items")]
-        public async Task<IActionResult> Upload(IFormFile file)
+        public async Task<IActionResult> Upload(IFormFile file,string name, string description, int? price, int? dmg, int?def)
         {
             if (file == null || file.Length == 0)
             {
@@ -46,19 +75,32 @@ namespace GameBook.Server.Controllers
 
             Item item = new Item
             {
-                ItemId = 1,
-                Name = file.FileName,
-                Description = "Popis",
+                Name = name,
+                Description = description,
                 Img = path,
-                Price = 100,
-                Damage = 10,
-                Defence = 5
+                Price = price,
+                Damage = dmg,
+                Defence = def
             };
 
             _context.Items.Add(item);
             await _context.SaveChangesAsync();
 
 
+            return Ok();
+        }
+
+
+        [HttpDelete("items/{id}")]
+        public IActionResult Delete(int id)
+        {
+            var item = _context.Items.FirstOrDefault(i => i.ItemId == id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            _context.Items.Remove(item);
+            _context.SaveChanges();
             return Ok();
         }
     }

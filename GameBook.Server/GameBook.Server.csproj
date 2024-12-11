@@ -31,7 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Uploads\" />
+    <Folder Include="Uploads\Items\" />
+    <Folder Include="Uploads\Characters\" />
+    <Folder Include="Uploads\Rooms\" />
   </ItemGroup>
 
 </Project>
