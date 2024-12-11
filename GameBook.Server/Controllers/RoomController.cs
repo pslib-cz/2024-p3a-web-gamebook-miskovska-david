@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using GameBook.Server.Data;
 using GameBook.Server.Models;
+using System.Text.Json.Serialization;
 namespace GameBook.Server.Controllers
 {
     [Route("api/[controller]")]
@@ -31,7 +32,7 @@ namespace GameBook.Server.Controllers
             }
             return Ok(room);
         }
-
+        
         [HttpPut("rooms/{id}")]
         public IActionResult Update(int id, Room room)
         {
@@ -49,6 +50,8 @@ namespace GameBook.Server.Controllers
         [HttpPost("rooms")]
         public async Task<IActionResult> Upload(IFormFile file, string? specialItem)
         {
+            
+
             if (file == null || file.Length == 0)
             {
                 return BadRequest("Soubor je prázdný");
