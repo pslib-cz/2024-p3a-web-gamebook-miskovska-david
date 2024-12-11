@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Login title='Přihlásit se' />,
   },
   {
-    path: "/home",
+    path: "/register",
     element: <Register title='Registrovat se' />,
   },
 ]);
