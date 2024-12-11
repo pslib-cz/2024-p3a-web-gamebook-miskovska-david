@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using GameBook.Server.Data;
 using GameBook.Server.Models;
 namespace GameBook.Server.Controllers
@@ -48,7 +47,7 @@ namespace GameBook.Server.Controllers
         }
 
         [HttpPost("rooms")]
-        public async Task<IActionResult> Upload(IFormFile file, List<string> dialogs)
+        public async Task<IActionResult> Upload(IFormFile file, string? specialItem)
         {
             if (file == null || file.Length == 0)
             {
@@ -64,7 +63,8 @@ namespace GameBook.Server.Controllers
             Room room = new Room
             {
                 Background = path,
-                Dialogs = dialogs,
+                //Dialogs = dialogs,
+                SpecialItem = specialItem
 
             };
 

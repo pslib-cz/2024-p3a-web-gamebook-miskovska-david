@@ -7,6 +7,7 @@ import {
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register"; 
 import Home from "./pages/Home/Home";
+import ControlPanel from "./pages/ControlPanel/ControlPanel";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register title='Registrovat se' />,
+  },
+  {
+    path: "/controlpanel",
+    element: <ControlPanel />,
   },
 ]);
 
