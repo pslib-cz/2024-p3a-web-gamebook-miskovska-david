@@ -54,8 +54,13 @@ export default defineConfig({
             '^/uploads': {
                 target,
                 secure: false
+            },
+            '^/api/Room/rooms':{
+                target,
+                secure: false
             }
         },
+
         port: 54079,
         https: {
             key: fs.readFileSync(keyFilePath),
