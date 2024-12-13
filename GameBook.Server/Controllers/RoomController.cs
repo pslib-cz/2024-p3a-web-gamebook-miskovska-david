@@ -9,10 +9,10 @@ namespace GameBook.Server.Controllers
     [ApiController]
     public class RoomController : ControllerBase
     {
-        private const string _folder = "" ;
+        private const string _folder = "uploads/";
 
-        
-        
+
+
         private readonly ApplicationDbContext _context;
         public RoomController(ApplicationDbContext context)
         {
@@ -69,7 +69,7 @@ namespace GameBook.Server.Controllers
 
             Room room = new Room
             {
-                Background = path,
+                Background = path.ToLower(),
                 //Dialogs = dialogs,
                 SpecialItem = specialItem
 

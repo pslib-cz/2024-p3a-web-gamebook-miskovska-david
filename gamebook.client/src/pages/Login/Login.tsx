@@ -10,19 +10,22 @@ type LoginProps = {
 
 const Login: React.FC<LoginProps> = ({ title }) => {
 
-    const [rooms, setRooms] = useState<any>(null)
+    const [rooms, setRooms] = useState<string>("")
 
     useEffect(() => {
         fetch('/api/Room/rooms')
             .then(response => response.json())
-            .then(data => console.log(data["result"][0]["background"]))
+            .then(data => setRooms(data["result"][0]["background"]))
             .catch(error => console.error('Error fetching data:', error));
         
     }, []);
-    
-    return (
 
-        <div className={style.login__screen} style={{ backgroundImage: "url(/uploads/bg.png)"} }  >
+    
+    
+    
+
+    return (
+        <div className={style.login__screen} style={{ backgroundImage: `url(/${rooms})` } }  >
             <div className={style.login__container}>
                 <h2>{title}</h2>
                 <form className={style.login__form}>
@@ -31,7 +34,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                 </form>
                 <Link to="/"><Button btnText="Přihlásit se" /></Link>
             </div>
-            <img src="/uploads/bg.png" />
+            
         </div>
     )
 }

@@ -50,8 +50,11 @@ export default defineConfig({
             '^/api/Room/rooms': {
                 target,
                 secure: false
+            },
+            '^/uploads': {
+                target,
+                secure: false
             }
-
         },
         port: 54079,
         https: {
