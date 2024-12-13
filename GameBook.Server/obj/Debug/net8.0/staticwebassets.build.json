@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cfih4YuKbesNedlfrAI3yX1ENzShm58Qq2rb+xFHOMo=",
+  "Hash": "2mKkni4TWrUvFLjJxDaPvsTB8kBJ/MBn/AGQn/hKwHQ=",
   "Source": "GameBook.Server",
   "BasePath": "_content/GameBook.Server",
   "Mode": "Default",
@@ -18,6 +18,14 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GameBook.Server\\wwwroot",
+      "Source": "GameBook.Server",
+      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "BasePath": "_content/GameBook.Server",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
