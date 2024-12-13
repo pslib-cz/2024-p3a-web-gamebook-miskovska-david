@@ -1,2 +1,3 @@
 C:\Users\ttomi\source\repos\GameBook\gamebook.client\obj\Debug\gamebook.client.esproj.CoreCompileInputs.cache
 C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\gamebook.client\obj\Debug\gamebook.client.esproj.CoreCompileInputs.cache
+C:\Users\marij\Source\Repos\2024-p3a-web-gamebook-miskovska-david\gamebook.client\obj\Debug\gamebook.client.esproj.CoreCompileInputs.cache

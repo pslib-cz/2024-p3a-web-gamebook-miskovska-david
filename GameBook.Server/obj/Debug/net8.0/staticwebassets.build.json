@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "UAekcqg6Tp8ojGuMOhY4o8h1K6K/WWahd9y/SZ7Npbw=",
+  "Hash": "Cfih4YuKbesNedlfrAI3yX1ENzShm58Qq2rb+xFHOMo=",
   "Source": "GameBook.Server",
   "BasePath": "_content/GameBook.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\gamebook.client\\gamebook.client.esproj",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\gamebook.client\\gamebook.client.esproj",
       "Version": 2,
       "Source": "gamebook.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,15 +18,6 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
-  "DiscoveryPatterns": [
-    {
-      "Name": "GameBook.Server\\wwwroot",
-      "Source": "GameBook.Server",
-      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
-      "BasePath": "_content/GameBook.Server",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [],
+  "Assets": []
 }
