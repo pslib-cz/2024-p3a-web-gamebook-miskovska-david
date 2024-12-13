@@ -15,16 +15,13 @@ const Login: React.FC<LoginProps> = ({ title }) => {
     useEffect(() => {
         fetch('/api/Room/rooms')
             .then(response => response.json())
-            .then(data => setRooms(data["result"][0]["background"]))
+            .then(data => setRooms(data [0]["background"]))   /* "result" */
             .catch(error => console.error('Error fetching data:', error));
-        
     }, []);
 
-    
-    
-
     return (
-        <div className={style.login__screen} style={{ backgroundImage: `url(/${rooms})` } }  >
+        <div className={style.login__screen} style={{backgroundImage: `url(/${rooms}`, backgroundSize:"cover", backgroundPosition: "center" }} >
+            
             <div className={style.login__container}>
                 <h2>{title}</h2>
                 <form className={style.login__form}>
@@ -36,6 +33,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
             
         </div>
     )
+    console.log(rooms);
 }
 
 export default Login;
