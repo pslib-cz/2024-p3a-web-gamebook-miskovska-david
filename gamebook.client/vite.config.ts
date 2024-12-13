@@ -47,7 +47,11 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/api': {
+            '^/api/Room/rooms': {
+                target,
+                secure: false
+            },
+            '^/uploads': {
                 target,
                 secure: false
             },

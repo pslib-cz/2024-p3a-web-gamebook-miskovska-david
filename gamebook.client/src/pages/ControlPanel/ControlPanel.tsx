@@ -1,4 +1,5 @@
 import HorizontalPanel from "../../components/HorizontalPanel/HorizontalPanel"
+import Input from "../../components/input/Input";
 
 
 
