@@ -1,0 +1,7 @@
+wwwroot\Uploads\Rooms\arena.png
+wwwroot\Uploads\Rooms\BG.png
+wwwroot\Uploads\Rooms\boj.png
+wwwroot\Uploads\Rooms\mapa.png
+wwwroot\Uploads\Rooms\nalodeni.png
+wwwroot\Uploads\Rooms\vezeni.png
+wwwroot\Uploads\Rooms\zed_s_diamnty.png

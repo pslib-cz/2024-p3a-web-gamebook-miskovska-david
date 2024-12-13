@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\Uploads\\Rooms\\BG.png",
+      "PackagePath": "staticwebassets\\Uploads\\Rooms\\BG.png"
+    },
+    {
+      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\Uploads\\Rooms\\arena.png",
+      "PackagePath": "staticwebassets\\Uploads\\Rooms\\arena.png"
+    },
+    {
+      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\Uploads\\Rooms\\boj.png",
+      "PackagePath": "staticwebassets\\Uploads\\Rooms\\boj.png"
+    },
+    {
+      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\Uploads\\Rooms\\mapa.png",
+      "PackagePath": "staticwebassets\\Uploads\\Rooms\\mapa.png"
+    },
+    {
+      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\Uploads\\Rooms\\nalodeni.png",
+      "PackagePath": "staticwebassets\\Uploads\\Rooms\\nalodeni.png"
+    },
+    {
+      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\Uploads\\Rooms\\vezeni.png",
+      "PackagePath": "staticwebassets\\Uploads\\Rooms\\vezeni.png"
+    },
+    {
+      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\Uploads\\Rooms\\zed_s_diamnty.png",
+      "PackagePath": "staticwebassets\\Uploads\\Rooms\\zed_s_diamnty.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameBook.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameBook.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GameBook.Server.props",
+      "PackagePath": "build\\GameBook.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GameBook.Server.props",
+      "PackagePath": "buildMultiTargeting\\GameBook.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GameBook.Server.props",
+      "PackagePath": "buildTransitive\\GameBook.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

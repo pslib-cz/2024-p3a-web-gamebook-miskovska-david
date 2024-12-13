@@ -47,10 +47,11 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/api': {
+            '^/api/Room/rooms': {
                 target,
                 secure: false
             }
+
         },
         port: 54079,
         https: {

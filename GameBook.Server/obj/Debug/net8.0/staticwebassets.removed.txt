@@ -1,0 +1,7 @@
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\wwwroot\Uploads\Rooms\arena.png
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\wwwroot\Uploads\Rooms\BG.png
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\wwwroot\Uploads\Rooms\boj.png
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\wwwroot\Uploads\Rooms\mapa.png
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\wwwroot\Uploads\Rooms\nalodeni.png
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\wwwroot\Uploads\Rooms\vezeni.png
+C:\Users\ttomi\Source\Repos\2024-p3a-web-gamebook-miskovska-david\GameBook.Server\wwwroot\Uploads\Rooms\zed_s_diamnty.png

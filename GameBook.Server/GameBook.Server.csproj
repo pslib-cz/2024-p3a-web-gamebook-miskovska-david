@@ -10,6 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="uploads\arena.png" />
+    <Content Include="uploads\bg.png" />
+    <Content Include="uploads\boj.png" />
+    <Content Include="uploads\mapa.png" />
+    <Content Include="uploads\nalodeni.png" />
+    <Content Include="uploads\vezeni.png" />
+    <Content Include="uploads\zed_s_diamnty.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
@@ -31,9 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Uploads\Items\" />
-    <Folder Include="Uploads\Characters\" />
-    <Folder Include="Uploads\Rooms\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>

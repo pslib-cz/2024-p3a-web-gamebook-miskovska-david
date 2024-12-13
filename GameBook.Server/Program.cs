@@ -1,7 +1,7 @@
 using GameBook.Server.Data;
 using Microsoft.EntityFrameworkCore;
-
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.Extensions.FileProviders;
+var builder = WebApplication.CreateBuilder();
 
 // Add services to the container.
 
@@ -14,7 +14,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 );
 
 
+
 var app = builder.Build();
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "uploads")),
+    RequestPath = "/uploads"
+});
 
 app.UseDefaultFiles();
 app.UseStaticFiles();

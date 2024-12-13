@@ -13,12 +13,12 @@
     gap: 1rem;
 }
 
-.login__screen{
+.login__screen {
     height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-imag e:  ;  z databáze */
+    
 }

@@ -2,13 +2,17 @@
 using GameBook.Server.Data;
 using GameBook.Server.Models;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 namespace GameBook.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class RoomController : ControllerBase
     {
-        private const string _folder = "Uploads/Rooms";
+        private const string _folder = "" ;
+
+        
+        
         private readonly ApplicationDbContext _context;
         public RoomController(ApplicationDbContext context)
         {
@@ -16,9 +20,9 @@ namespace GameBook.Server.Controllers
         }
 
         [HttpGet("rooms")]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAll()
         {
-            var rooms = _context.Rooms.ToList();
+            var rooms = _context.Rooms.ToListAsync();
             return Ok(rooms);
         }
 
