@@ -26,6 +26,7 @@ const router = createBrowserRouter([
     path: "/controlpanel",
     element: <ControlPanel />,
   },
+
 ]);
 
 function App() {

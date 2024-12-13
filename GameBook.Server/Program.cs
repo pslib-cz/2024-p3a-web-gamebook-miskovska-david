@@ -1,6 +1,11 @@
+using GameBook.Server;
 using GameBook.Server.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using GameBook.Server.Interfaces;
+using GameBook.Server.Managers;
+using GameBook.Server.Models;
+using GameBook.Server.Repository;
 var builder = WebApplication.CreateBuilder();
 
 // Add services to the container.
@@ -13,8 +18,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(
         options => options.UseSqlite("Data Source=gamebook.db")
 );
 
-
-
+builder.Services.AddAutoMapper(typeof(AutomapperConfigurationProfile));
+builder.Services.AddScoped<IRoomManager, RoomManager>();
+builder.Services.AddScoped<IRoomRepository, RoomRepository>();
+builder.Services.AddScoped<IBaseRepository<Room>, RoomRepository>();
 var app = builder.Build();
 
 app.UseStaticFiles(new StaticFileOptions
