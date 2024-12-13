@@ -22,7 +22,6 @@ const Login: React.FC<LoginProps> = ({ title }) => {
 
     
     
-    
 
     return (
         <div className={style.login__screen} style={{ backgroundImage: `url(/${rooms})` } }  >

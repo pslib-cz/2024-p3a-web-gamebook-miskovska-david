@@ -55,10 +55,6 @@ export default defineConfig({
                 target,
                 secure: false
             },
-            '^/api/Room/rooms':{
-                target,
-                secure: false
-            }
         },
 
         port: 54079,
