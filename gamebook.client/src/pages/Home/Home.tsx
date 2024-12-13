@@ -1,7 +1,7 @@
 import Button from "../../components/Button/ButtonDB";
 import style from "./Home.module.css";
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Home: React.FC = () => {
 
