@@ -20,7 +20,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
     }, []);
 
     return (
-        <div className={style.login__screen} style={{backgroundImage: `url(/${rooms}`, backgroundSize:"cover", backgroundPosition: "center" }} >
+        <div className={style.login__screen} style={{backgroundImage: `url(/${rooms}`}} >
             
             <div className={style.login__container}>
                 <h2>{title}</h2>
