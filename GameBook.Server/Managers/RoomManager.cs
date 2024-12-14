@@ -40,7 +40,7 @@ namespace GameBook.Server.Managers
 
             using (var stream = new FileStream(path, FileMode.Create))
             {
-                file.CopyToAsync(stream);
+              file.CopyTo(stream);
             }
             Room room = _mapper.Map<Room>(roomDto);
             room.Background = path.ToString().ToLower();
