@@ -3,24 +3,46 @@ import React, { useEffect, useState } from "react";
 import Button from "../../components/Button/ButtonLB";
 import Input from "../../components/input/Input";
 import { Link } from "react-router-dom";
-
+import { RoomType } from "../../types";
 type LoginProps = {
     title: string;
 }
 
 const Login: React.FC<LoginProps> = ({ title }) => {
 
-    const [rooms, setRooms] = useState<string>("")
+    const [rooms, setRooms] = useState<RoomType | null>(null)
+    const [error, setError] = useState<Error | null>(null)
+    const [loading, setLoading] = useState<boolean>(false)
 
     useEffect(() => {
-        fetch('/api/Room/rooms')
-            .then(response => response.json())
-            .then(data => setRooms(data [0]["background"]))   /* "result" */
-            .catch(error => console.error('Error fetching data:', error));
+        const fetchData = async () => {
+            setLoading(true)
+            try{
+                const response = await fetch("/api/Room/rooms");
+            if(!response.ok){
+                throw new Error("Nepodařilo se načíst místnosti")
+            }
+            const data = await response.json();
+            setRooms(data[0])
+            }
+            catch(error){
+                if(error instanceof Error){
+                    setError(error)
+                }else{
+                    setError(new Error("Něco se pokazilo"))
+                }
+            }finally{
+                setLoading(false)
+            }
+        }
+        fetchData();
     }, []);
 
+   console.log(error);
+   console.log(loading);
     return (
-        <div className={style.login__screen} style={{backgroundImage: `url(/${rooms}`}} >
+        
+        <div className={style.login__screen} style={{backgroundImage: `url(/${rooms?.background}`}} >
             
             <div className={style.login__container}>
                 <h2>{title}</h2>
