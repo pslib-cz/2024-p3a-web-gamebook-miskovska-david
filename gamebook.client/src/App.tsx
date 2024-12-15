@@ -10,7 +10,7 @@ import Home from "./pages/Home/Home";
 import ControlPanel from "./pages/ControlPanel/ControlPanel";
 import AppLayout from "./pages/AppLayout";
 import Room from "./pages/Room"; */
-import Room1 from "./pages/Room1/Room02";
+import Room1 from "./pages/Room1/Room06";
 
 
 

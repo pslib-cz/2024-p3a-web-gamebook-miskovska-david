@@ -1,0 +1,34 @@
+.room__screen {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.room__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.8rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.room__text {
+  color: var(--white); 
+  font-size:2rem;
+  text-align: center;
+  margin: 0 1rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+
+
+

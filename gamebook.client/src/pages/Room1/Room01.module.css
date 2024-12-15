@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     padding: 0.5rem 0.8rem;
-    place-self: flex-end;
     justify-content: center;
     align-items: center;
     width: 100%;
