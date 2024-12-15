@@ -11,7 +11,7 @@ namespace GameBook.Server.Controllers
     [ApiController]
     public class RoomController : ControllerBase
     {
-        private const string _folder = "uploads/";
+        
 
 
         private readonly IRoomManager _roomManager;

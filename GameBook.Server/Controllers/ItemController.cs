@@ -5,6 +5,8 @@ using GameBook.Server.Models;
 using System.IO;
 using SQLitePCL;
 using GameBook.Server.Data;
+using GameBook.Server.Interfaces;
+using GameBook.Server.Managers;
 namespace GameBook.Server.Controllers
 {
     [Route("api/[controller]")]
@@ -12,96 +14,129 @@ namespace GameBook.Server.Controllers
     public class ItemController : ControllerBase
     {
 
-        private const string _folder = "Uploads/Items";
-        private readonly ApplicationDbContext _context;
-        public ItemController(ApplicationDbContext context)
+        /// <summary>
+        ///Přístup k logice pro předměty
+        /// </summary>
+        private readonly IItemManager _itemManager;
+
+        public ItemController(IItemManager itemManager)
         {
-            _context = context;
+            _itemManager = itemManager;
         }
+
+        /// <summary>
+        /// Vrátí všechny předměty
+        /// </summary>
+        /// <returns><see cref="IActionResult"/> který obsahuje list předmětů, vracených s http 200 status kódem</returns>
+        /// <response code="200">Vrací list předmětů</response>
+        /// <remarks>
+        /// Tento endpoint je volán pomocí GET requestu na /api/item/items
+        /// </remarks>
 
         [HttpGet("items")]
         public IActionResult GetAll()
         {
-            var items = _context.Items.ToList();
+            var items = _itemManager.GetAllItems();
             return Ok(items);
         }
 
-        
+        /// <summary>
+        /// Vratí předmět podle zadaného Id
+        /// </summary>
+        /// <param name="id">Id předmětu co chceme vrátit</param>
+        /// <returns><see cref="IActionResult"/> obsahujcí item podle zadaného id, vráceného pomcí HTTP 200 status kódu; pokud není nalezen vrátí HTTP 404 statu kód </returns>
+        /// <response code="200">Vrací item podle zadaného id</response>
+        /// <response code="404">Pokud item s daným id neexistuje</response>
+        /// <remarks>
+        /// Tento endpoint je volán pomocí GET requestu na /api/item/items/{id}
+        /// </remarks>
 
         [HttpGet("items/{id}")]
-        public IActionResult GetById(int id) {
-            var item = _context.Items.FirstOrDefault(i => i.ItemId == id);
+        public IActionResult GetById(int id)
+        {
+            ItemDto? item = _itemManager.GetItemById(id);
             if (item == null)
             {
                 return NotFound();
             }
             return Ok(item);
         }
-        [HttpPut("items/{id}")]
-        public async Task<IActionResult> Update(int id, Item item)
-        {
-            if (id != item.ItemId)
-            {
-                return BadRequest();
-            }
-            _context.Items.Update(item);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch
-            {
 
-                return BadRequest();
-            }
-            return Ok();
-        }
+        /// <summary>
+        /// Vytvoří nový předmět v databázi a uloží obrázek do složky
+        /// </summary>
+        /// <param name="itemDto">DTO s detailem předmětu</param>
+        /// <param name="file">Obrázek předmětu</param>
+        /// <returns>
+        /// <see cref="IActionResult"/> obsahujcí vytvořený item, vrácený pomocí HTTP 201 status kódu; pokud se nepovede vytvořit vrátí HTTP 400 status kód
+        /// </returns>
+        /// <response code="201">předmět byl uspěšně vytvořený</response>
+        /// <response code="400">Neplatný požadavek</response>
+        /// <remarks>
+        /// Tent endpoint je volán pomocí POST requestu na /api/item/items
+        /// </remarks>
 
         [HttpPost("items")]
-        public async Task<IActionResult> Upload(IFormFile file,string name, string description, int? price, int? dmg, int?def)
+        public IActionResult CreateItem([FromForm] ItemDto itemDto, IFormFile file)
         {
-            if (file == null || file.Length == 0)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Soubor je prázdný");
-            }
-            var path = Path.Combine(_folder, file.FileName);
-           
-            using (var stream = new FileStream(path, FileMode.Create))
-            {
-                await file.CopyToAsync(stream);
-                
-
+                return BadRequest(ModelState);
             }
 
-            Item item = new Item
-            {
-                Name = name,
-                Description = description,
-                Img = path,
-                Price = price,
-                Damage = dmg,
-                Defence = def
-            };
-
-            _context.Items.Add(item);
-            await _context.SaveChangesAsync();
-
-
-            return Ok();
+            ItemDto? createdItem = _itemManager.CreateItem(itemDto, file);
+            return CreatedAtAction(nameof(GetById), new { id = createdItem?.ItemId }, createdItem);
         }
 
 
-        [HttpDelete("items/{id}")]
-        public IActionResult Delete(int id)
+        /// <summary>
+        /// Aktualizuje předmět v databázi
+        /// </summary>
+        /// <param name="id">Id předmětu, který chceme změnit</param>
+        /// <param name="itemDto">DTO s detailem o předmětu co chceme změnit</param>
+        /// <returns>
+        /// <see cref="IActionResult"/> obsahujcí změněný item, vrácený pomocí HTTP 200 status kódu; pokud se nepovede vrátí HTTP 404 status kód
+        /// </returns>
+        /// <response code="200">předmět byl uspěšně aktualizován</response>
+        /// <response code="404">předmět s daným id neexistuje</response>
+        /// <remarks>
+        /// Tento endpoint je volán pomocí PUT requestu na /api/item/items/{id}
+        /// </remarks>
+        
+        [HttpPut("items/{id}")]
+        public IActionResult UpdateItem(int id, [FromBody] ItemDto itemDto)
         {
-            var item = _context.Items.FirstOrDefault(i => i.ItemId == id);
-            if (item == null)
+
+            ItemDto? updatedItem = _itemManager.UpdateItem(id, itemDto);
+            if (updatedItem == null)
             {
                 return NotFound();
             }
-            _context.Items.Remove(item);
-            _context.SaveChanges();
-            return Ok();
+            return Ok(updatedItem);
+        }
+
+        /// <summary>
+        /// Smaže předmět z databáze
+        /// </summary>
+        /// <param name="id">Id předmětu, který chceme smazat</param>
+        /// <returns>
+        /// <see cref="IActionResult"/> obsahujcí smazaný item, vrácený pomocí HTTP 200 status kódu; pokud se nepovede vrátí HTTP 404 status kód
+        /// </returns>
+        /// <response code="200">předmět byl uspěšně smazán</response>
+        /// <response code="404">předmět s daným id neexistuje</response>
+        /// <remarks>
+        /// Tento endpoint je volán pomocí DELETE requestu na /api/item/items/{id}
+        /// </remarks>
+
+        [HttpDelete("items/{id}")]
+        public IActionResult DeleteItem(int id)
+        {
+            ItemDto? deletedItem = _itemManager.DeleteItem(id);
+            if (deletedItem == null)
+            {
+                return NotFound();
+            }
+            return Ok(deletedItem);
         }
     }
 }

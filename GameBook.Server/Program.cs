@@ -18,10 +18,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(
         options => options.UseSqlite("Data Source=gamebook.db")
 );
 
+
+//Automapper
 builder.Services.AddAutoMapper(typeof(AutomapperConfigurationProfile));
+//Room services
 builder.Services.AddScoped<IRoomManager, RoomManager>();
 builder.Services.AddScoped<IRoomRepository, RoomRepository>();
 builder.Services.AddScoped<IBaseRepository<Room>, RoomRepository>();
+//Item services
+builder.Services.AddScoped<IItemManager, ItemManager>();
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<IBaseRepository<Item>, ItemRepository>();
 var app = builder.Build();
 app.UseStaticFiles(new StaticFileOptions
 {
