@@ -1,9 +1,7 @@
 
 .login__container{
-    display: flex;
-    flex-direction: column;
     background-color: var(--brown);
-    padding: .5rem 1rem .5rem 1rem;
+    padding: .5rem 1rem;
     border-radius: .5rem;
 }
 

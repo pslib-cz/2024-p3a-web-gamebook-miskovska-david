@@ -47,8 +47,8 @@ const Login: React.FC<LoginProps> = ({ title }) => {
             <div className={style.login__container}>
                 <h2>{title}</h2>
                 <form className={style.login__form}>
-                    <Input placeholder="Uživatelské jméno/Email"></Input>
-                    <Input placeholder="Heslo"></Input>
+                    <Input placeholder="Uživatelské jméno/Email" />
+                    <Input placeholder="Heslo"/>
                 </form>
                 <Link to="/"><Button btnText="Přihlásit se" /></Link>
             </div>

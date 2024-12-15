@@ -1,8 +1,5 @@
 .login__input{
-    padding: .5rem 0 .5rem 0;
-    border-radius: 2rem;
-    border-color: transparent;
-    font-size: 1rem;
-    padding-inline-end: 2rem;
-    padding-inline-start: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: none;
 }
