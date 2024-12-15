@@ -7,8 +7,14 @@ namespace GameBook.Server
     {
         public AutomapperConfigurationProfile()
         {
+
+            //Konfigurace mapování mezi entitami a DTO Room
             CreateMap<Room, RoomDto>();
             CreateMap<RoomDto, Room>();
+
+            //Konfigurace mapování mezi entitami a DTO Item
+            CreateMap<Item, ItemDto>();
+            CreateMap<ItemDto, Item>();
         }
     }
 }
