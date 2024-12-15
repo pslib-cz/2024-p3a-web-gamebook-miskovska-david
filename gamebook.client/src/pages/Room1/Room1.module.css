@@ -1,0 +1,41 @@
+.room__screen {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .room__container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 0.5rem 0.8rem;
+    place-self: flex-end;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+  }
+  
+  .room__text {
+    color: var(--white);
+    font-size: 0.75rem;
+    text-align: center;
+    margin-block: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: typing 3s steps(30, end), step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 100%; 
+    }
+  }
+  
+
+  

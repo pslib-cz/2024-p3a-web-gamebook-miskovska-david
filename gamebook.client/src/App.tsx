@@ -1,5 +1,5 @@
 import './App.css';
-import {
+/* import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -9,9 +9,10 @@ import Register from "./pages/Register/Register";
 import Home from "./pages/Home/Home";
 import ControlPanel from "./pages/ControlPanel/ControlPanel";
 import AppLayout from "./pages/AppLayout";
-import Room from "./pages/Room";
+import Room from "./pages/Room"; */
+import Room1 from "./pages/Room1/Room1";
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -38,12 +39,15 @@ const router = createBrowserRouter([
       }
     ]
   }
- ]);
+ ]); */
 
 function App() {
     return (
-        <RouterProvider router={router} />
+       <Room1 />
+        
+
     )
 }
 
 export default App;
+{/* <RouterProvider router={router} /> */}
