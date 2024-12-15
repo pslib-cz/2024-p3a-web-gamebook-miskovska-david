@@ -6,7 +6,6 @@ const Room1: React.FC = () => {
 
   return (
     <div>
-      <h2>Room 1</h2>
       <p>This is the content of Room 1.</p>
       <button onClick={() => navigate(`/rooms/2`)}>
         Přejít na místnost 2
