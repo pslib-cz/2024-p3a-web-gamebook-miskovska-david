@@ -10,7 +10,9 @@ import Home from "./pages/Home/Home";
 import ControlPanel from "./pages/ControlPanel/ControlPanel";
 import AppLayout from "./pages/AppLayout";
 import Room from "./pages/Room"; */
-import Room1 from "./pages/Room1/Room1";
+import Room1 from "./pages/Room1/Room01";
+
+
 
 /* const router = createBrowserRouter([
   {
@@ -44,7 +46,6 @@ import Room1 from "./pages/Room1/Room1";
 function App() {
     return (
        <Room1 />
-        
 
     )
 }
