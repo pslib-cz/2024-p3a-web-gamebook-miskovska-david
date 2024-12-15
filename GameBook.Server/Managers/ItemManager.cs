@@ -28,7 +28,9 @@ namespace GameBook.Server.Managers
         /// <summary>
         /// Vrátí všechny položky z databazé a namapuje je na DTO.
         /// </summary>
-        /// <returns>List <see cref="ItemDto"/> objektů reprezentujcí předměty</returns>
+        /// <returns>
+        /// List <see cref="ItemDto"/> objektů reprezentujcí předměty
+        /// </returns>
         public IList<ItemDto> GetAllItems()
         {
             IList<Item> items = _itemRepository.GetAll();
@@ -39,7 +41,9 @@ namespace GameBook.Server.Managers
         /// Vrátí předmět podle zadaného ID.
         /// </summary>
         /// <param name="id">Id předmětu, který chceme vrátit.</param>
-        /// <returns><see cref="ItemDto"/> objekt pokud id existuje; jinak <c>null</c>.</returns>
+        /// <returns>
+        /// <see cref="ItemDto"/> objekt pokud id existuje; jinak <c>null</c>.
+        /// </returns>
 
         public ItemDto? GetItemById(int id)
         {
@@ -57,7 +61,9 @@ namespace GameBook.Server.Managers
         /// </summary>
         /// <param name="itemDto">DTO obsahujcí detaily k vytvoření předmětu</param>
         /// <param name="file">Obrázek k nahraní jako pozadí</param>
-        /// <returns><see cref="ItemDto"/> reprezentujcí vytvořený předmět; pokud se nepovede vytvořit <c>null</c></returns>
+        /// <returns>
+        /// <see cref="ItemDto"/> reprezentujcí vytvořený předmět; pokud se nepovede vytvořit <c>null</c>
+        /// </returns>
         public ItemDto? CreateItem(ItemDto itemDto, IFormFile file)
         {
             if (file == null || file.Length == 0)
@@ -82,7 +88,9 @@ namespace GameBook.Server.Managers
         /// </summary>
         /// <param name="id">Id předmětu co chceme změnit</param>
         /// <param name="roomDto">DTO obsahujcí detaily k předmětu</param>
-        /// <returns><see cref="ItemDto"/> reprezentujcí změněný předmět</returns>
+        /// <returns>
+        /// <see cref="ItemDto"/> reprezentujcí změněný předmět; pokud id neexistuje <c>null</c>
+        /// </returns>
 
         public ItemDto UpdateItem(int id, ItemDto itemDto)
         {
@@ -101,7 +109,9 @@ namespace GameBook.Server.Managers
         /// Smaže předmět z databáze.
         /// </summary>
         /// <param name="id">Id předmětu co chceme odstranit</param>
-        /// <returns><see cref="ItemDto"/> odstraněno předmětu; pokud id neexistuje <c>null</c></returns>
+        /// <returns>
+        /// <see cref="ItemDto"/> odstraněno předmětu; pokud id neexistuje <c>null</c>
+        /// </returns>
         public ItemDto? DeleteItem(int id)
         {
             if (!_itemRepository.IsExist(id))

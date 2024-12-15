@@ -1,12 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-
+﻿using Microsoft.AspNetCore.Mvc;
 using GameBook.Server.Models;
-using System.IO;
-using SQLitePCL;
-using GameBook.Server.Data;
 using GameBook.Server.Interfaces;
-using GameBook.Server.Managers;
 namespace GameBook.Server.Controllers
 {
     [Route("api/[controller]")]
@@ -65,7 +59,7 @@ namespace GameBook.Server.Controllers
         /// <summary>
         /// Vytvoří nový předmět v databázi a uloží obrázek do složky
         /// </summary>
-        /// <param name="itemDto">DTO s detailem předmětu</param>
+        /// <param name="itemDto">DTO s detailem o předmětu</param>
         /// <param name="file">Obrázek předmětu</param>
         /// <returns>
         /// <see cref="IActionResult"/> obsahujcí vytvořený item, vrácený pomocí HTTP 201 status kódu; pokud se nepovede vytvořit vrátí HTTP 400 status kód

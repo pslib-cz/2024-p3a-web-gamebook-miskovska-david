@@ -6,7 +6,13 @@ namespace GameBook.Server.Repository
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
+        /// <summary>
+        /// Kontext databáze
+        /// </summary>
         protected readonly ApplicationDbContext _context;
+        /// <summary>
+        /// Tabulka v databázi
+        /// </summary>
         protected readonly DbSet<TEntity> _dbSet;
         public BaseRepository(ApplicationDbContext context)
         {
@@ -14,15 +20,47 @@ namespace GameBook.Server.Repository
             _dbSet = _context.Set<TEntity>();
         }
 
+        /// <summary>
+        /// Vrátí všechny entity
+        /// </summary>
+        /// <returns>
+        /// List <see cref="TEntity"/> objekt reprezentujcí entity v databázi
+        /// </returns>
+        /// <remarks>
+        /// Tato metoda se dotazuje na Dbset a načítá všechny entity z databáze.
+        /// </remarks>
+
         public IList<TEntity> GetAll()
         {
             return _dbSet.ToList();
         }
 
+        /// <summary>
+        /// Vrátí entitu podle zadaného ID
+        /// </summary>
+        /// <param name="id">Id entity</param>
+        /// <returns>
+        /// Instnci <see cref="TEntity"/> objektu, pokud id existuje;
+        /// </returns>
+        /// <remarks>
+        /// Tato metoda používá metodu Find na Dbsetu pro nalezení entity podle id.
+        /// </remarks>
+
         public TEntity? GetById(int id)
         {
             return _dbSet.Find(id);
         }
+
+        /// <summary>
+        /// Vytvoří novou entitu v databázi
+        /// </summary>
+        /// <param name="entity">Druh entity, kterou chceme založit </param>
+        /// <returns>
+        /// Vytvoří <see cref="TEntity"/> objekt a uloží ho do databáze"/>
+        /// </returns>
+        /// <remarks>
+        /// Tato metoda používá metodu Add na Dbsetu pro přidání nové entity.
+        /// </remarks>
 
         public TEntity Create(TEntity entity)
         {
@@ -31,12 +69,34 @@ namespace GameBook.Server.Repository
             return entityEntry.Entity;
         }
 
+        /// <summary>
+        /// Aktualizuje entitu v databázi
+        /// </summary>
+        /// <param name="entity">Druh entity, kterou chceme změnit</param>
+        /// <returns>
+        /// Informaci o tom, že <see cref="TEntity"/> objekt byl změněn a uložen do databáze"/>
+        /// </returns>
+        /// <remarks>
+        /// Tato metoda používá metodu Update na Dbsetu pro aktualizaci entity.
+        /// </remarks>
+
         public TEntity Update(TEntity entity)
         {
             EntityEntry<TEntity> entityEntry = _dbSet.Update(entity);
             _context.SaveChanges();
             return entityEntry.Entity;
         }
+
+        /// <summary>
+        /// Oveřuje zda Id entity existuje; odpojuje entitu od kontextu pokud není null
+        /// </summary>
+        /// <param name="id">Id k ověření</param>
+        /// <returns>
+        /// True nebo False na základě toho, zda Id entity existuje
+        /// </returns>
+        /// <remarks>
+        /// Tato metoda používá metodu Find na Dbsetu pro nalezení entity podle id.
+        /// </remarks>
 
         public bool IsExist(int id)
         {
@@ -48,6 +108,12 @@ namespace GameBook.Server.Repository
 
             return entity != null;
         }
+
+        /// <summary>
+        /// Smaže entitu z databáze
+        /// </summary>
+        /// <param name="id">Id enetity co chceme smazat</param>
+        /// <exception cref="InvalidOperationException">Pokud se nepovede smazat entitu</exception>
 
         public void Delete(int id)
         {
