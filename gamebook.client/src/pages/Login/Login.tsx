@@ -18,12 +18,12 @@ const Login: React.FC<LoginProps> = ({ title }) => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms");
+                const response = await fetch("/api/Room/rooms/1"); //Ta 1 je id místnosti, kterou chceme načíst. To pak se bude měnit v routě, takže místo 1 tam bude proměnná.
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
             const data = await response.json();
-            setRooms(data[0])
+            setRooms(data)
             }
             catch(error){
                 if(error instanceof Error){
@@ -55,7 +55,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
             
         </div>
     )
-    console.log(rooms);
+    
 }
 
 export default Login;
