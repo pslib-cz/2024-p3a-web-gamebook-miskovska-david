@@ -2,6 +2,10 @@
     font-size: 1rem;
     align-self: flex-end;
     margin:0;
-    /* background-color: transparent;
-    color: var(--white) */
+    background-color: transparent;
+    color: var(--white)
+}
+
+.text:focus{
+    outline: none;
 }

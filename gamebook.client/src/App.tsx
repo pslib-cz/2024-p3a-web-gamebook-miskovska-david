@@ -1,5 +1,5 @@
 import './App.css';
-/* import {
+import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -8,13 +8,11 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register"; 
 import Home from "./pages/Home/Home";
 import ControlPanel from "./pages/ControlPanel/ControlPanel";
-import AppLayout from "./pages/AppLayout";
-import Room from "./pages/Room"; */
-import Room1 from "./pages/Room5/Room01";
+import RoomWithDialog from "./pages/Room1/RoomWithDialog";
 
 
 
-/* const router = createBrowserRouter([
+ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -33,22 +31,20 @@ import Room1 from "./pages/Room5/Room01";
   },
   { 
     path: "/rooms",
-     element: <AppLayout />, 
      children: [ 
       { 
         path: ":id",
-        element: <Room />
+        element: <RoomWithDialog numberOfDialogs={3}/>
       }
     ]
   }
- ]); */
+ ]); 
 
 function App() {
     return (
-       <Room1 />
+      <RouterProvider router={router} />
 
     )
 }
 
 export default App;
-{/* <RouterProvider router={router} /> */}

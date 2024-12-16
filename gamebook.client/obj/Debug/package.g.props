@@ -14,6 +14,7 @@
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.0.2</PackageJsonDependenciesReactRouterDom>
     <PackageJsonDependenciesReactTyped Condition="$(PackageJsonDependenciesReactTyped) == ''">^2.0.12</PackageJsonDependenciesReactTyped>
     <PackageJsonDependenciesReactTypewriter Condition="$(PackageJsonDependenciesReactTypewriter) == ''">^0.4.1</PackageJsonDependenciesReactTypewriter>
+    <PackageJsonDependenciesTypewriterEffect Condition="$(PackageJsonDependenciesTypewriterEffect) == ''">^2.21.0</PackageJsonDependenciesTypewriterEffect>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.13.0</PackageJsonDevdependenciesEslintJs>
     <PackageJsonDevdependenciesTypesNode Condition="$(PackageJsonDevdependenciesTypesNode) == ''">^20.14.0</PackageJsonDevdependenciesTypesNode>
     <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^18.3.12</PackageJsonDevdependenciesTypesReact>

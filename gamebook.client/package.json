@@ -14,7 +14,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.2",
     "react-typed": "^2.0.12",
-    "react-typewriter": "^0.4.1"
+    "react-typewriter": "^0.4.1",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

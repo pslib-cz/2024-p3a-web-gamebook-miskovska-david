@@ -3,11 +3,12 @@ import style from "./Pokracovat.module.css";
 
 type PokracovatProps = {
     text:string
+    changeDialog: () => void
 }
 
-const Pokracovat :React.FC<PokracovatProps> = ({text}) => {
+const Pokracovat :React.FC<PokracovatProps> = ({text, changeDialog}) => {
     return(
-        <p className={style.text}>{text}</p>
+        <button onClick={changeDialog} className={style.text}>{text}</button>
     )
 }
 
