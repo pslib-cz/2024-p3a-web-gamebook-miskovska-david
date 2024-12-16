@@ -36,7 +36,19 @@
     left: 30%;
  }
 
- 
+ .arrow__right1{
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+ }
+
+ .arrow__right2{
+    position: absolute;
+    right: 35%;
+    bottom: 40%;
+ }
+
+
 
 
   

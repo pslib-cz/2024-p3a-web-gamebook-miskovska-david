@@ -1,9 +1,8 @@
-import style from "./Room02.module.css";
+import style from "./Room03.module.css";
 import React, { useEffect, useState } from "react";
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
-import arrowLeft from "../../assets/arrows/arrow-left.png";
-import arrowRight from "../../assets/arrows/arrow-right.png";
+
 
 const Room02: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
@@ -14,7 +13,7 @@ const Room02: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/6"); 
+                const response = await fetch("/api/Room/rooms/13"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
@@ -41,15 +40,7 @@ const Room02: React.FC= () => {
             className={style.room__screen}
             style={{ backgroundImage: `url(/${rooms?.background})` }}>
             <img src={arrowStraight} className={style.arrow__straight} alt="straight" />
-            <img src={arrowLeft} className={style.arrow__left} alt="left"></img>
-            <img src={arrowRight} className={style.arrow__right1} alt="right"></img>
-            <img src={arrowRight} className={style.arrow__right2} alt="lright"></img>
-            <div className={style.room__container}>
-                <div className={style.slot}></div>
-                <div className={style.slot}></div>
-                <div className={style.slot}></div>
-                <div className={style.slot}></div>
-            </div>
+            
         </div>
     );
 
