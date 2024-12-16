@@ -21,7 +21,7 @@
 .room__text {
   color: var(--white);
   font-size: 0.75rem;
-  text-align: center;
+  text-align:left;
   margin-block: 1rem 0;
   overflow: hidden;
   white-space: wrap; 

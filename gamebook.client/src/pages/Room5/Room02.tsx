@@ -1,20 +1,19 @@
-import style from "./Room04.module.css";
+import style from "./Room02.module.css";
 import React, { useEffect, useState } from "react";
-import Pokracovat from "../../components/Button/Pokracovat";
 import { RoomType } from "../../types";
+import arrowStraight from "../../assets/arrows/arrow-straight.png";
+import arrowLeft from "../../assets/arrows/arrow-left.png";
 
-const Room06: React.FC= () => {
+const Room02: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
-    const [isTextComplete, setIsTextComplete] = useState<boolean>(false);
-    const [displayedText, setDisplayedText] = useState<string>(""); 
-    
+   
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/2"); 
+                const response = await fetch("/api/Room/rooms/6"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
@@ -36,40 +35,21 @@ const Room06: React.FC= () => {
    console.log(error);
    console.log(loading);
 
-
-   useEffect(() => {
-    if (rooms?.dialogs?.[7]) {
-        const fullText = rooms.dialogs[7];
-        let index = 0;
-
-        setDisplayedText(""); 
-
-        const interval = setInterval(() => {
-            if (index <= fullText.length) {
-                setDisplayedText(fullText.slice(0, index));
-                index += 1;
-            } 
-            else {
-                clearInterval(interval);
-                setIsTextComplete(true);
-            }
-        }, 70); 
-
-        return () => clearInterval(interval); 
-    }
-}, [rooms]);
-
-
     return (
         <div
             className={style.room__screen}
             style={{ backgroundImage: `url(/${rooms?.background})` }}>
+            <img src={arrowStraight} className={style.arrow__straight} alt="straight" />
+            <img src={arrowLeft} className={style.arrow__left} alt="left"></img>
+
             <div className={style.room__container}>
-                <p className={style.room__text}>{displayedText}</p>
-                {isTextComplete && <Pokracovat text="Pokračovat" />}
+                <div className={style.slot}></div>
+                <div className={style.slot}></div>
+                <div className={style.slot}></div>
+                <div className={style.slot}></div>
             </div>
         </div>
     );
 
 }
-export default Room06;
+export default Room02;

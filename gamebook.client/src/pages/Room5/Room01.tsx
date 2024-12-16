@@ -1,9 +1,9 @@
-import style from "./Room04.module.css";
+import style from "./Room01.module.css";
 import React, { useEffect, useState } from "react";
 import Pokracovat from "../../components/Button/Pokracovat";
 import { RoomType } from "../../types";
 
-const Room06: React.FC= () => {
+const Room01: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
@@ -14,7 +14,7 @@ const Room06: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/2"); 
+                const response = await fetch("/api/Room/rooms/6"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
@@ -38,8 +38,8 @@ const Room06: React.FC= () => {
 
 
    useEffect(() => {
-    if (rooms?.dialogs?.[7]) {
-        const fullText = rooms.dialogs[7];
+    if (rooms?.dialogs?.[1]) {
+        const fullText = rooms.dialogs[1];
         let index = 0;
 
         setDisplayedText(""); 
@@ -72,4 +72,4 @@ const Room06: React.FC= () => {
     );
 
 }
-export default Room06;
+export default Room01;
