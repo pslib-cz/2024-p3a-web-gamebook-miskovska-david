@@ -7,25 +7,25 @@ import Typewriter from 'typewriter-effect'
 
 type RoomWithDialogProps = {
     roomId?: string | undefined;
-    numberOfDialogs: number;
 }
 
-const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId, numberOfDialogs}) => {
+const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
-    const [visibleDialogIndex, setVisibleDialogIndex] = useState<number>(3);
+    const [visibleDialogIndex, setVisibleDialogIndex] = useState<number>(1);
     const [startDialogIndex, setStartDialogIndex] = useState<number>(0);
     const [dialog, setDialog] = useState<string>("")
     roomId = useParams().id
-    let navigate = useNavigate();
-    
+    const navigate = useNavigate();
+    const idNumber =  roomId ? parseInt(roomId): 0;   
+
 
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch(`/api/Room/rooms/${roomId}`); //Ta 1 je id místnosti, kterou chceme načíst. To pak se bude měnit v routě, takže místo 1 tam bude proměnná.
+                const response = await fetch(`/api/Room/rooms/${roomId}`); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
@@ -43,9 +43,9 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId, numberOfDialogs})
             }
         }
         fetchData();
-        setVisibleDialogIndex(numberOfDialogs);
         
-    }, [roomId, numberOfDialogs]);
+        
+    }, [roomId]);
 
     useEffect(() => {
         const GetDialogs = () => {
@@ -54,15 +54,29 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId, numberOfDialogs})
                 let dialogSentence = ""
                 for(let i = startDialogIndex; i < visibleDialogIndex; i++){
                     dialogSentence += rooms.dialogs[i] + "\n"
-                    if(i === rooms.dialogs.length - 1){
-                        navigate("/rooms/3")
+                    if(i >= rooms.dialogs.length - 1){
+                        if(idNumber+1 === 3 || idNumber+1 === 5 ){
+                            navigate(`/room-with-text/${idNumber + 1}`)
+                            
+                            break;
+                        }else if(idNumber+1 === 6){
+                            navigate(`/fight/${idNumber + 1}`)
+                            
+                            break;
+                        }
+                        else{
+                            navigate(`/rooms/${idNumber + 1}`)
+                            
+                            break;
+                        }
+                        
                     }
                     setDialog(dialogSentence)
                 }
         }
     }
     GetDialogs()
-}, [rooms, startDialogIndex, visibleDialogIndex, navigate])
+}, [rooms, startDialogIndex, visibleDialogIndex, navigate, idNumber])
 
     
    console.log(error);
@@ -85,10 +99,11 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId, numberOfDialogs})
             options={{
             strings: dialog,
             autoStart: true,
+            deleteSpeed: 0,
             loop: false,
             }}
         />
-      {visibleDialogIndex >= 2 && <Pokracovat text="Pokračovat" changeDialog={changeDialogHandler}/>}
+       <Pokracovat text="Pokračovat" changeDialog={changeDialogHandler}/>
     </div>
   </div>
   );

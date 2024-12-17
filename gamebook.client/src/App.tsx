@@ -9,7 +9,8 @@ import Register from "./pages/Register/Register";
 import Home from "./pages/Home/Home";
 import ControlPanel from "./pages/ControlPanel/ControlPanel";
 import RoomWithDialog from "./pages/Room1/RoomWithDialog";
-
+import RoomWithText from './pages/Room1/RoomWithText';
+import FightRoom from './pages/Room1/FightRoom';
 
 
  const router = createBrowserRouter([
@@ -31,10 +32,28 @@ import RoomWithDialog from "./pages/Room1/RoomWithDialog";
   },
   { 
     path: "/rooms",
-     children: [ 
+     children: [
       { 
         path: ":id",
-        element: <RoomWithDialog numberOfDialogs={3}/>
+        element: <RoomWithDialog />
+      }
+    ]
+  },
+  {
+    path: "/room-with-text",
+    children: [
+      {
+        path: ":id",
+        element: <RoomWithText />
+      }
+    ]
+  },
+  {
+    path: "/fight",
+    children: [
+      {
+        path: ":id",
+        element: <FightRoom />
       }
     ]
   }

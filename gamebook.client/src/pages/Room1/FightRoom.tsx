@@ -1,14 +1,16 @@
-import style from "./Room02.module.css";
 import React, { useEffect, useState } from "react";
-import Pokracovat from "../../components/Button/Pokracovat";
 import { RoomType } from "../../types";
-
-const Room02: React.FC= () => {
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+const FightRoom: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
     const [visibleDialogIndex, setVisibleDialogIndex] = useState(0);
     
+    const id = useParams().id
+    const idNumber = id ? parseInt(id): 0; 
+
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true)
@@ -46,19 +48,11 @@ const Room02: React.FC= () => {
   }, [visibleDialogIndex, rooms]);
 
   return(
-    <div
-    className={style.room__screen}
-    style={{ backgroundImage: `url(/${rooms?.background}` }}>
-    <div className={style.room__container}>
-      {rooms?.dialogs.slice(0, visibleDialogIndex + 1 ).map((dialog, index) => (
-        <p key={index} className={style.room__text}>
-          {dialog}
-        </p>
-      ))}
-      {visibleDialogIndex >= 2 && <Pokracovat text="Pokračovat" />}
-    </div>
+    <div style={{ backgroundImage: `url(/${rooms?.background})` }}>
+    <p>Fight room</p>
+    <Link to={`/rooms/${idNumber+1}`}>Pokračovat</Link>
   </div>
   );
 
 }
-export default Room02;
+export default FightRoom;
