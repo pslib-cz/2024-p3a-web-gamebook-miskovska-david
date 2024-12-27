@@ -1,19 +1,15 @@
-import Button from "../../components/Button/ButtonDB";
 import style from "./Home.module.css";
-import { Link, useNavigate } from "react-router-dom";
 import React from "react";
-
+import LinkButton from "../../components/Button/LinkButton";
 const Home: React.FC = () => {
-    const navigate = useNavigate();
+    
 
 
     return (
-        <div className={style.homeScreen}>
+        <div className={style.homeScreen} >
             <div className={style.container}>
-                <Link to="/login"><Button btnText="Přihlásit se" /></Link>
-                <Link to="/register"><Button btnText="Registrovat se" /></Link>
-                <Button btnText="Hrát" onClick={() => navigate('/rooms/1')} />
-                <Button btnText="Síň slávy" />
+                <LinkButton to="/login">Přihlásit se</LinkButton>
+                <LinkButton to="/register">Registrovat se</LinkButton>
             </div>
         </div>
     );

@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-imag e:  ;  z databáze */
+    background-image: url('/uploads/bg.png');
 }
 
 .text{

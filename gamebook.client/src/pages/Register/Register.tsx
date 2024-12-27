@@ -20,7 +20,7 @@ const Register: React.FC<RegisterProps> = ({title}) => {
                     <Input placeholder="Zopakovat heslo"></Input>
                 </form>
                 <Link to="/login"><Button btnText="Registrovat se" /></Link>
-                <p className={style.text}>Už máte účet? <Link to="/home">Přihlásit se</Link></p>
+                <p className={style.text}>Už máte účet? <Link to="/login">Přihlásit se</Link></p>
             </div>
         </div>
     )
