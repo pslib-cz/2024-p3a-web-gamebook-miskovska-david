@@ -1,6 +1,6 @@
 import style from "./Room01.module.css";
 import React, { useEffect, useState } from "react";
-import Pokracovat from "../../components/Button/Pokracovat";
+import Pokracovat from "../../components/Button/Continue";
 import { RoomType } from "../../types";
 
 const Room01: React.FC= () => {

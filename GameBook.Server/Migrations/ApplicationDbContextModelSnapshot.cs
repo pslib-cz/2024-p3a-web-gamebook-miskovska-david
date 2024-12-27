@@ -116,11 +116,11 @@ namespace GameBook.Server.Migrations
                     b.Property<bool?>("IsLocked")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("SpecialItem")
+                    b.Property<string>("RoomType")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("roomType")
-                        .IsRequired()
+                    b.Property<string>("SpecialItem")
                         .HasColumnType("TEXT");
 
                     b.HasKey("RoomId");
