@@ -2,7 +2,7 @@ import style from "./RoomWithDialog.module.css";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import Typewriter from 'typewriter-effect'
-import LinkButton from "../../components/Button/LinkButton";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 type RoomWithDialogProps = {
@@ -31,13 +31,10 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
             }
         }
     }  
+
+    if(dialogIndex === 0)
+        nextDialog(data?.dialogs, dialogIndex)
     
-
-       
-        
-
-
-
    
   return(
     <div
@@ -52,7 +49,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
             loop: false,
             }}
         />
-        {visibleContinue ? <LinkButton to="parek" >Pokračovat</LinkButton> :<button onClick={() => nextDialog(data?.dialogs, dialogIndex)}>Pokračovat</button>}
+        {visibleContinue ? <Link className={style.link} to="" >Pokračovat...</Link> :<button className={style.btn} onClick={() => nextDialog(data?.dialogs, dialogIndex)}>Pokračovat</button>}
     </div>
   </div>
   );
