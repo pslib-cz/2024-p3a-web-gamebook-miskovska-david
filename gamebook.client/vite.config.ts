@@ -56,6 +56,10 @@ export default defineConfig({
                 target,
                 secure: false
             },
+            '^/api/Auth/register': {
+                target,
+                secure: false
+            },
         },
 
         port: 54079,
