@@ -6,7 +6,7 @@ type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({btnText}) =>{
     return (
-        <button className={style.btn}>{btnText}</button>
+        <button  className={style.btn}>{btnText}</button>
     )
 }
 export default Button;

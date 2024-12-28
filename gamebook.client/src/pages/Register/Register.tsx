@@ -14,6 +14,12 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
   const [confrimPassword, setConfirmPassword] = useState<string>("");
   const [incorectPassword, setIncorectPassword] = useState<boolean>(false);
 
+  /*
+    Funkce pro odeslání formuláře
+    Spustí funkci CheckPassword
+    Pokud jsou shodná, pošle data na server
+  */
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (CheckPassword(password, confrimPassword)) {
@@ -26,6 +32,11 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
     }
   };
 
+  /*
+    Funkce pro kontrolu shody hesel
+    Spustí se po odeslání formuláře
+    Pokud se hesla neshodují, zobrazí se chybová hláška
+  */
   const CheckPassword = (password: string, password2: string) => {
     if (password === password2) {
         setIncorectPassword(false);

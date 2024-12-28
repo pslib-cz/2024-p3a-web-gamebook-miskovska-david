@@ -1,40 +1,25 @@
 import style from "./Login.module.css";
 import Input from "../../components/input/Input";
 import Button from "../../components/Button/ButtonLB";
+import { useState } from "react";
 type LoginProps = {
     title: string;
 }
 
 const Login: React.FC<LoginProps> = ({ title }) => {
 
-    // const [rooms, setRooms] = useState<RoomType | null>(null)
-    // const [error, setError] = useState<Error | null>(null)
-    // const [loading, setLoading] = useState<boolean>(false)
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         setLoading(true)
-    //         try{
-    //             const response = await fetch("/api/Room/rooms/1"); //Ta 1 je id místnosti, kterou chceme načíst. To pak se bude měnit v routě, takže místo 1 tam bude proměnná.
-    //         if(!response.ok){
-    //             throw new Error("Nepodařilo se načíst místnosti")
-    //         }
-    //         const data = await response.json();
-    //         setRooms(data)
-    //         }
-    //         catch(error){
-    //             if(error instanceof Error){
-    //                 setError(error)
-    //             }else{
-    //                 setError(new Error("Něco se pokazilo"))
-    //             }
-    //         }finally{
-    //             setLoading(false)
-    //         }
-    //     }
-    //     fetchData();
-    // }, []);
-
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const data = { email, password };
+        fetch("/api/Auth/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        });
+    }
    
     return (
         
@@ -42,11 +27,12 @@ const Login: React.FC<LoginProps> = ({ title }) => {
             
             <div className={style.login__container}>
                 <h2>{title}</h2>
-                <form className={style.login__form}>
-                    <Input placeholder="Uživatelské jméno/Email" />
-                    <Input placeholder="Heslo"/>
+                <form className={style.login__form} onSubmit={handleSubmit}>
+                    <Input inputType="email" placeholder="Uživatelské jméno/Email" onDataSend={setEmail}/>
+                    <Input inputType="password" placeholder="Heslo" onDataSend={setPassword} />
+                    <Button btnText="Přihlásit se" />
                 </form>
-                <Button btnText="Přihlásit se" ></Button>
+                
             </div>
             
         </div>

@@ -60,6 +60,11 @@ export default defineConfig({
                 target,
                 secure: false
             },
+                '^/api/Auth/login': {
+                    target,
+                    secure: false
+                },
+            }
         },
 
         port: 54079,
