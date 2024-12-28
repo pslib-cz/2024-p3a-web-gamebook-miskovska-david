@@ -1,7 +1,16 @@
-wwwroot\Uploads\Rooms\arena.png
-wwwroot\Uploads\Rooms\BG.png
-wwwroot\Uploads\Rooms\boj.png
-wwwroot\Uploads\Rooms\mapa.png
-wwwroot\Uploads\Rooms\nalodeni.png
-wwwroot\Uploads\Rooms\vezeni.png
-wwwroot\Uploads\Rooms\zed_s_diamnty.png
+wwwroot\uploads\arena.png
+wwwroot\uploads\bg.png
+wwwroot\uploads\boj.png
+wwwroot\uploads\ikona_boje.png
+wwwroot\uploads\interier1.png
+wwwroot\uploads\interier3.png
+wwwroot\uploads\mapa.png
+wwwroot\uploads\mesto_v_pozadi_runove_sutry.png
+wwwroot\uploads\nalodeni.png
+wwwroot\uploads\plavba.png
+wwwroot\uploads\pripluti.png
+wwwroot\uploads\prochazeni_mesta.png
+wwwroot\uploads\talin.png
+wwwroot\uploads\talin_a_maxim_u run.png
+wwwroot\uploads\trosky_ve_meste.png
+wwwroot\uploads\vezeni.png

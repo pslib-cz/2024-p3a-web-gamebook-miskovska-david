@@ -10,6 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Migrations\20241211103120_char FK.cs" />
+    <Content Include="Migrations\20241211103120_char FK.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
@@ -31,7 +36,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\NewFolder\" />
+    <None Include="wwwroot\uploads\arena.png" />
+    <None Include="wwwroot\uploads\bg.png" />
+    <None Include="wwwroot\uploads\boj.png" />
+    <None Include="wwwroot\uploads\ikona_boje.png" />
+    <None Include="wwwroot\uploads\interier1.png" />
+    <None Include="wwwroot\uploads\interier3.png" />
+    <None Include="wwwroot\uploads\mapa.png" />
+    <None Include="wwwroot\uploads\mesto_v_pozadi_runove_sutry.png" />
+    <None Include="wwwroot\uploads\nalodeni.png" />
+    <None Include="wwwroot\uploads\plavba.png" />
+    <None Include="wwwroot\uploads\pripluti.png" />
+    <None Include="wwwroot\uploads\prochazeni_mesta.png" />
+    <None Include="wwwroot\uploads\talin.png" />
+    <None Include="wwwroot\uploads\talin_a_maxim_u run.png" />
+    <None Include="wwwroot\uploads\trosky_ve_meste.png" />
+    <None Include="wwwroot\uploads\vezeni.png" />
   </ItemGroup>
 
 </Project>

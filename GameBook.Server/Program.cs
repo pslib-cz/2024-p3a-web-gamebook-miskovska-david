@@ -6,6 +6,7 @@ using GameBook.Server.Interfaces;
 using GameBook.Server.Managers;
 using GameBook.Server.Models;
 using GameBook.Server.Repository;
+using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder();
 
 // Add services to the container.
@@ -29,17 +30,12 @@ builder.Services.AddScoped<IBaseRepository<Room>, RoomRepository>();
 builder.Services.AddScoped<IItemManager, ItemManager>();
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
 builder.Services.AddScoped<IBaseRepository<Item>, ItemRepository>();
+
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")),
-    RequestPath = "/wwwroot"
-});
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "uploads")),
-    RequestPath = "/uploads"
-});
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
@@ -51,11 +47,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseAuthentication();
+
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.MapFallbackToFile("/index.html");
 

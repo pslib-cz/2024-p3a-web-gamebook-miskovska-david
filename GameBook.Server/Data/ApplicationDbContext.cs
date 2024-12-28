@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using GameBook.Server.Models;
-using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 namespace GameBook.Server.Data
 {
-    public class ApplicationDbContext: DbContext
+    public class ApplicationDbContext: IdentityDbContext<IdentityUser>
     {
         
 
