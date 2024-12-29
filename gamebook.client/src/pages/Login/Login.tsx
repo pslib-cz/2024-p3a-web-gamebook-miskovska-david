@@ -11,18 +11,27 @@ const Login: React.FC<LoginProps> = ({ title }) => {
 
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
+    const [incorectLogin, setIncorectLogin] = useState<boolean>(false);
     const navigate = useNavigate();
+
+    /*
+    Funkce pro odeslání formuláře
+    Pokud POST vrátí 200 přesměruje na /menu
+    Pokud POST vrátí 404 vyhodí chybovou hlášku
+  */
     const handleSubmit  = async  (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const data = { email, password };
-        const respons = await fetch("/api/Auth/login", {
+        const response = await fetch("/api/Auth/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
         });
 
-        if(respons.ok){
-            navigate("/");
+        if(response.ok){
+            navigate("/menu");
+        }else{
+            setIncorectLogin(true);
         }
     
 
@@ -37,6 +46,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                 <form className={style.login__form} onSubmit={handleSubmit}>
                     <Input inputType="email" placeholder="Uživatelské jméno/Email" onDataSend={setEmail}/>
                     <Input inputType="password" placeholder="Heslo" onDataSend={setPassword} />
+                    {incorectLogin && <p>Nesprávné uživatelské jméno nebo heslo</p>}
                     <Button btnText="Přihlásit se" />
                 </form>
                 

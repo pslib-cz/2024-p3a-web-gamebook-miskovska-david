@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    gap: 2rem;
+}
+
+.homeScreen{
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/uploads/bg.png");
+}

@@ -10,12 +10,17 @@ import Home from "./pages/Home/Home";
 import RoomWithDialog from "./pages/Room1/RoomWithDialog";
 import RoomWithText from './pages/Room1/RoomWithText';
 import FightRoom from './pages/Room1/FightRoom';
+import Menu from './pages/Menu/Menu';
 
 
  const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/menu",
+    element: <Menu />,
   },
   {
     path: "/login",
