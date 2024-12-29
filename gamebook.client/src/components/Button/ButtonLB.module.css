@@ -2,8 +2,9 @@
     background-color: var(--light-brown);
     color: var(--brown);
     display: flex;
-    justify-self: self-end;
+    align-self: end;
     margin-top: 1rem;
     margin-bottom: .5rem;
     font-size: .8rem;
+    width: fit-content;
 }
