@@ -2,6 +2,7 @@ import style from "./Login.module.css";
 import Input from "../../components/input/Input";
 import Button from "../../components/Button/ButtonLB";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 type LoginProps = {
     title: string;
 }
@@ -10,15 +11,21 @@ const Login: React.FC<LoginProps> = ({ title }) => {
 
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
-    
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const navigate = useNavigate();
+    const handleSubmit  = async  (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const data = { email, password };
-        fetch("/api/Auth/login", {
+        const respons = await fetch("/api/Auth/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
         });
+
+        if(respons.ok){
+            navigate("/");
+        }
+    
+
     }
    
     return (

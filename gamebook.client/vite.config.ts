@@ -64,8 +64,8 @@ export default defineConfig({
                     target,
                     secure: false
                 },
-            }
-        },
+            },
+        
 
         port: 54079,
         https: {
