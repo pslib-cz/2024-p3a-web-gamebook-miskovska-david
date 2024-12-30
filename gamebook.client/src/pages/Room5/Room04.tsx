@@ -39,8 +39,7 @@ const Room02: React.FC= () => {
         <div
             className={style.room__screen}
             style={{ backgroundImage: `url(/${rooms?.background})` }}>
-            <img src={arrowStraight} className={style.arrow__straight} alt="straight" />
-            
+            <img src={arrowStraight} className={style.arrow__straight} alt="straight" /> 
         </div>
     );
 

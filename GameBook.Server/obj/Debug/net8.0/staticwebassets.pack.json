@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.png",
+      "PackagePath": "staticwebassets\\uploads\\amulet_zrcadlove_obrany.png"
+    },
+    {
       "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.png",
       "PackagePath": "staticwebassets\\uploads\\arena.png"
     },
@@ -23,6 +27,18 @@
     {
       "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.png",
       "PackagePath": "staticwebassets\\uploads\\interier3.png"
+    },
+    {
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.png",
+      "PackagePath": "staticwebassets\\uploads\\lektvar_magicke_vule.png"
+    },
+    {
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.png",
+      "PackagePath": "staticwebassets\\uploads\\lektvar_zivota.png"
+    },
+    {
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.png",
+      "PackagePath": "staticwebassets\\uploads\\lektvar_zkazy.png"
     },
     {
       "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa.png",
@@ -49,6 +65,14 @@
       "PackagePath": "staticwebassets\\uploads\\prochazeni_mesta.png"
     },
     {
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.png",
+      "PackagePath": "staticwebassets\\uploads\\shield.png"
+    },
+    {
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.png",
+      "PackagePath": "staticwebassets\\uploads\\sword.png"
+    },
+    {
       "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.png",
       "PackagePath": "staticwebassets\\uploads\\talin.png"
     },
@@ -63,6 +87,10 @@
     {
       "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.png",
       "PackagePath": "staticwebassets\\uploads\\vezeni.png"
+    },
+    {
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.png",
+      "PackagePath": "staticwebassets\\uploads\\zrcadlo_dvojiho_videni.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameBook.Server.Microsoft.AspNetCore.StaticWebAssets.props",

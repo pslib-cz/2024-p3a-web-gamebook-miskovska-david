@@ -52,6 +52,10 @@ export default defineConfig({
                 target,
                 secure: false,
             },
+            '^/api/Item/items':{
+                target,
+                secure: false
+            },
             '^/uploads': {
                 target,
                 secure: false

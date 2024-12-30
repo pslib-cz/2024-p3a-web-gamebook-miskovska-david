@@ -12,8 +12,14 @@ import RoomWithText from './pages/Room1/RoomWithText';
 import FightRoom from './pages/Room1/FightRoom';
 import Menu from './pages/Menu/Menu';
 
+import Obchod from './pages/Room5/Room07';
+
 
  const router = createBrowserRouter([
+  {
+   path: "/obchod",
+  element: <Obchod />,
+  },
   {
     path: "/",
     element: <Home />,

@@ -1,7 +1,7 @@
 import style from "./Room01.module.css";
 import React, { useEffect, useState } from "react";
 import Pokracovat from "../../components/Button/Continue";
-import { RoomType } from "../../types/index";
+import { RoomType } from "../../types";
 
 const Room01: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
@@ -14,7 +14,7 @@ const Room01: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/6"); 
+                const response = await fetch("/api/Room/rooms/20"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
@@ -38,8 +38,8 @@ const Room01: React.FC= () => {
 
 
    useEffect(() => {
-    if (rooms?.dialogs?.[1]) {
-        const fullText = rooms.dialogs[1];
+    if (rooms?.dialogs?.[0]) {
+        const fullText = rooms.dialogs[0];
         let index = 0;
 
         setDisplayedText(""); 
