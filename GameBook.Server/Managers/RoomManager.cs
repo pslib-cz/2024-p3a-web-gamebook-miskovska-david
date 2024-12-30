@@ -17,7 +17,7 @@ namespace GameBook.Server.Managers
         /// <summary>
         /// Cesta ke složce, kde se ukládají obrázky.
         /// </summary>
-        private const string _folder = "uploads/";
+        private const string _folder = "wwwroot/uploads/";
         public RoomManager(IBaseRepository<Room> roomRepository, IMapper mapper)
         {
             _roomRepository = roomRepository;
