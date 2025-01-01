@@ -77,7 +77,7 @@ namespace GameBook.Server.Managers
               file.CopyTo(stream);
             }
             Room room = _mapper.Map<Room>(roomDto);
-            room.Background = path.ToString().ToLower();
+            room.Background = path.ToString().ToLower().Replace("wwwroot/", "");
             Room createdRoom = _roomRepository.Create(room);
             createdRoom.Background = path.ToString().ToLower();
             return _mapper.Map<RoomDto>(createdRoom);

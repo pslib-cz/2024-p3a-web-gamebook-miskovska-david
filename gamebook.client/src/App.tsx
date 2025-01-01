@@ -18,7 +18,7 @@ import Obchod from './pages/Room5/Room07';
  const router = createBrowserRouter([
   {
    path: "/obchod",
-  element: <Obchod />,
+   element: <Obchod />,
   },
   {
     path: "/",

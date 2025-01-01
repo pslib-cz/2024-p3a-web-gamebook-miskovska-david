@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { RoomType } from '../types';
+import { ItemType, RoomType } from '../types';
 
 /*
     Tento hook slouží k načtení dat z API.
@@ -9,7 +9,7 @@ import { RoomType } from '../types';
 
 
 const useFetch = (url: string) => {
-    const [data, setData] = useState<RoomType | null>(null);
+    const [data, setData] = useState<RoomType | ItemType | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<Error | null>(null);
 

@@ -77,9 +77,9 @@ namespace GameBook.Server.Managers
                 file.CopyTo(stream);
             }
             Item item = _mapper.Map<Item>(itemDto);
-            item.Img = path.ToString().ToLower();
+            item.Background = path.ToString().ToLower().Replace("wwwroot/", "");
             Item createdItem = _itemRepository.Create(item);
-            createdItem.Img = path.ToString().ToLower();
+            createdItem.Background = path.ToString().ToLower();
             return _mapper.Map<ItemDto>(createdItem);
         }
 
