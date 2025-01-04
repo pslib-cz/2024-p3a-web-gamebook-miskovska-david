@@ -1,16 +1,3 @@
-export type RoomType = {
-    id: number;
-    background: string;
-    specialItem: string;
-    dialogs: Array<string>;
-}
+export { type ItemType } from './itemType';
+export { type RoomType } from './roomType';
 
-export type ItemType = {
-    itemId: number;
-    name: string;
-    description: string;
-    background: string;
-    price: number;
-    demage: number;
-    defense: number;
-}

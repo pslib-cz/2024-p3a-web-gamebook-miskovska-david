@@ -1,10 +1,10 @@
-import style from "./Room03.module.css";
+import style from "./RoomInterier1.module.css";
 import React, { useEffect, useState } from "react";
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
 
 
-const Room03: React.FC= () => {
+const RoomInterier1: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
@@ -13,7 +13,7 @@ const Room03: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/13"); 
+                const response = await fetch("/api/Room/rooms/14"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
@@ -39,10 +39,9 @@ const Room03: React.FC= () => {
         <div
             className={style.room__screen}
             style={{ backgroundImage: `url(/${rooms?.background})` }}>
-            <img src={arrowStraight} className={style.arrow__straight} alt="straight" />
-            
+            <img src={arrowStraight} className={style.arrow__straight} alt="straight" /> 
         </div>
     );
 
 }
-export default Room03;
+export default RoomInterier1;
