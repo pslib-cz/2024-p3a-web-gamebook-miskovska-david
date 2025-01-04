@@ -2,7 +2,7 @@ import style from "./Room06.module.css";
 import React, { useEffect, useState } from "react";
 import { RoomType } from "../../types";
 
-const Room01: React.FC = () => {
+const Room06: React.FC = () => {
     const [rooms, setRooms] = useState<RoomType | null>(null);
     const [error, setError] = useState<Error | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
@@ -87,4 +87,4 @@ const Room01: React.FC = () => {
     );
 };
 
-export default Room01;
+export default Room06;
