@@ -2,13 +2,13 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
   }
   
   .room__container {
-    display: flex;
+    
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8); 
     padding: 0.5rem 0.8rem;
@@ -29,7 +29,38 @@
 
 
 
+.continueButton {
+    display: flex;
+    justify-self: flex-end;
+    font-size: 1rem;
+    align-self: flex-end;
+    margin:0;
+    background-color: transparent;
+    color: var(--white)
+}
 
+.buttons {
+    content: '';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;  
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+    
+
+.button{
+  background-color: var(--yellow);
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+
+}
   
   
   

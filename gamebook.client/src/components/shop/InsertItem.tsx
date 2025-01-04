@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ItemType } from "../../types/item";
+import { ItemType } from "../../types/";
 import Item from "./Item";
 
 

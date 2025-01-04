@@ -4,7 +4,7 @@ import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
 
 
-const Room02: React.FC= () => {
+const Room04: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
@@ -44,4 +44,4 @@ const Room02: React.FC= () => {
     );
 
 }
-export default Room02;
+export default Room04;

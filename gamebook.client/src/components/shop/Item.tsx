@@ -1,5 +1,5 @@
 import React from "react";
-import { ItemType } from "../../types/item";
+import { ItemType } from "../../types/";
 import style from "./Item.module.css";
 import coins from "../../assets/coins/coins.png";
 import Buy from "../../components/Button/Buy";
