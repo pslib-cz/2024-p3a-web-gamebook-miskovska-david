@@ -66,9 +66,14 @@ const Room06: React.FC = () => {
     return (
         <div className={style.room__screen} style={{ backgroundImage: `url(/${rooms?.background})` }}>
             <div className={style.room__container}>
-                {!showButtons && (
+                {!showButtons ? (
                     <p className={style.room__text}>{displayedText}</p>
-                )}
+                ) : ( 
+                    <div className={style.buttons}>
+                        <button className={style.button}>Odejít</button>
+                        <button className={style.button}>Koupit</button>
+                    </div>
+                 )}
 
                 {isTextComplete && (
                     <button className={style.continueButton} onClick={handleContinueClick}>
@@ -76,13 +81,6 @@ const Room06: React.FC = () => {
                     </button>
                 )}
             </div>
-            
-            {showButtons && (
-                    <div className={style.buttons}>
-                        <button className={style.button}>Odejít</button>
-                        <button className={style.button}>Koupit</button>
-                    </div>
-                )}
         </div>
     );
 };
