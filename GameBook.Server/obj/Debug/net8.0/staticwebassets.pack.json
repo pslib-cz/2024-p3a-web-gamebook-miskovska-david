@@ -1,112 +1,108 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.png",
       "PackagePath": "staticwebassets\\uploads\\amulet_zrcadlove_obrany.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.png",
       "PackagePath": "staticwebassets\\uploads\\arena.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.png",
       "PackagePath": "staticwebassets\\uploads\\bg.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.png",
       "PackagePath": "staticwebassets\\uploads\\boj.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.png",
       "PackagePath": "staticwebassets\\uploads\\ikona_boje-removebg-preview.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje.png",
       "PackagePath": "staticwebassets\\uploads\\ikona_boje.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.png",
       "PackagePath": "staticwebassets\\uploads\\ikona_obrany-removebg-preview.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.png",
       "PackagePath": "staticwebassets\\uploads\\interier1.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.png",
       "PackagePath": "staticwebassets\\uploads\\interier3.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.png",
       "PackagePath": "staticwebassets\\uploads\\lektvar_magicke_vule.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.png",
       "PackagePath": "staticwebassets\\uploads\\lektvar_zivota.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.png",
       "PackagePath": "staticwebassets\\uploads\\lektvar_zkazy.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa.png",
       "PackagePath": "staticwebassets\\uploads\\mapa.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.png",
       "PackagePath": "staticwebassets\\uploads\\mesto_v_pozadi_runove_sutry.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.png",
       "PackagePath": "staticwebassets\\uploads\\nalodeni.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.png",
       "PackagePath": "staticwebassets\\uploads\\plavba.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.png",
       "PackagePath": "staticwebassets\\uploads\\pripluti.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.png",
       "PackagePath": "staticwebassets\\uploads\\prochazeni_mesta.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.png",
       "PackagePath": "staticwebassets\\uploads\\shield.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.png",
       "PackagePath": "staticwebassets\\uploads\\sword.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.png",
       "PackagePath": "staticwebassets\\uploads\\talin.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.png",
       "PackagePath": "staticwebassets\\uploads\\talin_a_maxim_u run.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.png",
       "PackagePath": "staticwebassets\\uploads\\trosky_ve_meste.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.png",
       "PackagePath": "staticwebassets\\uploads\\vezeni.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.png",
       "PackagePath": "staticwebassets\\uploads\\zbrojir2.png"
     },
     {
-      "Id": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.png",
+      "Id": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.png",
       "PackagePath": "staticwebassets\\uploads\\zrcadlo_dvojiho_videni.png"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameBook.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameBook.Server.Microsoft.AspNetCore.StaticWebAssets.props",
