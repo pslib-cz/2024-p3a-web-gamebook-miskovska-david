@@ -12,7 +12,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
 
     return (
         <div className={style.item}>
-            <img src={`/${item.img}`} alt={item.name} className={style.image} />
+            <img src={`/${item.background}`} alt={item.name} className={style.image} />
             <div className={style.text}>
                 <p className={style.name}>{item.name}</p>
                 <p className={style.description}>{item.description}</p>
