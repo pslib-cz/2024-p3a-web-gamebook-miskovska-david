@@ -8,6 +8,10 @@ type ContinueProps = {
 
 const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId, type}) => {
 
+    /*
+        podle typu se určí kam se má uživatel přesměrovat
+        načte další data z api
+    */
 
     const SetRoute = (type: string): string => {
         let route=""

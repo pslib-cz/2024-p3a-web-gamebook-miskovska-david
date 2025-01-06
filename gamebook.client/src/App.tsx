@@ -11,16 +11,13 @@ import RoomWithDialog from "./pages/room/RoomWithDialog";
 import RoomWithText from './pages/room/RoomWithText';
 import FightRoom from './pages/room/FightRoom';
 import Menu from './pages/menu/Menu';
-import Obchod from './pages/room/Shop';
+import Obchod from './pages/room/ShopDialog';
 
 
 
  const router = createBrowserRouter([
  
-  {
-   path: "/obchod",
-   element: <Obchod />,
-  },
+  
   {
     path: "/",
     element: <Home />,
@@ -63,7 +60,11 @@ import Obchod from './pages/room/Shop';
         element: <FightRoom />
       }
     ]
-  }
+  },
+  {
+    path: "/shop",
+    element: <Obchod />,
+   },
  ]); 
 
 function App() {
