@@ -2,7 +2,7 @@ import style from "./RoomWithDialog.module.css";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import Typewriter from 'typewriter-effect'
-import { Link } from "react-router-dom";
+import Continue from "../../components/button/Continue";
 import React, { useState } from "react";
 
 type RoomWithDialogProps = {
@@ -17,7 +17,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     roomId = useParams().id
     const idNumber =  roomId ? parseInt(roomId): 0;   
     const {data} = useFetch(`/api/Room/rooms/${idNumber}`);
-    
+    const {data: nextRoom} = useFetch(`/api/Room/rooms/${idNumber+1}`);
     
 
     
@@ -49,7 +49,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
             loop: false,
             }}
         />
-        {visibleContinue ? <Link className={style.link} to="" >Pokračovat...</Link> :<button className={style.btn} onClick={() => nextDialog(data?.dialogs, dialogIndex)}>Pokračovat</button>}
+        {visibleContinue ? <Continue type={nextRoom?.roomType} roomId={idNumber+1} >Pokračovat...</Continue> :<button className={style.btn} onClick={() => nextDialog(data?.dialogs, dialogIndex)}>Pokračovat</button>}
     </div>
   </div>
   );

@@ -2,7 +2,7 @@
 import { PropsWithChildren } from "react";
 import { Link } from "react-router-dom";
 type ContinueProps = {
-    roomId: string;
+    roomId: number;
     type: string;
 }
 
@@ -23,7 +23,7 @@ const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId,
     }
 
     return(
-        <Link to={SetRoute(type) + roomId} >{children}</Link>
+        <Link to={SetRoute(type)} >{children}</Link>
     )
 }
 
