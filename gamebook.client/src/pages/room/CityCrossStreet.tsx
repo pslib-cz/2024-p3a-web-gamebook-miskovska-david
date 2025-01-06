@@ -4,6 +4,7 @@ import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
 import arrowLeft from "../../assets/arrows/arrow-left.png";
 import arrowRight from "../../assets/arrows/arrow-right.png";
+import { Link } from "react-router-dom";
 
 const CityCrossStreet: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
@@ -14,7 +15,7 @@ const CityCrossStreet: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/6"); 
+                const response = await fetch("/api/Room/rooms/9"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
@@ -40,10 +41,10 @@ const CityCrossStreet: React.FC= () => {
         <div
             className={style.room__screen}
             style={{ backgroundImage: `url(/${rooms?.background})` }}>
-            <img src={arrowStraight} className={style.arrow__straight} alt="straight" />
-            <img src={arrowLeft} className={style.arrow__left} alt="left"></img>
-            <img src={arrowRight} className={style.arrow__right1} alt="right"></img>
-            <img src={arrowRight} className={style.arrow__right2} alt="lright"></img>
+            <Link to="/city-streight" ><img src={arrowStraight} className={style.arrow__straight} alt="straight" /></Link>
+            <Link to="/interier2"><img src={arrowLeft} className={style.arrow__left} alt="left"></img></Link>
+            <Link to="/interier1"><img src={arrowRight} className={style.arrow__right1} alt="right"></img></Link>
+            <Link to="/shopdialog"><img src={arrowRight} className={style.arrow__right2} alt="right"></img></Link>
             <div className={style.room__container}>
                 <div className={style.slot}></div>
                 <div className={style.slot}></div>
