@@ -2,12 +2,16 @@
 import { PropsWithChildren } from "react";
 import { Link } from "react-router-dom";
 type ContinueProps = {
-    roomId: string;
+    roomId: number;
     type: string;
 }
 
 const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId, type}) => {
 
+    /*
+        podle typu se určí kam se má uživatel přesměrovat
+        načte další data z api
+    */
 
     const SetRoute = (type: string): string => {
         let route=""
@@ -23,7 +27,7 @@ const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId,
     }
 
     return(
-        <Link to={SetRoute(type) + roomId} >{children}</Link>
+        <Link to={SetRoute(type)} >{children}</Link>
     )
 }
 
