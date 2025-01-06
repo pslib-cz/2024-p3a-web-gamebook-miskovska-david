@@ -11,7 +11,13 @@ import RoomWithDialog from "./pages/room/RoomWithDialog";
 import RoomWithText from './pages/room/RoomWithText';
 import FightRoom from './pages/room/FightRoom';
 import Menu from './pages/Menu/Menu';
-import Obchod from './pages/room/ShopDialog';
+import ObchodDialog from './pages/room/ShopDialog';
+import Shop from './pages/room/Shop';
+
+import CityCross from './pages/room/CityCrossStreet';
+import CityStreight from './pages/room/CityStreightStreet';
+import Interier1 from './pages/room/RoomInterier1';
+import Interier2 from './pages/room/RoomInterier2';
 
 
 
@@ -62,9 +68,32 @@ import Obchod from './pages/room/ShopDialog';
     ]
   },
   {
-    path: "/shop",
-    element: <Obchod />,
+    path: "/shopdialog",
+    element: <ObchodDialog />,
    },
+
+   {
+    path: "/city-cross",
+    element: <CityCross />,
+   },
+   {
+    path: "/city-streight",
+    element: <CityStreight />,
+   },
+   {
+    path: "/interier1",
+    element: <Interier1 />,
+   },
+   {
+    path: "/interier2",
+    element: <Interier2 />,
+   },
+   {
+    path: "/shop",
+    element: <Shop/>,
+   },
+
+
  ]); 
 
 function App() {
