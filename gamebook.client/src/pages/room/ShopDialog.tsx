@@ -2,6 +2,7 @@ import style from "./ShopDialog.module.css";
 import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 import useFetch from "../../hooks/useFetch";
+import {Link} from "react-router-dom";
 
 const Room06: React.FC = () => {
   const [dialogIndex, setDialogIndex] = useState<number>(0);
@@ -44,8 +45,8 @@ console.log(data?.dialogs.length)
 
         {visibleContinue && (
           <div className={style.buttons}>
-            <button className={style.button}>Odejít</button>
-            <button className={style.button}>Koupit</button>
+            <Link to="/city-cross"><button className={style.button}>Odejít</button></Link>
+            <Link to="/shop"><button className={style.button}>Koupit</button></Link>
           </div>
         )}
 

@@ -2,6 +2,7 @@ import style from "./CityStreightStreet.module.css";
 import React, { useEffect, useState } from "react";
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
+import { Link } from "react-router-dom";
 
 
 const CityStreightStreet: React.FC= () => {
@@ -39,7 +40,7 @@ const CityStreightStreet: React.FC= () => {
         <div
             className={style.room__screen}
             style={{ backgroundImage: `url(/${rooms?.background})` }}>
-            <img src={arrowStraight} className={style.arrow__straight1} alt="straight" />
+            <Link to="/city-cross"><img src={arrowStraight} className={style.arrow__straight1} alt="straight" /></Link>
             <img src={arrowStraight} className={style.arrow__straight2} alt="straight" />
             
         </div>
