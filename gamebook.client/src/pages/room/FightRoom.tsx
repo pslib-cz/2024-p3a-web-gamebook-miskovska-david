@@ -11,7 +11,7 @@ const FightRoom: React.FC= () => {
 
     const {data: RoomData} = useFetch(`/api/Room/rooms/${idNumber}`);
     const {data: AtkData} = useFetch(`/api/Item/items/100`);
-    const {data: DefData} = useFetch(`/api/Room/rooms/${idNumber}`);
+    const {data: DefData} = useFetch(`/api/Item/items/101`);
 
 
 
@@ -20,8 +20,18 @@ const FightRoom: React.FC= () => {
         const screenHeigh = window.innerHeight;
         const randomTop = Math.floor(Math.random() * (screenHeigh - 50));
         const randomLeft = Math.floor(Math.random() * (screenWith-50));
-        return <FightButton top={randomTop} left={randomLeft} path={`/${AtkData?.background}`}  />;
+
+        const random = Math.round(Math.random() * 2);
+        if(random === 0)
+           return <FightButton top={randomTop} left={randomLeft} path={`/${DefData?.background}`}  />;
+        else
+          return <FightButton top={randomTop} left={randomLeft} path={`/${AtkData?.background}`}  />;
     }
+
+    const FightHandler = (hp: number, enemyHp: number) => {
+      
+    }
+
   
 
   return(
