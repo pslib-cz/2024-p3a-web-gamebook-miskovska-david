@@ -27,6 +27,14 @@
     margin-top: 2rem;
 }
 
+.text__warning{
+    margin: 0;
+    color: var(--red);
+    display: inline-flex;
+    align-items: center;
+    gap: .2rem;
+}
+
 .register__button{
     background-color: var(--light-brown);
     color: var(--brown);

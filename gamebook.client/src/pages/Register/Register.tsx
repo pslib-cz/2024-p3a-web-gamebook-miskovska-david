@@ -2,6 +2,7 @@ import style from "./Register.module.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Input from "../../components/input/Input";
+import { FiAlertCircle } from "react-icons/fi";
 
 type RegisterProps = {
   title: string;
@@ -72,7 +73,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
             inputType="password"
           />
           {incorectPassword && 
-            <p className={style.text}>Hesla se neshodují</p>
+            <p className={style.text__warning}><FiAlertCircle />Hesla se neshodují</p>
           }
           <button type="submit" className={style.register__button}>
             Registrovat

@@ -11,6 +11,7 @@
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^18.3.1</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^18.3.1</PackageJsonDependenciesReactDom>
+    <PackageJsonDependenciesReactIcons Condition="$(PackageJsonDependenciesReactIcons) == ''">^5.4.0</PackageJsonDependenciesReactIcons>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.0.2</PackageJsonDependenciesReactRouterDom>
     <PackageJsonDependenciesReactTyped Condition="$(PackageJsonDependenciesReactTyped) == ''">^2.0.12</PackageJsonDependenciesReactTyped>
     <PackageJsonDependenciesReactTypewriter Condition="$(PackageJsonDependenciesReactTypewriter) == ''">^0.4.1</PackageJsonDependenciesReactTypewriter>
