@@ -3,6 +3,7 @@ import Input from "../../components/input/Input";
 import Button from "../../components/Button/ButtonLB";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FiAlertCircle } from "react-icons/fi";
 type LoginProps = {
     title: string;
 }
@@ -46,7 +47,7 @@ const Login: React.FC<LoginProps> = ({ title }) => {
                 <form className={style.login__form} onSubmit={handleSubmit}>
                     <Input inputType="email" placeholder="Uživatelské jméno/Email" onDataSend={setEmail}/>
                     <Input inputType="password" placeholder="Heslo" onDataSend={setPassword} />
-                    {incorectLogin && <p>Nesprávné uživatelské jméno nebo heslo</p>}
+                    {incorectLogin && <p className={style.text__warning}><FiAlertCircle /> Nesprávné uživatelské jméno nebo heslo</p>}
                     <Button btnText="Přihlásit se" />
                 </form>
                 
