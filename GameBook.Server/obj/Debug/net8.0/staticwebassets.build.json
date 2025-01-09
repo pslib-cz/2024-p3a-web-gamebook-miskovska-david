@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tpC6ihAHWr9g0Q7GAe/HlUXpdSjiuqOtGXlNVxZHFzc=",
+  "Hash": "ASArOUNGI73vkdZ87AJhmrmj2DuisrIiMet4nSJ0lj0=",
   "Source": "GameBook.Server",
   "BasePath": "_content/GameBook.Server",
   "Mode": "Default",
@@ -29,12 +29,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/amulet_zrcadlove_obrany.png",
+      "RelativePath": "uploads/amulet_zrcadlove_obrany.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -45,15 +45,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\amulet_zrcadlove_obrany.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\amulet_zrcadlove_obrany.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/arena.png",
+      "RelativePath": "uploads/arena.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -64,15 +64,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\arena.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\arena.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/bg.png",
+      "RelativePath": "uploads/bg.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -83,15 +83,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\bg.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\bg.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/boj.png",
+      "RelativePath": "uploads/boj.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -102,15 +102,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\boj.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\boj.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/ikona_boje.png",
+      "RelativePath": "uploads/ikona_boje-removebg-preview.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -121,15 +121,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\ikona_boje.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\ikona_boje-removebg-preview.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/ikona_boje-removebg-preview.png",
+      "RelativePath": "uploads/ikona_obrany-removebg-preview.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -140,15 +140,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\ikona_boje-removebg-preview.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\ikona_obrany-removebg-preview.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/ikona_obrany-removebg-preview.png",
+      "RelativePath": "uploads/interier1.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -159,15 +159,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\ikona_obrany-removebg-preview.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\interier1.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/interier1.png",
+      "RelativePath": "uploads/interier3.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -178,15 +178,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\interier1.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\interier3.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/interier3.png",
+      "RelativePath": "uploads/lektvar_magicke_vule.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -197,15 +197,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\interier3.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\lektvar_magicke_vule.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/lektvar_magicke_vule.png",
+      "RelativePath": "uploads/lektvar_zivota.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -216,15 +216,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\lektvar_magicke_vule.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\lektvar_zivota.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/lektvar_zivota.png",
+      "RelativePath": "uploads/lektvar_zkazy.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\lektvar_zivota.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\lektvar_zkazy.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/lektvar_zkazy.png",
+      "RelativePath": "uploads/mesto_v_pozadi_runove_sutry.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -254,15 +254,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\lektvar_zkazy.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/mapa.png",
+      "RelativePath": "uploads/nalodeni.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -273,15 +273,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\mapa.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\nalodeni.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/mesto_v_pozadi_runove_sutry.png",
+      "RelativePath": "uploads/plavba.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -292,15 +292,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\plavba.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/nalodeni.png",
+      "RelativePath": "uploads/pripluti.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -311,15 +311,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\nalodeni.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\pripluti.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/plavba.png",
+      "RelativePath": "uploads/prochazeni_mesta.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -330,15 +330,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\plavba.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\prochazeni_mesta.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/pripluti.png",
+      "RelativePath": "uploads/shield.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -349,15 +349,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\pripluti.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\shield.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/prochazeni_mesta.png",
+      "RelativePath": "uploads/sword.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -368,15 +368,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\prochazeni_mesta.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\sword.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/shield.png",
+      "RelativePath": "uploads/talin.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -387,15 +387,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\shield.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\talin.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/sword.png",
+      "RelativePath": "uploads/talin_a_maxim_u run.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -406,15 +406,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sword.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\talin_a_maxim_u run.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/talin.png",
+      "RelativePath": "uploads/trosky_ve_meste.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -425,15 +425,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\talin.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\trosky_ve_meste.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/talin_a_maxim_u run.png",
+      "RelativePath": "uploads/vezeni.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -444,15 +444,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\talin_a_maxim_u run.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\vezeni.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/trosky_ve_meste.png",
+      "RelativePath": "uploads/zbrojir2.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -463,15 +463,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\trosky_ve_meste.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\zbrojir2.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.png",
+      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/vezeni.png",
+      "RelativePath": "uploads/zrcadlo_dvojiho_videni.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -482,45 +482,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\vezeni.png"
-    },
-    {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.png",
-      "SourceId": "GameBook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
-      "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/zbrojir2.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\zbrojir2.png"
-    },
-    {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.png",
-      "SourceId": "GameBook.Server",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
-      "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/zrcadlo_dvojiho_videni.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\zrcadlo_dvojiho_videni.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\zrcadlo_dvojiho_videni.webp"
     }
   ]
 }
