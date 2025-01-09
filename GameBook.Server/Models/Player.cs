@@ -6,6 +6,7 @@
         public int Coin { get; set; }
         public int Damage { get; set; }
         public int Defence { get; set; }
+        public int hp { get; set; } = 100;
 
         //cizí klíč
         public User? User { get; set; }

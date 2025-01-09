@@ -64,6 +64,7 @@ namespace GameBook.Server.Controllers
                 Name = name,
                 Bio = bio,
                 CharImg = path,
+                hp = 100
             };
             _context.Characters.Add(character);
             await _context.SaveChangesAsync();

@@ -1,0 +1,34 @@
+# Visual Studio soubory a složky
+.vs/
+*.user
+*.suo
+
+# Build výstupy
+bin/
+obj/
+
+# Logy
+*.log
+
+# Zálohy
+*.bak
+*.tmp
+
+
+
+# Ignorování build složek
+bin/
+obj/
+
+# Ignorování databázových souborù
+*.db
+*.db-shm
+*.db-wal
+
+# Ignorování dalších doèasných souborù
+*.pdb
+*.exe
+*.cache
+*.runtime.json
+*.sourcelink.json
+*.props

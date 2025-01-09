@@ -38,8 +38,6 @@ const useFetch = (url: string) => {
                fetchData();
            }, [url]);
 
-
-           console.log(error);
     return { data, loading, error };
 }
 
