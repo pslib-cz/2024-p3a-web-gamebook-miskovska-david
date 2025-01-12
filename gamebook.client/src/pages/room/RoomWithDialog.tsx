@@ -19,7 +19,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     const {data} = useFetch(`/api/Room/rooms/${idNumber}`);
     const {data: nextRoom} = useFetch(`/api/Room/rooms/${idNumber+1}`);
     
-
+   
     
     const nextDialog = (array: string[] | undefined, index: number) => {
         if(array){
