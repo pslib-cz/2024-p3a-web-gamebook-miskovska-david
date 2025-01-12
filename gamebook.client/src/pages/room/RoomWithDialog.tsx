@@ -26,7 +26,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
         if(array){
             setDialog(array[index]);
             setDialogIndex(index+1);
-            if(index === array.length){
+            if(index === array.length-1){
                 setVisibleContinue(true);
 
             }
