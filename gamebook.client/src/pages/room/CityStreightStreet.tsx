@@ -14,7 +14,7 @@ const CityStreightStreet: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/15"); 
+                const response = await fetch("/api/Room/rooms/16"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }

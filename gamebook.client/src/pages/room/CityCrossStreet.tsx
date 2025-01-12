@@ -6,6 +6,7 @@ import arrowLeft from "../../assets/arrows/arrow-left.png";
 import arrowRight from "../../assets/arrows/arrow-right.png";
 import { Link } from "react-router-dom";
 
+
 const CityCrossStreet: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)
@@ -15,7 +16,7 @@ const CityCrossStreet: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/9"); 
+                const response = await fetch("/api/Room/rooms/11"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
