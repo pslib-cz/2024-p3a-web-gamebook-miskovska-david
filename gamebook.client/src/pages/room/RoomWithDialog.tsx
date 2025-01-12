@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Typewriter from 'typewriter-effect'
 import Continue from "../../components/Button/Continue";
 import React, { useState } from "react";
+import Location from "../../components/Location/Location";
 
 type RoomWithDialogProps = {
     roomId?: string | undefined;
@@ -51,6 +52,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
         />
         {visibleContinue ? <Continue type={nextRoom?.roomType} roomId={idNumber+1} >Pokračovat...</Continue> :<button className={style.btn} onClick={() => nextDialog(data?.dialogs, dialogIndex)}>Pokračovat</button>}
     </div>
+    <Location />
   </div>
   );
 

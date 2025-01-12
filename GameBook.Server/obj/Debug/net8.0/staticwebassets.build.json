@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "7XUmPJ932iosDDGrrNlKFB4gv7UBUo9M42Mpp9jrhwI=",
+  "Hash": "gMGTQrPYAfUyhsrbeNNiCEWheN65JtLceZ3PHmidJpM=",
   "Source": "GameBook.Server",
   "BasePath": "_content/GameBook.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\gamebook.client\\gamebook.client.esproj",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\gamebook.client\\gamebook.client.esproj",
       "Version": 2,
       "Source": "gamebook.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,486 +22,2897 @@
     {
       "Name": "GameBook.Server\\wwwroot",
       "Source": "GameBook.Server",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/amulet_zrcadlove_obrany.webp",
+      "RelativePath": "uploads/amulet_zrcadlove_obrany#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "u2qm0clzpj",
+      "Integrity": "hu2jPtkYJrUqEfdIN6fLurBXmC12vgCnW81Av0kZ9Mk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\amulet_zrcadlove_obrany.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/arena.webp",
+      "RelativePath": "uploads/arena#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "teffu0tx24",
+      "Integrity": "OxYXGW/kOUb9Agu+tKGvUR6UHcgdDrP0G+J9cF0EtY8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\arena.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/bg.webp",
+      "RelativePath": "uploads/bg#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ycoezw5u96",
+      "Integrity": "0sXXenZ+Sak9BrJ4XBNzdK60GKYnVwbsVKBlIVjr0Q0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\bg.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/boj.webp",
+      "RelativePath": "uploads/boj#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "t1puy3hsaw",
+      "Integrity": "r8fJhe7uClHmDihiMIqo4nSZa17PayjjaJYzTmZP5bM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\boj.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/ikona_boje-removebg-preview.webp",
+      "RelativePath": "uploads/ikona_boje-removebg-preview#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "f1s02uo02z",
+      "Integrity": "DXjFXgjeX9Cs7QHGePioBK7PotwBm6Inp3/GF9E/jPQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ikona_boje-removebg-preview.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/ikona_obrany-removebg-preview.webp",
+      "RelativePath": "uploads/ikona_obrany-removebg-preview#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4um6xqlpz6",
+      "Integrity": "5E3t4myvx1SUb2RCWto+gLjCabCVbAmA5nvZQjT+CcQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\ikona_obrany-removebg-preview.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/interier1.webp",
+      "RelativePath": "uploads/interier1#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "oo7o7s4u7i",
+      "Integrity": "6FNFR9Uwby4YU8NREiXRDHVlSxmGrKfG29EfZU0+w70=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\interier1.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/interier3.webp",
+      "RelativePath": "uploads/interier3#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "gmx44326vs",
+      "Integrity": "OJM8nebJm2YtJ0tWilyijgP0zuhTGu/+NGyKi1GhF9g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\interier3.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/lektvar_magicke_vule.webp",
+      "RelativePath": "uploads/lektvar_magicke_vule#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "vbb75uqok3",
+      "Integrity": "5c0NbrHeZGaZeTqqKQrN/6SBW4+Se9lqHnpSqTsQ49k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\lektvar_magicke_vule.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/lektvar_zivota.webp",
+      "RelativePath": "uploads/lektvar_zivota#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "li6jjjlzgb",
+      "Integrity": "vdZpL9t4CIRnbqSSWnYpSQa6JPIXHHggsZzhX/ZY9Vc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\lektvar_zivota.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/lektvar_zkazy.webp",
+      "RelativePath": "uploads/lektvar_zkazy#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "64rdk7x4rb",
+      "Integrity": "huqVRmhAPlI3H/9grYhlvK/aSykF80vnKZpnfPWT7R4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\lektvar_zkazy.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_aeternum.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_aeternum.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/mapa_aeternum.webp",
+      "RelativePath": "uploads/mapa_aeternum#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4t50tm91sn",
+      "Integrity": "mL0ge3fWjrySwZ33biHiLPe41NMX/eqdDZX7pIpTAVg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\mapa_aeternum.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_aurenia.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/mesto_v_pozadi_runove_sutry.webp",
+      "RelativePath": "uploads/mapa_aurenia#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "xyzkb21z0a",
+      "Integrity": "5wnIL0As7I3WMYIIYL66IMbIRRr5ROcODM9syYk6pE8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\mapa_aurenia.webp"
+    },
+    {
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_eryndor.webp",
+      "SourceId": "GameBook.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "BasePath": "_content/GameBook.Server",
+      "RelativePath": "uploads/mapa_eryndor#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6f7dj2ylvq",
+      "Integrity": "Lv4XNkeIYtbp6Du2DkBLYnA71CbKfBOCD0mbc9jeeS8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\mapa_eryndor.webp"
+    },
+    {
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_more.webp",
+      "SourceId": "GameBook.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "BasePath": "_content/GameBook.Server",
+      "RelativePath": "uploads/mapa_more#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ovcmqmnrel",
+      "Integrity": "tIwRx2806HZDxh3gkrFLhTDljNEE9hh4Tp2mMzKjNrM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\mapa_more.webp"
+    },
+    {
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.webp",
+      "SourceId": "GameBook.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "BasePath": "_content/GameBook.Server",
+      "RelativePath": "uploads/mesto_v_pozadi_runove_sutry#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7ap5lw5755",
+      "Integrity": "wSsVjjaP3yiV5YO2uBR3/Xfk7jqm5sPpANpy4dcfnow=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/nalodeni.webp",
+      "RelativePath": "uploads/nalodeni#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "klutl8jlk7",
+      "Integrity": "KAVubmgJwctWQpNQmLLVgn8Al0p1CRXrQy0qYuYs8D0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\nalodeni.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/plavba.webp",
+      "RelativePath": "uploads/plavba#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4i0g026m33",
+      "Integrity": "dHG8faQEZNHNWlGb7RkRHLjtoQWMDb0cbwEt8sJLyns=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\plavba.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/pripluti.webp",
+      "RelativePath": "uploads/pripluti#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "9t9bvrb2za",
+      "Integrity": "k/4A/oXuMyvDcMJzjjbrsdEe3L6g/8WAMBO9AF+id6c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\pripluti.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/prochazeni_mesta.webp",
+      "RelativePath": "uploads/prochazeni_mesta#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "mff4dg6hor",
+      "Integrity": "IjQb9h4hQYd+o6JEawuQyfouG6EPYWbO64ELqkGPdrM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\prochazeni_mesta.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/shield.webp",
+      "RelativePath": "uploads/shield#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "koidgjutja",
+      "Integrity": "LAQWgXuWLmm64N7m8xcF2wPHDCEAcbeZGJ7ztsXMp1w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\shield.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/sword.webp",
+      "RelativePath": "uploads/sword#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "cwz6t6k9hf",
+      "Integrity": "xG+ZZW74ow+n11VndUUEjue4TB6pfLCEVVcNsYy250Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\sword.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/talin.webp",
+      "RelativePath": "uploads/talin#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "88th7uigve",
+      "Integrity": "OG35eNp7T6AuN+4PBa+AvX53q4o8X2MkasDhbYewXko=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\talin.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/talin_a_maxim_u run.webp",
+      "RelativePath": "uploads/talin_a_maxim_u run#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "mduqwh35dc",
+      "Integrity": "SpDduqwt820BnN9HMgLEmD8J9dhgMEW0sfW7uGiFL7U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\talin_a_maxim_u run.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/trosky_ve_meste.webp",
+      "RelativePath": "uploads/trosky_ve_meste#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "pi93otzrfa",
+      "Integrity": "DxHr4tOkGH3VPbqOwhQObQcpd7OOwxqdDXx9BnmARqY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\trosky_ve_meste.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/vezeni.webp",
+      "RelativePath": "uploads/vezeni#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4srdfyo6we",
+      "Integrity": "5ASLcgYQ9QcorY2nD2yKyTe88ZV4Hqcdd4fyt5tIJSY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\vezeni.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/zbrojir2.webp",
+      "RelativePath": "uploads/zbrojir2#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "dn9olcf54v",
+      "Integrity": "J6Rb5pys0av9yc7I9AomktzCAR6iydEdtXAfl6nuDyY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\zbrojir2.webp"
     },
     {
-      "Identity": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.webp",
+      "Identity": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.webp",
       "SourceId": "GameBook.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\marij\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\",
       "BasePath": "_content/GameBook.Server",
-      "RelativePath": "uploads/zrcadlo_dvojiho_videni.webp",
+      "RelativePath": "uploads/zrcadlo_dvojiho_videni#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "omgihu4qg7",
+      "Integrity": "UDK1pY0ZsY2aSkp867Qae90kQNoLN2wkj12amvUOWlA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\zrcadlo_dvojiho_videni.webp"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/amulet_zrcadlove_obrany.u2qm0clzpj.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hu2jPtkYJrUqEfdIN6fLurBXmC12vgCnW81Av0kZ9Mk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u2qm0clzpj"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/amulet_zrcadlove_obrany.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hu2jPtkYJrUqEfdIN6fLurBXmC12vgCnW81Av0kZ9Mk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/amulet_zrcadlove_obrany.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\amulet_zrcadlove_obrany.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hu2jPtkYJrUqEfdIN6fLurBXmC12vgCnW81Av0kZ9Mk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hu2jPtkYJrUqEfdIN6fLurBXmC12vgCnW81Av0kZ9Mk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/arena.teffu0tx24.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "203172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxYXGW/kOUb9Agu+tKGvUR6UHcgdDrP0G+J9cF0EtY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "teffu0tx24"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/arena.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OxYXGW/kOUb9Agu+tKGvUR6UHcgdDrP0G+J9cF0EtY8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/arena.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\arena.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "203172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxYXGW/kOUb9Agu+tKGvUR6UHcgdDrP0G+J9cF0EtY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OxYXGW/kOUb9Agu+tKGvUR6UHcgdDrP0G+J9cF0EtY8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bg.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "197418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0sXXenZ+Sak9BrJ4XBNzdK60GKYnVwbsVKBlIVjr0Q0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0sXXenZ+Sak9BrJ4XBNzdK60GKYnVwbsVKBlIVjr0Q0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bg.ycoezw5u96.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\bg.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "197418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0sXXenZ+Sak9BrJ4XBNzdK60GKYnVwbsVKBlIVjr0Q0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ycoezw5u96"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bg.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0sXXenZ+Sak9BrJ4XBNzdK60GKYnVwbsVKBlIVjr0Q0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/boj.t1puy3hsaw.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "196218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r8fJhe7uClHmDihiMIqo4nSZa17PayjjaJYzTmZP5bM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t1puy3hsaw"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/boj.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r8fJhe7uClHmDihiMIqo4nSZa17PayjjaJYzTmZP5bM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/boj.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\boj.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "196218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r8fJhe7uClHmDihiMIqo4nSZa17PayjjaJYzTmZP5bM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r8fJhe7uClHmDihiMIqo4nSZa17PayjjaJYzTmZP5bM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ikona_boje-removebg-preview.f1s02uo02z.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DXjFXgjeX9Cs7QHGePioBK7PotwBm6Inp3/GF9E/jPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f1s02uo02z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ikona_boje-removebg-preview.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DXjFXgjeX9Cs7QHGePioBK7PotwBm6Inp3/GF9E/jPQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ikona_boje-removebg-preview.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_boje-removebg-preview.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DXjFXgjeX9Cs7QHGePioBK7PotwBm6Inp3/GF9E/jPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DXjFXgjeX9Cs7QHGePioBK7PotwBm6Inp3/GF9E/jPQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ikona_obrany-removebg-preview.4um6xqlpz6.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5E3t4myvx1SUb2RCWto+gLjCabCVbAmA5nvZQjT+CcQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4um6xqlpz6"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ikona_obrany-removebg-preview.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5E3t4myvx1SUb2RCWto+gLjCabCVbAmA5nvZQjT+CcQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ikona_obrany-removebg-preview.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\ikona_obrany-removebg-preview.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5E3t4myvx1SUb2RCWto+gLjCabCVbAmA5nvZQjT+CcQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5E3t4myvx1SUb2RCWto+gLjCabCVbAmA5nvZQjT+CcQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/interier1.oo7o7s4u7i.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6FNFR9Uwby4YU8NREiXRDHVlSxmGrKfG29EfZU0+w70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oo7o7s4u7i"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/interier1.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6FNFR9Uwby4YU8NREiXRDHVlSxmGrKfG29EfZU0+w70="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/interier1.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6FNFR9Uwby4YU8NREiXRDHVlSxmGrKfG29EfZU0+w70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6FNFR9Uwby4YU8NREiXRDHVlSxmGrKfG29EfZU0+w70="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/interier3.gmx44326vs.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "193774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OJM8nebJm2YtJ0tWilyijgP0zuhTGu/+NGyKi1GhF9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gmx44326vs"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/interier3.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OJM8nebJm2YtJ0tWilyijgP0zuhTGu/+NGyKi1GhF9g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/interier3.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\interier3.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "193774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OJM8nebJm2YtJ0tWilyijgP0zuhTGu/+NGyKi1GhF9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OJM8nebJm2YtJ0tWilyijgP0zuhTGu/+NGyKi1GhF9g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/lektvar_magicke_vule.vbb75uqok3.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5c0NbrHeZGaZeTqqKQrN/6SBW4+Se9lqHnpSqTsQ49k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vbb75uqok3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/lektvar_magicke_vule.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5c0NbrHeZGaZeTqqKQrN/6SBW4+Se9lqHnpSqTsQ49k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/lektvar_magicke_vule.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_magicke_vule.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5c0NbrHeZGaZeTqqKQrN/6SBW4+Se9lqHnpSqTsQ49k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5c0NbrHeZGaZeTqqKQrN/6SBW4+Se9lqHnpSqTsQ49k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/lektvar_zivota.li6jjjlzgb.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vdZpL9t4CIRnbqSSWnYpSQa6JPIXHHggsZzhX/ZY9Vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "li6jjjlzgb"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/lektvar_zivota.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vdZpL9t4CIRnbqSSWnYpSQa6JPIXHHggsZzhX/ZY9Vc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/lektvar_zivota.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zivota.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vdZpL9t4CIRnbqSSWnYpSQa6JPIXHHggsZzhX/ZY9Vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vdZpL9t4CIRnbqSSWnYpSQa6JPIXHHggsZzhX/ZY9Vc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/lektvar_zkazy.64rdk7x4rb.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"huqVRmhAPlI3H/9grYhlvK/aSykF80vnKZpnfPWT7R4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "64rdk7x4rb"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/lektvar_zkazy.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-huqVRmhAPlI3H/9grYhlvK/aSykF80vnKZpnfPWT7R4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/lektvar_zkazy.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\lektvar_zkazy.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"huqVRmhAPlI3H/9grYhlvK/aSykF80vnKZpnfPWT7R4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-huqVRmhAPlI3H/9grYhlvK/aSykF80vnKZpnfPWT7R4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_aeternum.4t50tm91sn.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_aeternum.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mL0ge3fWjrySwZ33biHiLPe41NMX/eqdDZX7pIpTAVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4t50tm91sn"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/mapa_aeternum.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mL0ge3fWjrySwZ33biHiLPe41NMX/eqdDZX7pIpTAVg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_aeternum.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_aeternum.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mL0ge3fWjrySwZ33biHiLPe41NMX/eqdDZX7pIpTAVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mL0ge3fWjrySwZ33biHiLPe41NMX/eqdDZX7pIpTAVg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_aurenia.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_aurenia.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "297224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5wnIL0As7I3WMYIIYL66IMbIRRr5ROcODM9syYk6pE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5wnIL0As7I3WMYIIYL66IMbIRRr5ROcODM9syYk6pE8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_aurenia.xyzkb21z0a.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_aurenia.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "297224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5wnIL0As7I3WMYIIYL66IMbIRRr5ROcODM9syYk6pE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xyzkb21z0a"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/mapa_aurenia.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5wnIL0As7I3WMYIIYL66IMbIRRr5ROcODM9syYk6pE8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_eryndor.6f7dj2ylvq.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_eryndor.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "295668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lv4XNkeIYtbp6Du2DkBLYnA71CbKfBOCD0mbc9jeeS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6f7dj2ylvq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/mapa_eryndor.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lv4XNkeIYtbp6Du2DkBLYnA71CbKfBOCD0mbc9jeeS8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_eryndor.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_eryndor.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "295668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lv4XNkeIYtbp6Du2DkBLYnA71CbKfBOCD0mbc9jeeS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lv4XNkeIYtbp6Du2DkBLYnA71CbKfBOCD0mbc9jeeS8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_more.ovcmqmnrel.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_more.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tIwRx2806HZDxh3gkrFLhTDljNEE9hh4Tp2mMzKjNrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ovcmqmnrel"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/mapa_more.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tIwRx2806HZDxh3gkrFLhTDljNEE9hh4Tp2mMzKjNrM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mapa_more.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mapa_more.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tIwRx2806HZDxh3gkrFLhTDljNEE9hh4Tp2mMzKjNrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 21:12:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tIwRx2806HZDxh3gkrFLhTDljNEE9hh4Tp2mMzKjNrM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mesto_v_pozadi_runove_sutry.7ap5lw5755.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wSsVjjaP3yiV5YO2uBR3/Xfk7jqm5sPpANpy4dcfnow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7ap5lw5755"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/mesto_v_pozadi_runove_sutry.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wSsVjjaP3yiV5YO2uBR3/Xfk7jqm5sPpANpy4dcfnow="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/mesto_v_pozadi_runove_sutry.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\mesto_v_pozadi_runove_sutry.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wSsVjjaP3yiV5YO2uBR3/Xfk7jqm5sPpANpy4dcfnow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wSsVjjaP3yiV5YO2uBR3/Xfk7jqm5sPpANpy4dcfnow="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/nalodeni.klutl8jlk7.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KAVubmgJwctWQpNQmLLVgn8Al0p1CRXrQy0qYuYs8D0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "klutl8jlk7"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/nalodeni.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KAVubmgJwctWQpNQmLLVgn8Al0p1CRXrQy0qYuYs8D0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/nalodeni.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\nalodeni.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "220066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KAVubmgJwctWQpNQmLLVgn8Al0p1CRXrQy0qYuYs8D0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KAVubmgJwctWQpNQmLLVgn8Al0p1CRXrQy0qYuYs8D0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/plavba.4i0g026m33.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dHG8faQEZNHNWlGb7RkRHLjtoQWMDb0cbwEt8sJLyns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4i0g026m33"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/plavba.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dHG8faQEZNHNWlGb7RkRHLjtoQWMDb0cbwEt8sJLyns="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/plavba.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\plavba.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dHG8faQEZNHNWlGb7RkRHLjtoQWMDb0cbwEt8sJLyns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dHG8faQEZNHNWlGb7RkRHLjtoQWMDb0cbwEt8sJLyns="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pripluti.9t9bvrb2za.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/4A/oXuMyvDcMJzjjbrsdEe3L6g/8WAMBO9AF+id6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9t9bvrb2za"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/pripluti.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k/4A/oXuMyvDcMJzjjbrsdEe3L6g/8WAMBO9AF+id6c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/pripluti.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\pripluti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/4A/oXuMyvDcMJzjjbrsdEe3L6g/8WAMBO9AF+id6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k/4A/oXuMyvDcMJzjjbrsdEe3L6g/8WAMBO9AF+id6c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prochazeni_mesta.mff4dg6hor.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173004"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IjQb9h4hQYd+o6JEawuQyfouG6EPYWbO64ELqkGPdrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mff4dg6hor"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prochazeni_mesta.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IjQb9h4hQYd+o6JEawuQyfouG6EPYWbO64ELqkGPdrM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prochazeni_mesta.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\prochazeni_mesta.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173004"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IjQb9h4hQYd+o6JEawuQyfouG6EPYWbO64ELqkGPdrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IjQb9h4hQYd+o6JEawuQyfouG6EPYWbO64ELqkGPdrM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/shield.koidgjutja.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62238"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LAQWgXuWLmm64N7m8xcF2wPHDCEAcbeZGJ7ztsXMp1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "koidgjutja"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/shield.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LAQWgXuWLmm64N7m8xcF2wPHDCEAcbeZGJ7ztsXMp1w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/shield.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\shield.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62238"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LAQWgXuWLmm64N7m8xcF2wPHDCEAcbeZGJ7ztsXMp1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LAQWgXuWLmm64N7m8xcF2wPHDCEAcbeZGJ7ztsXMp1w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/sword.cwz6t6k9hf.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xG+ZZW74ow+n11VndUUEjue4TB6pfLCEVVcNsYy250Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwz6t6k9hf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/sword.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xG+ZZW74ow+n11VndUUEjue4TB6pfLCEVVcNsYy250Q="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/sword.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\sword.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xG+ZZW74ow+n11VndUUEjue4TB6pfLCEVVcNsYy250Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xG+ZZW74ow+n11VndUUEjue4TB6pfLCEVVcNsYy250Q="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/talin.88th7uigve.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "249176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OG35eNp7T6AuN+4PBa+AvX53q4o8X2MkasDhbYewXko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "88th7uigve"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/talin.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OG35eNp7T6AuN+4PBa+AvX53q4o8X2MkasDhbYewXko="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/talin.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "249176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OG35eNp7T6AuN+4PBa+AvX53q4o8X2MkasDhbYewXko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OG35eNp7T6AuN+4PBa+AvX53q4o8X2MkasDhbYewXko="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/talin_a_maxim_u run.mduqwh35dc.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SpDduqwt820BnN9HMgLEmD8J9dhgMEW0sfW7uGiFL7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mduqwh35dc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/talin_a_maxim_u run.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SpDduqwt820BnN9HMgLEmD8J9dhgMEW0sfW7uGiFL7U="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/talin_a_maxim_u run.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\talin_a_maxim_u run.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SpDduqwt820BnN9HMgLEmD8J9dhgMEW0sfW7uGiFL7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SpDduqwt820BnN9HMgLEmD8J9dhgMEW0sfW7uGiFL7U="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/trosky_ve_meste.pi93otzrfa.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxHr4tOkGH3VPbqOwhQObQcpd7OOwxqdDXx9BnmARqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pi93otzrfa"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/trosky_ve_meste.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxHr4tOkGH3VPbqOwhQObQcpd7OOwxqdDXx9BnmARqY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/trosky_ve_meste.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\trosky_ve_meste.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxHr4tOkGH3VPbqOwhQObQcpd7OOwxqdDXx9BnmARqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxHr4tOkGH3VPbqOwhQObQcpd7OOwxqdDXx9BnmARqY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/vezeni.4srdfyo6we.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85314"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ASLcgYQ9QcorY2nD2yKyTe88ZV4Hqcdd4fyt5tIJSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4srdfyo6we"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/vezeni.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ASLcgYQ9QcorY2nD2yKyTe88ZV4Hqcdd4fyt5tIJSY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/vezeni.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\vezeni.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85314"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5ASLcgYQ9QcorY2nD2yKyTe88ZV4Hqcdd4fyt5tIJSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5ASLcgYQ9QcorY2nD2yKyTe88ZV4Hqcdd4fyt5tIJSY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/zbrojir2.dn9olcf54v.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1088002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J6Rb5pys0av9yc7I9AomktzCAR6iydEdtXAfl6nuDyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dn9olcf54v"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/zbrojir2.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J6Rb5pys0av9yc7I9AomktzCAR6iydEdtXAfl6nuDyY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/zbrojir2.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zbrojir2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1088002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J6Rb5pys0av9yc7I9AomktzCAR6iydEdtXAfl6nuDyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J6Rb5pys0av9yc7I9AomktzCAR6iydEdtXAfl6nuDyY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/zrcadlo_dvojiho_videni.omgihu4qg7.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDK1pY0ZsY2aSkp867Qae90kQNoLN2wkj12amvUOWlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "omgihu4qg7"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/zrcadlo_dvojiho_videni.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UDK1pY0ZsY2aSkp867Qae90kQNoLN2wkj12amvUOWlA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/zrcadlo_dvojiho_videni.webp",
+      "AssetFile": "C:\\Users\\ttomi\\Source\\Repos\\2024-p3a-web-gamebook-miskovska-david\\GameBook.Server\\wwwroot\\uploads\\zrcadlo_dvojiho_videni.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDK1pY0ZsY2aSkp867Qae90kQNoLN2wkj12amvUOWlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 10 Jan 2025 07:01:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UDK1pY0ZsY2aSkp867Qae90kQNoLN2wkj12amvUOWlA="
+        }
+      ]
     }
   ]
 }
