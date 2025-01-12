@@ -2,7 +2,7 @@ import style from "./RoomWithDialog.module.css";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import Typewriter from 'typewriter-effect'
-import Continue from "../../components/button/Continue";
+import Continue from "../../components/Button/Continue";
 import React, { useState } from "react";
 
 type RoomWithDialogProps = {
@@ -19,7 +19,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     const {data} = useFetch(`/api/Room/rooms/${idNumber}`);
     const {data: nextRoom} = useFetch(`/api/Room/rooms/${idNumber+1}`);
     
-
+   
     
     const nextDialog = (array: string[] | undefined, index: number) => {
         if(array){

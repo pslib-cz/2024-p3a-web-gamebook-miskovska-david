@@ -7,14 +7,18 @@ const Room07: React.FC = () => {
         <div className={style.room__screen}>
             <h2>Obchod</h2>
             <div className={style.container}>
-                <p className={style.category}>Zbraně</p>
-                <InsertItem filterCondition={(item) => item.itemId === 1 || item.itemId === 2} />
-
-                <p className={style.category}>Lektvary</p>
-                <InsertItem filterCondition={(item) => item.itemId >= 3 && item.itemId <= 5} />
-
-                <p className={style.category}>Speciální předměty</p>
-                <InsertItem filterCondition={(item) => item.itemId === 6 || item.itemId === 7} />
+                <section> 
+                   <p className={style.category}>Zbraně</p>
+                   <InsertItem filterCondition={(item) => item.itemId === 1 || item.itemId === 2} />
+                </section>
+                <section> 
+                    <p className={style.category}>Lektvary</p>
+                    <InsertItem filterCondition={(item) => item.itemId >= 3 && item.itemId <= 5} />
+                </section>
+                <section> 
+                    <p className={style.category}>Speciální předměty</p>
+                    <InsertItem filterCondition={(item) => item.itemId === 6 || item.itemId === 7} />
+                </section>
             </div>
         </div>
     );

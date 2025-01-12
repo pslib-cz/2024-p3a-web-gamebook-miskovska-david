@@ -8,8 +8,6 @@ type LinkButtonProps = {
 
 const LinkButton: React.FC<PropsWithChildren<LinkButtonProps>> = ({ to, children }) => {
 
-    
-
     return (
         <Link to={to} className={style.btn}>{children}</Link>
     )

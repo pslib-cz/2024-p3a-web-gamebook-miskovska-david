@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/uploads/bg.png');
+    background-image: url('/uploads/bg.webp');
 }
 
 .text{

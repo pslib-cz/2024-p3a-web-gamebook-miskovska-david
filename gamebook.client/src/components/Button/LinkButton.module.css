@@ -6,3 +6,10 @@
     border-radius: .5rem;
     text-align: center;
 }
+
+.btn:hover{
+    background-color: var(--light-brown);
+    color: var(--brown);
+} 
+
+
