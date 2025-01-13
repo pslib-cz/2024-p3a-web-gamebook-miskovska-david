@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 import useFetch from "../../hooks/useFetch";
 import {Link} from "react-router-dom";
-
+import { RoomType } from "../../types";
 const Room06: React.FC = () => {
   const [dialogIndex, setDialogIndex] = useState<number>(0);
   const [visibleContinue, setVisibleContinue] = useState<boolean>(false);
   const [dialog, setDialog] = useState<string>("");
 
-  const { data } = useFetch(`/api/Room/rooms/20`);
+  const { data } = useFetch<RoomType>(`/api/Room/rooms/20`);
 
   const nextDialog = (array: string[] | undefined, index: number) => {
     if (array) {

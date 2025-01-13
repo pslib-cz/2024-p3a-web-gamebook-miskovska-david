@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import classes from "./FightRoom.module.css";
 import FightButton from "../../components/FightButtons/FightButton";
+import { ItemType, RoomType } from "../../types";
 
 const FightRoom: React.FC= () => {
     
@@ -9,9 +10,9 @@ const FightRoom: React.FC= () => {
     const id = useParams().id
     const idNumber = id ? parseInt(id): 0; 
 
-    const {data: RoomData} = useFetch(`/api/Room/rooms/${idNumber}`);
-    const {data: AtkData} = useFetch(`/api/Item/items/100`);
-    const {data: DefData} = useFetch(`/api/Item/items/101`);
+    const {data: RoomData} = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
+    const {data: AtkData} = useFetch<ItemType>(`/api/Item/items/100`);
+    const {data: DefData} = useFetch<ItemType>(`/api/Item/items/101`);
 
 
 
