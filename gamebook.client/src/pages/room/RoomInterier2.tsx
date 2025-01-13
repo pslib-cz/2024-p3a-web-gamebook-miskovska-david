@@ -14,7 +14,7 @@ const Room03: React.FC= () => {
         const fetchData = async () => {
             setLoading(true)
             try{
-                const response = await fetch("/api/Room/rooms/13"); 
+                const response = await fetch("/api/Room/rooms/15"); 
             if(!response.ok){
                 throw new Error("Nepodařilo se načíst místnosti")
             }
