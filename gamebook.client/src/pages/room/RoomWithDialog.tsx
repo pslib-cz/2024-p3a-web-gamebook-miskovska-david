@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Typewriter from 'typewriter-effect'
 import Continue from "../../components/Button/Continue";
 import React, { useState } from "react";
+import { RoomType } from "../../types";
 
 type RoomWithDialogProps = {
     roomId?: string | undefined;
@@ -16,8 +17,8 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     const [dialogIndex, setDialogIndex] = useState<number>(0);
     roomId = useParams().id
     const idNumber =  roomId ? parseInt(roomId): 0;   
-    const {data} = useFetch(`/api/Room/rooms/${idNumber}`);
-    const {data: nextRoom} = useFetch(`/api/Room/rooms/${idNumber+1}`);
+    const {data} = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
+    const {data: nextRoom} = useFetch<RoomType>(`/api/Room/rooms/${idNumber+1}`);
     
    
     
@@ -25,7 +26,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
         if(array){
             setDialog(array[index]);
             setDialogIndex(index+1);
-            if(index === array.length){
+            if(index === array.length-1){
                 setVisibleContinue(true);
 
             }
