@@ -9,7 +9,7 @@ const Room06: React.FC = () => {
   const [visibleContinue, setVisibleContinue] = useState<boolean>(false);
   const [dialog, setDialog] = useState<string>("");
 
-  const { data } = useFetch<RoomType>(`/api/Room/rooms/20`);
+  const { data } = useFetch<RoomType>(`/api/Room/rooms/17`);
 
   const nextDialog = (array: string[] | undefined, index: number) => {
     if (array) {

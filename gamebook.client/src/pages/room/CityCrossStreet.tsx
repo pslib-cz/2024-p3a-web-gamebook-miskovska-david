@@ -7,6 +7,7 @@ import arrowRight from "../../assets/arrows/arrow-right.png";
 import { Link } from "react-router-dom";
 
 
+
 const CityCrossStreet: React.FC= () => {
     const [rooms, setRooms] = useState<RoomType | null>(null)
     const [error, setError] = useState<Error | null>(null)

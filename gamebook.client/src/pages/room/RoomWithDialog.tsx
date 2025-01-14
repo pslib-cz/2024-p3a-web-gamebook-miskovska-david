@@ -5,6 +5,7 @@ import Typewriter from 'typewriter-effect'
 import Continue from "../../components/Button/Continue";
 import React, { useState } from "react";
 import { RoomType } from "../../types";
+import Location from "../../components/Location/Location";
 
 type RoomWithDialogProps = {
     roomId?: string | undefined;
@@ -41,6 +42,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     <div
     className={style.room__screen}
     style={{ backgroundImage: `url(/${data?.background}` }}>
+    <Location />
     <div className={style.room__container}>
         <Typewriter
             options={{
