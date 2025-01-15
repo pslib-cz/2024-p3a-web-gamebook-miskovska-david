@@ -15,7 +15,7 @@ const CityStreightStreet: React.FC= () => {
         <div
             className={style.room__screen}
             style={{ backgroundImage: `url(/${rooms?.background})` }}>
-            <img src={arrowStraight} className={style.arrow__straight1} alt="straight" />
+            <Link to="/rooms/12"><img src={arrowStraight} className={style.arrow__straight1} alt="straight" /></Link>
             <Link to="/city-cross"><img src={arrowStraight} className={style.arrow__straight2} alt="straight" /></Link>
             
         </div>
