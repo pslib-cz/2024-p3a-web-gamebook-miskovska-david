@@ -18,7 +18,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     const [dialogIndex, setDialogIndex] = useState<number>(0);
     roomId = useParams().id
     const idNumber =  roomId ? parseInt(roomId): 0;   
-    const {data} = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
+    const {data, error} = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
     const {data: nextRoom} = useFetch<RoomType>(`/api/Room/rooms/${idNumber+1}`);
     
    
@@ -37,7 +37,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     if(dialogIndex === 0)
         nextDialog(data?.dialogs, dialogIndex)
     
-   
+    console.log(error)
   return(
     <div
     className={style.room__screen}
