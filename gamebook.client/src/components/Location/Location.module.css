@@ -1,51 +1,36 @@
-
-
-
-
-
+.location__menu {
+    position: relative;
+    z-index: 2;
+}
+  
 .btn {
+    position: fixed; 
+    top: 10%;
+    right: 0;
     background-color: rgb( 255,255,255,0.7);
     padding: .5rem; 
-    position: fixed;
-    top: 10%;
-    left: 0;
-    transition: all 0.5s ease-in-out;
 }
   
 .btn__open {
-    background-color: rgb( 255,255,255,0.7);
-    padding: .5rem; 
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    top: 10%;
-    right: 0;
-    z-index: 2;
+    position: absolute; 
+    top: 2%;
+    left: 0; 
 }
-   
-
-
-.menuContent {
-    text-align: center;
-    background-color: var(--yellow);
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    top: 0;
-    transform: translateX(-999px);
-}
-
-.menuContent__open{
-    text-align: center;
-    background-color: var(--yellow);
-    position: absolute;
+  
+.location__menu.open {
+    position: absolute; 
     top: 0;
     left: 0;
-    transition: all 0.5s ease-in-out;
+    background-color: var(--yellow);
 }
-
+  
+  
+.menuContent {
+    text-align: center;
+}
 .location__content{
     margin: 0 1rem;
 }
-
 .menuContent > h3 {
     font-size: 1.2rem;
     font-family: Playfair Display;
@@ -60,7 +45,6 @@
     color: var(--black);
 }
   
-
 @media screen and (min-width: 1200px) {
     .menuContent{
         height: 100vh;
@@ -71,7 +55,6 @@
         flex-direction: column;
         align-self:flex-start;
     }
-
     .location__content {
         display: flex;
         align-items: center;
@@ -79,21 +62,8 @@
         max-width: 900px;
         gap: 1rem;
     }
-
     .btn{
         width: 50px;
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
