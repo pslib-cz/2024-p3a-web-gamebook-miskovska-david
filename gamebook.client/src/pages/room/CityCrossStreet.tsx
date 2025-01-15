@@ -10,7 +10,7 @@ import useFetch from "../../hooks/useFetch";
 
 const CityCrossStreet: React.FC= () => {
     
-    const {data: rooms} = useFetch<RoomType>("rooms/city-cross-street");
+    const {data: rooms} = useFetch<RoomType>("api/Room/rooms/11");
 
     return (
         <div

@@ -14,7 +14,7 @@ const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId,
 
     const SetRoute = (type: string): string => {
         let route=""
-        if(roomId === 12){
+        if(roomId === 11){
             route = "/city-cross"
         }
         else if(type === "dialog"){
