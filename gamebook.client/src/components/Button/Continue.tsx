@@ -2,10 +2,10 @@
 import { PropsWithChildren } from "react";
 type ContinueProps = {
     roomId: number;
-    type: string;
+    type: string | undefined;
 }
 
-const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId, type}) => {
+const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId, type="dialog"}) => {
 
 
     /*
@@ -18,11 +18,9 @@ const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId,
         let route = ""
         if(roomId === 12){
             route = "/city-cross/"
-
-        let route=""
+        }
         if(roomId === 11){
-            route = "/city-streight"
-
+            route = "/city-cross"
         }
         else if(type === "dialog"){
             route = "/rooms/" + roomId

@@ -3,16 +3,14 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import React, { useState } from "react";
 import LocationBtn from "../../assets/location/location.svg";
-
+import { RoomType } from "../../types";
 const Location: React.FC = () => {
   const id = useParams().id;
-  const { data } = useFetch(`/api/Room/rooms/${id}`);
+  const { data } = useFetch<RoomType>(`/api/Room/rooms/${id}`);
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <div className={`${style.location__menu} ${isOpen ? style.open : ""}`}>
       <img
@@ -21,7 +19,6 @@ const Location: React.FC = () => {
         alt={data?.locationName}
         className={`${style.btn} ${isOpen ? style.btn__open : ""}`}
       />
-
       {isOpen && (
         <div className={style.menuContent}>
           <h3>{data?.locationName}</h3>
@@ -34,5 +31,4 @@ const Location: React.FC = () => {
     </div>
   );
 };
-
 export default Location;

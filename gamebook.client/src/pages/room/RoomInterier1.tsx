@@ -1,40 +1,12 @@
 import style from "./RoomInterier1.module.css";
-import React, { useEffect, useState } from "react";
+import useFetch from "../../hooks/useFetch";
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
 import { Link } from "react-router-dom";
 
-
 const RoomInterier1: React.FC= () => {
-    const [rooms, setRooms] = useState<RoomType | null>(null)
-    const [error, setError] = useState<Error | null>(null)
-    const [loading, setLoading] = useState<boolean>(false)
-   
-    useEffect(() => {
-        const fetchData = async () => {
-            setLoading(true)
-            try{
-                const response = await fetch("/api/Room/rooms/14"); 
-            if(!response.ok){
-                throw new Error("Nepodařilo se načíst místnosti")
-            }
-            const data = await response.json();
-            setRooms(data)
-            }
-            catch(error){
-                if(error instanceof Error){
-                    setError(error)
-                }else{
-                    setError(new Error("Něco se pokazilo"))
-                }
-            }finally{
-                setLoading(false)
-            }
-        }
-        fetchData();
-    }, []);
-   console.log(error);
-   console.log(loading);
+    
+    const {data: rooms} = useFetch<RoomType>("api/Room/rooms/14");
 
     return (
         <div

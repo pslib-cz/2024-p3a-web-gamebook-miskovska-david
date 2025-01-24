@@ -6,6 +6,7 @@ import Continue from "../../components/Button/Continue";
 import React, { useState } from "react";
 import Location from "../../components/Location/Location";
 import { RoomType } from "../../types";
+import Location from "../../components/Location/Location";
 
 
 type RoomWithDialogProps = {
@@ -19,7 +20,7 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     const [dialogIndex, setDialogIndex] = useState<number>(0);
     roomId = useParams().id
     const idNumber =  roomId ? parseInt(roomId): 0;   
-    const {data} = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
+    const {data, error} = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
     const {data: nextRoom} = useFetch<RoomType>(`/api/Room/rooms/${idNumber+1}`);
     
    
@@ -38,11 +39,12 @@ const RoomWithDialog: React.FC<RoomWithDialogProps>= ({roomId,}) => {
     if(dialogIndex === 0)
         nextDialog(data?.dialogs, dialogIndex)
     
-   
+    console.log(error)
   return(
     <div
     className={style.room__screen}
     style={{ backgroundImage: `url(/${data?.background}` }}>
+    <Location />
     <div className={style.room__container}>
         <Typewriter
             options={{

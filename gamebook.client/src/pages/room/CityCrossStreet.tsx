@@ -1,6 +1,6 @@
 import style from "./CityCrossStreet.module.css";
-import React, { useEffect, useState } from "react";
 
+import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
 import arrowLeft from "../../assets/arrows/arrow-left.png";
 import arrowRight from "../../assets/arrows/arrow-right.png";
@@ -8,9 +8,12 @@ import { Link } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 
 
+
+
 const CityCrossStreet: React.FC= () => {
     
-    const {data: rooms} = useFetch("/api/Room/rooms/11");
+
+    const {data: rooms} = useFetch<RoomType>("api/Room/rooms/11");
 
     return (
         <div
