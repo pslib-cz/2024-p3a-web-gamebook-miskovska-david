@@ -7,13 +7,18 @@ type ContinueProps = {
 
 const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId, type="dialog"}) => {
 
+
     /*
         podle typu se určí kam se má uživatel přesměrovat
         načte další data z api
     */
 
     const SetRoute = (type: string): string => {
-        let route=""
+
+        let route = ""
+        if(roomId === 12){
+            route = "/city-cross/"
+        }
         if(roomId === 11){
             route = "/city-cross"
         }

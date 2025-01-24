@@ -3,7 +3,7 @@ export type RoomType = {
     background: string;
     specialItem: string;
     dialogs: Array<string>;
-    roomType: string;
+    roomType: string
     locationName: string;
     location: string;
     locationDescription: string;
