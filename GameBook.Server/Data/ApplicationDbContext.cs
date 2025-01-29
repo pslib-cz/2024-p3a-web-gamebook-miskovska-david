@@ -17,7 +17,7 @@ namespace GameBook.Server.Data
         public DbSet<Item> Items { get; set; }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Player> Players { get; set; }
-
+        public DbSet<Location> Locations { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -98,7 +98,7 @@ namespace GameBook.Server.Controllers
         /// </remarks>
         
         [HttpPut("items/{id}")]
-        public async Task<IActionResult> UpdateItem(int id, [FromBody] ItemDto itemDto)
+        public async Task<IActionResult> UpdateItem(int id, [FromBody] Item itemDto)
         {
 
             Item? updatedItem = await _itemManager.UpdateItem(id, itemDto);
