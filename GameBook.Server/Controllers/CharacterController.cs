@@ -3,30 +3,38 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using GameBook.Server.Models;
 using Microsoft.EntityFrameworkCore;
+using GameBook.Server.Interfaces;
+using GameBook.Server.Managers;
 namespace GameBook.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class CharacterController : ControllerBase
     {
-        private const string _folder = "Uploads/Characters";
-        private readonly ApplicationDbContext _context;
-        public CharacterController(ApplicationDbContext context)
+
+        
+        private readonly ICharacterManager _characterManager;
+
+        public CharacterController(ICharacterManager character)
         {
-            _context = context;
+            _characterManager = character;
         }
+
+    
 
         [HttpGet("characters")]
         public async Task<IActionResult> GetAll()
         {
-            var characters = _context.Characters.ToListAsync();
-            return Ok(characters);
+            var character = await _characterManager.GetAllCharacters();
+            return Ok(character);
         }
 
-        [HttpGet("characters/{id}")]
+        
+
+        [HttpGet("character/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var character = _context.Characters.FirstOrDefaultAsync(c => c.CharacterId == id);
+            Character? character = await _characterManager.GetCharacterById(id);
             if (character == null)
             {
                 return NotFound();
@@ -34,55 +42,46 @@ namespace GameBook.Server.Controllers
             return Ok(character);
         }
 
-        [HttpPut("characters/{id}")]
-        public async Task<IActionResult> Update(Character character) {
-            var characterToUpdate = _context.Characters.FirstOrDefault(c => c.CharacterId == character.CharacterId);
-            if (characterToUpdate == null)
-            {
-                return NotFound();
-            }
-            characterToUpdate.Name = character.Name;
-            characterToUpdate.Bio = character.Bio;
-            characterToUpdate.CharImg = character.CharImg;
-            await _context.SaveChangesAsync();
-            return Ok(characterToUpdate);
-        }
+        
 
         [HttpPost("characters")]
-        public async Task<IActionResult> Upload(IFormFile file, string name, string bio)
+        public async Task<IActionResult> CreateCharacter([FromForm] Character characterDto, IFormFile file)
         {
-            if (file == null || file.Length == 0)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Soubor je prázdný");
+                return BadRequest(ModelState);
             }
-            var path = Path.Combine(_folder, file.FileName);
-            using (var stream = new FileStream(path, FileMode.Create))
-            {
-                await file.CopyToAsync(stream);
-            }
-            Character character = new Character
-            {
-                Name = name,
-                Bio = bio,
-                CharImg = path,
-                hp = 100
-            };
-            _context.Characters.Add(character);
-            await _context.SaveChangesAsync();
-            return Ok(character);
+
+            Character? createdCharacter = await _characterManager.CreateCharacter(characterDto, file);
+            return CreatedAtAction(nameof(GetById), new { id = createdCharacter?.CharacterId }, createdCharacter);
         }
 
-        [HttpDelete("characters/{id}")]
-        public async Task<IActionResult> Delete(int id)
+
+       
+
+        [HttpPut("characters/{id}")]
+        public async Task<IActionResult> UpdateCharacter(int id, [FromBody] Character characterDto)
         {
-            var character = _context.Characters.FirstOrDefault(c => c.CharacterId == id);
-            if (character == null)
+
+            Character? updatedCharacter = await _characterManager.UpdateCharacter(id, characterDto);
+            if (updatedCharacter == null)
             {
                 return NotFound();
             }
-            _context.Characters.Remove(character);
-            await _context.SaveChangesAsync();
-            return Ok();
+            return Ok(updatedCharacter);
+        }
+
+        
+
+        [HttpDelete("characters/{id}")]
+        public async Task<IActionResult> DeleteCharacter(int id)
+        {
+            Character? deletedCharacter = await _characterManager.DeleteCharacter(id);
+            if (deletedCharacter == null)
+            {
+                return NotFound();
+            }
+            return Ok(deletedCharacter);
         }
     }
 }
