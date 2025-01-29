@@ -31,9 +31,9 @@ namespace GameBook.Server.Controllers
         /// Tento endpoint je volán pomocí GET requestu na /api/room/rooms
         /// </remarks>
         [HttpGet("rooms")]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var rooms = _roomManager.GetAllRooms();
+            var rooms = await _roomManager.GetAllRooms();
             return Ok(rooms);
         }
 
@@ -51,9 +51,9 @@ namespace GameBook.Server.Controllers
         /// </remarks>
 
         [HttpGet("rooms/{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            RoomDto? room = _roomManager.GetRoomById(id);
+            Room? room = await _roomManager.GetRoomById(id);
             if (room == null)
             {
                 return NotFound();
@@ -76,14 +76,14 @@ namespace GameBook.Server.Controllers
         /// </remarks>
 
         [HttpPost("rooms")]
-        public IActionResult CreateRoom([FromForm]RoomDto roomDto, IFormFile file)
+        public async Task<IActionResult> CreateRoom([FromForm]Room roomDto, IFormFile file)
         {
             if(!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            RoomDto? createdRoom = _roomManager.CreateRoom(roomDto, file);
+            Room? createdRoom = await _roomManager.CreateRoom(roomDto, file);
             return CreatedAtAction(nameof(GetById), new { id = createdRoom?.RoomId }, createdRoom);
         }
 
@@ -103,10 +103,10 @@ namespace GameBook.Server.Controllers
 
 
         [HttpPut("rooms/{id}")]
-        public IActionResult UpdateRoom(int id, [FromBody] RoomDto roomDto)
+        public async Task<IActionResult> UpdateRoom(int id, [FromBody] Room roomDto)
         {
             
-            RoomDto? updatedRoom = _roomManager.UpdateRoom(id, roomDto);
+            Room? updatedRoom =  await _roomManager.UpdateRoom(id, roomDto);
             if (updatedRoom == null)
             {
                 return NotFound();
@@ -128,9 +128,9 @@ namespace GameBook.Server.Controllers
         /// </remarks>
 
         [HttpDelete("rooms/{id}")]
-        public IActionResult DeleteRoom(int id)
+        public async Task<IActionResult> DeleteRoom(int id)
         {
-            RoomDto? deletedRoom = _roomManager.DeleteRoom(id);
+            Room? deletedRoom = await _roomManager.DeleteRoom(id);
             if (deletedRoom == null)
             {
                 return NotFound();

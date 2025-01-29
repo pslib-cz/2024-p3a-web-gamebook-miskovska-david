@@ -31,10 +31,10 @@ namespace GameBook.Server.Managers
         /// List <see cref="RoomDto"/> objektů reprezentujcí mísnosti
         /// </returns>
 
-        public IList<RoomDto> GetAllRooms()
+        public async Task<IList<Room>> GetAllRooms()
         {
-            IList<Room> rooms = _roomRepository.GetAll();
-            return _mapper.Map<IList<RoomDto>>(rooms);
+            IList<Room> rooms = await _roomRepository.GetAll();
+            return _mapper.Map<IList<Room>>(rooms);
         }
 
         /// <summary>
@@ -45,14 +45,14 @@ namespace GameBook.Server.Managers
         /// <see cref="RoomDto"/> objekt pokud id existuje; jinak <c>null</c>
         /// </returns>
 
-        public RoomDto? GetRoomById(int id)
+        public async Task<Room?> GetRoomById(int id)
         {
-            Room? room = _roomRepository.GetById(id);
+            Room? room =  await _roomRepository.GetById(id);
             if (room == null)
             {
                 return null;
             }
-            return _mapper.Map<RoomDto>(room);
+            return _mapper.Map<Room>(room);
         }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace GameBook.Server.Managers
         /// <see cref="RoomDto"/> objekt pokud se podaří vytvořit; jinak <c>null</c>
         /// </returns>
 
-        public RoomDto? CreateRoom(RoomDto roomDto, IFormFile file)
+        public async Task<Room?> CreateRoom(Room room, IFormFile file)
         {
             if(file == null || file.Length == 0)
             {
@@ -76,11 +76,11 @@ namespace GameBook.Server.Managers
             {
               file.CopyTo(stream);
             }
-            Room room = _mapper.Map<Room>(roomDto);
+            Room newRoom = _mapper.Map<Room>(room);
             room.Background = path.ToString().ToLower().Replace("wwwroot/", "");
-            Room createdRoom = _roomRepository.Create(room);
+            Room createdRoom =  await _roomRepository.Create(newRoom);
             createdRoom.Background = path.ToString().ToLower();
-            return _mapper.Map<RoomDto>(createdRoom);
+            return _mapper.Map<Room>(createdRoom);
         }
 
         /// <summary>
@@ -92,17 +92,17 @@ namespace GameBook.Server.Managers
         /// <see cref="RoomDto"/> objekt reprezentujcí změněnou mísnost; pokud id neexistuje <c>null</c>
         /// </returns>
 
-        public RoomDto UpdateRoom(int id, RoomDto roomDto)
+        public async Task<Room> UpdateRoom(int id, Room room)
         {
-            if(!_roomRepository.IsExist(id))
+            if(!await _roomRepository.IsExist(id))
             {
                 return null;
             }
 
-            Room room = _mapper.Map<Room>(roomDto);
-            room.RoomId = id;
-            Room updatedRoom = _roomRepository.Update(room);
-            return _mapper.Map<RoomDto>(updatedRoom);
+            Room newRoom = _mapper.Map<Room>(room);
+            newRoom.RoomId = id;
+            Room updatedRoom = await _roomRepository.Update(newRoom);
+            return _mapper.Map<Room>(updatedRoom);
         }
 
         /// <summary>
@@ -113,14 +113,14 @@ namespace GameBook.Server.Managers
         /// <see cref="RoomDto"/> objekt reprezentujcí smazanou mísnost; pokud id neexistuje <c>null</c>"/>
         /// </returns>
 
-        public RoomDto? DeleteRoom(int id)
+        public async Task<Room> DeleteRoom(int id)
         {
-            if (!_roomRepository.IsExist(id))
+            if (! await _roomRepository.IsExist(id))
             {
                 return null;
             }
-            Room room = _roomRepository.GetById(id);
-            RoomDto roomDto = _mapper.Map<RoomDto>(room);
+            Room room = await _roomRepository.GetById(id);
+            Room roomDto = _mapper.Map<Room>(room);
 
             _roomRepository.Delete(id);
             return roomDto;

@@ -31,10 +31,10 @@ namespace GameBook.Server.Managers
         /// <returns>
         /// List <see cref="ItemDto"/> objektů reprezentujcí předměty
         /// </returns>
-        public IList<ItemDto> GetAllItems()
+        public async Task<IList<Item>> GetAllItems()
         {
-            IList<Item> items = _itemRepository.GetAll();
-            return _mapper.Map<IList<ItemDto>>(items);
+            IList<Item> items = await _itemRepository.GetAll();
+            return _mapper.Map<IList<Item>>(items);
         }
 
         /// <summary>
@@ -42,17 +42,17 @@ namespace GameBook.Server.Managers
         /// </summary>
         /// <param name="id">Id předmětu, který chceme vrátit.</param>
         /// <returns>
-        /// <see cref="ItemDto"/> objekt pokud id existuje; jinak <c>null</c>.
+        /// <see cref="Item"/> objekt pokud id existuje; jinak <c>null</c>.
         /// </returns>
 
-        public ItemDto? GetItemById(int id)
+        public async Task<Item> GetItemById(int id)
         {
-            Item? item = _itemRepository.GetById(id);
+            Item? item = await _itemRepository.GetById(id);
             if (item == null)
             {
                 return null;
             }
-            return _mapper.Map<ItemDto>(item);
+            return _mapper.Map<Item>(item);
         }
 
 
@@ -64,7 +64,7 @@ namespace GameBook.Server.Managers
         /// <returns>
         /// <see cref="ItemDto"/> reprezentujcí vytvořený předmět; pokud se nepovede vytvořit <c>null</c>
         /// </returns>
-        public ItemDto? CreateItem(ItemDto itemDto, IFormFile file)
+        public async Task<Item?> CreateItem(Item item, IFormFile file)
         {
             if (file == null || file.Length == 0)
             {
@@ -76,11 +76,11 @@ namespace GameBook.Server.Managers
             {
                 file.CopyTo(stream);
             }
-            Item item = _mapper.Map<Item>(itemDto);
-            item.Background = path.ToString().ToLower().Replace("wwwroot/", "");
-            Item createdItem = _itemRepository.Create(item);
+            Item newItem = _mapper.Map<Item>(item);
+            newItem.Background = path.ToString().ToLower().Replace("wwwroot/", "");
+            Item createdItem = await _itemRepository.Create(newItem);
             createdItem.Background = path.ToString().ToLower();
-            return _mapper.Map<ItemDto>(createdItem);
+            return _mapper.Map<Item>(createdItem);
         }
 
         /// <summary>
@@ -92,17 +92,17 @@ namespace GameBook.Server.Managers
         /// <see cref="ItemDto"/> reprezentujcí změněný předmět; pokud id neexistuje <c>null</c>
         /// </returns>
 
-        public ItemDto UpdateItem(int id, ItemDto itemDto)
+        public async Task<Item> UpdateItem(int id, Item item)
         {
-            if (!_itemRepository.IsExist(id))
+            if (! await _itemRepository.IsExist(id))
             {
                 return null;
             }
 
-            Item item = _mapper.Map<Item>(itemDto);
-            item.ItemId = id;
-            Item updatedItem = _itemRepository.Update(item);
-            return _mapper.Map<ItemDto>(updatedItem);
+            Item newItem = _mapper.Map<Item>(item);
+            newItem.ItemId = id;
+            Item updatedItem = await _itemRepository.Update(newItem);
+            return _mapper.Map<Item>(updatedItem);
         }
 
         /// <summary>
@@ -110,16 +110,16 @@ namespace GameBook.Server.Managers
         /// </summary>
         /// <param name="id">Id předmětu co chceme odstranit</param>
         /// <returns>
-        /// <see cref="ItemDto"/> odstraněno předmětu; pokud id neexistuje <c>null</c>
+        /// <see cref="Item"/> odstraněno předmětu; pokud id neexistuje <c>null</c>
         /// </returns>
-        public ItemDto? DeleteItem(int id)
+        public async Task<Item?> DeleteItem(int id)
         {
-            if (!_itemRepository.IsExist(id))
+            if (! await _itemRepository.IsExist(id))
             {
                 return null;
             }
-            Item item = _itemRepository.GetById(id);
-            ItemDto itemDto = _mapper.Map<ItemDto>(item);
+            Item item = await _itemRepository.GetById(id);
+            Item itemDto = _mapper.Map<Item>(item);
 
             _itemRepository.Delete(id);
             return itemDto;

@@ -3,11 +3,11 @@ namespace GameBook.Server.Interfaces
 {
     public interface IRoomManager
     {
-        IList<RoomDto> GetAllRooms();
-        RoomDto? GetRoomById(int id);
-        RoomDto? CreateRoom(RoomDto roomDto, IFormFile file);
-        RoomDto UpdateRoom(int id, RoomDto roomDto);
-        RoomDto? DeleteRoom(int id);
+        Task<IList<Room>> GetAllRooms();
+        Task<Room?> GetRoomById(int id);
+        Task<Room?> CreateRoom(Room room, IFormFile file);
+        Task<Room> UpdateRoom(int id, Room room);
+        Task<Room?> DeleteRoom(int id);
 
     }
 }
