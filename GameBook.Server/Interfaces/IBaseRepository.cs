@@ -2,11 +2,11 @@
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {
-        IList<TEntity> GetAll();
-        TEntity GetById(int id);
-        TEntity Create(TEntity entity);
-        TEntity Update(TEntity entity);
+        Task<IList<TEntity>> GetAll();
+        Task<TEntity> GetById(int id);
+        Task<TEntity> Create(TEntity entity);
+        Task<TEntity> Update(TEntity entity);
         void Delete(int id);
-        bool IsExist(int id);
+        Task<bool> IsExist(int id);
     }
 }

@@ -28,9 +28,9 @@ namespace GameBook.Server.Controllers
         /// </remarks>
 
         [HttpGet("items")]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var items = _itemManager.GetAllItems();
+            var items = await _itemManager.GetAllItems();
             return Ok(items);
         }
 
@@ -46,9 +46,9 @@ namespace GameBook.Server.Controllers
         /// </remarks>
 
         [HttpGet("items/{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            ItemDto? item = _itemManager.GetItemById(id);
+            Item? item =  await _itemManager.GetItemById(id);
             if (item == null)
             {
                 return NotFound();
@@ -59,7 +59,7 @@ namespace GameBook.Server.Controllers
         /// <summary>
         /// Vytvoří nový předmět v databázi a uloží obrázek do složky
         /// </summary>
-        /// <param name="itemDto">DTO s detailem o předmětu</param>
+        /// <param name="item">DTO s detailem o předmětu</param>
         /// <param name="file">Obrázek předmětu</param>
         /// <returns>
         /// <see cref="IActionResult"/> obsahujcí vytvořený item, vrácený pomocí HTTP 201 status kódu; pokud se nepovede vytvořit vrátí HTTP 400 status kód
@@ -71,14 +71,14 @@ namespace GameBook.Server.Controllers
         /// </remarks>
 
         [HttpPost("items")]
-        public IActionResult CreateItem([FromForm] ItemDto itemDto, IFormFile file)
+        public async Task<IActionResult> CreateItem([FromForm] Item itemDto, IFormFile file)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            ItemDto? createdItem = _itemManager.CreateItem(itemDto, file);
+            Item? createdItem = await _itemManager.CreateItem(itemDto, file);
             return CreatedAtAction(nameof(GetById), new { id = createdItem?.ItemId }, createdItem);
         }
 
@@ -98,10 +98,10 @@ namespace GameBook.Server.Controllers
         /// </remarks>
         
         [HttpPut("items/{id}")]
-        public IActionResult UpdateItem(int id, [FromBody] ItemDto itemDto)
+        public async Task<IActionResult> UpdateItem(int id, [FromBody] ItemDto itemDto)
         {
 
-            ItemDto? updatedItem = _itemManager.UpdateItem(id, itemDto);
+            Item? updatedItem = await _itemManager.UpdateItem(id, itemDto);
             if (updatedItem == null)
             {
                 return NotFound();
@@ -123,9 +123,9 @@ namespace GameBook.Server.Controllers
         /// </remarks>
 
         [HttpDelete("items/{id}")]
-        public IActionResult DeleteItem(int id)
+        public async Task<IActionResult> DeleteItem(int id)
         {
-            ItemDto? deletedItem = _itemManager.DeleteItem(id);
+            Item? deletedItem = await _itemManager.DeleteItem(id);
             if (deletedItem == null)
             {
                 return NotFound();

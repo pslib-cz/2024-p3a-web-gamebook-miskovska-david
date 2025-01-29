@@ -30,9 +30,9 @@ namespace GameBook.Server.Repository
         /// Tato metoda se dotazuje na Dbset a načítá všechny entity z databáze.
         /// </remarks>
 
-        public IList<TEntity> GetAll()
+        public async Task<IList<TEntity>> GetAll()
         {
-            return _dbSet.ToList();
+            return await _dbSet.ToListAsync();
         }
 
         /// <summary>
@@ -46,9 +46,9 @@ namespace GameBook.Server.Repository
         /// Tato metoda používá metodu Find na Dbsetu pro nalezení entity podle id.
         /// </remarks>
 
-        public TEntity? GetById(int id)
+        public async Task<TEntity?> GetById(int id)
         {
-            return _dbSet.Find(id);
+            return await _dbSet.FindAsync(id);
         }
 
         /// <summary>
@@ -62,10 +62,10 @@ namespace GameBook.Server.Repository
         /// Tato metoda používá metodu Add na Dbsetu pro přidání nové entity.
         /// </remarks>
 
-        public TEntity Create(TEntity entity)
+        public async Task<TEntity> Create(TEntity entity)
         {
             EntityEntry<TEntity> entityEntry = _dbSet.Add(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return entityEntry.Entity;
         }
 
@@ -80,10 +80,10 @@ namespace GameBook.Server.Repository
         /// Tato metoda používá metodu Update na Dbsetu pro aktualizaci entity.
         /// </remarks>
 
-        public TEntity Update(TEntity entity)
+        public async Task<TEntity> Update(TEntity entity)
         {
             EntityEntry<TEntity> entityEntry = _dbSet.Update(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return entityEntry.Entity;
         }
 
@@ -98,12 +98,12 @@ namespace GameBook.Server.Repository
         /// Tato metoda používá metodu Find na Dbsetu pro nalezení entity podle id.
         /// </remarks>
 
-        public bool IsExist(int id)
+        public async Task<bool> IsExist(int id)
         {
-            TEntity? entity = _dbSet.Find(id);
+            TEntity? entity = await _dbSet.FindAsync(id);
             if(entity != null)
             {
-                _context.Entry(entity).State = EntityState.Detached;
+               _context.Entry(entity).State = EntityState.Detached;
             }
 
             return entity != null;
@@ -115,9 +115,9 @@ namespace GameBook.Server.Repository
         /// <param name="id">Id enetity co chceme smazat</param>
         /// <exception cref="InvalidOperationException">Pokud se nepovede smazat entitu</exception>
 
-        public void Delete(int id)
+        public async void Delete(int id)
         {
-            TEntity? entity = _dbSet.Find(id);
+            TEntity? entity = await _dbSet.FindAsync(id);
             if (entity != null)
             {
                 try

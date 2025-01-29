@@ -6,11 +6,11 @@ namespace GameBook.Server.Managers
     public class CharacterManager: ICharacterManager
     {
         /// <summary>
-        /// přístup k <see cref="Item"/> entitě v databázi
+        /// přístup k <see cref="CharacterManager"/> entitě v databázi
         /// </summary>
         private readonly IBaseRepository<Character> _characterRepository;
         /// <summary>
-        /// Mapper pro mapování (convertovaní) mezi entitami a DTO.
+        /// Mapper pro mapování (convertovaní) mezi entitami.
         /// </summary>
         private readonly IMapper _mapper;
         /// <summary>
@@ -24,16 +24,16 @@ namespace GameBook.Server.Managers
         }
 
         /// <summary>
-        /// Vrátí všechny postavy z databáze a namapuje je na DTO.
+        /// Vrátí všechny postavy z databáze a namapuje je.
         /// </summary>
         /// <returns>
-        /// List <see cref="CharacterDto"/> objektů reprezentujcí postavu
+        /// List <see cref="Character"/> objektů reprezentujcí postavu
         /// </returns>
 
-        public IList<CharacterDto> GetAllCharacters()
+        public async Task<IList<Character>> GetAllCharacters()
         {
-            IList<Character> characters = _characterRepository.GetAll();
-            return _mapper.Map<IList<CharacterDto>>(characters);
+            IList<Character> characters = await _characterRepository.GetAll();
+            return _mapper.Map<IList<Character>>(characters);
         }
 
         /// <summary>
@@ -44,26 +44,26 @@ namespace GameBook.Server.Managers
         /// <see cref="CharacterDto"/> objekt pokud id existuje; jinak <c>null</c>
         /// </returns>
 
-        public CharacterDto? GetCharacterById(int id)
+        public async Task<Character>? GetCharacterById(int id)
         {
-            Character? character = _characterRepository.GetById(id);
+            Character? character =  await _characterRepository.GetById(id);
             if (character == null)
             {
                 return null;
             }
-            return _mapper.Map<CharacterDto>(character);
+            return _mapper.Map<Character>(character);
         }
 
         /// <summary>
         /// Vytvoří novou postavu v databázi a uloží obrázek do složky
         /// </summary>
-        /// <param name="characterDto">DTO s detailem o postavě co chceme vytvořit</param>
+        /// <param name="Character">Třida s detailem o postavě co chceme vytvořit</param>
         /// <param name="file">Pozadí (obrázek) pro danou postavu</param>
         /// <returns>
-        /// <see cref="CharacterDto"/> objekt pokud se podaří vytvořit; jinak <c>null</c>
+        /// <see cref="Character"/> objekt pokud se podaří vytvořit; jinak <c>null</c>
         /// </returns>
 
-        public CharacterDto? CreateCharacter(CharacterDto characterDto, IFormFile file)
+        public async Task<Character?> CreateCharacter(Character characterDto, IFormFile file)
         {
             if (file == null || file.Length == 0)
             {
@@ -77,8 +77,8 @@ namespace GameBook.Server.Managers
             }
             Character character = _mapper.Map<Character>(characterDto);
             character.CharImg = path.ToString().ToLower().Replace("wwwroot/", "");
-            Character createdCharacter = _characterRepository.Create(character);
-            return _mapper.Map<CharacterDto>(createdCharacter);
+            Character createdCharacter = await _characterRepository.Create(character);
+            return _mapper.Map<Character>(createdCharacter);
         }
 
         /// <summary>
@@ -90,17 +90,17 @@ namespace GameBook.Server.Managers
         /// <see cref="CharacterDto"/> objekt reprezentujcí změněnou postavu; pokud id neexistuje <c>null</c>
         /// </returns>
 
-        public CharacterDto UpdateCharacter(int id, CharacterDto characterDto)
+        public async Task<Character> UpdateCharacter(int id, Character characterDto)
         {
-            if (!_characterRepository.IsExist(id))
+            if (!await _characterRepository.IsExist(id))
             {
                 return null;
             }
 
             Character character = _mapper.Map<Character>(characterDto);
             character.CharacterId = id;
-            Character updatedCharacter = _characterRepository.Update(character);
-            return _mapper.Map<CharacterDto>(updatedCharacter);
+            Character updatedCharacter = await _characterRepository.Update(character);
+            return _mapper.Map<Character>(updatedCharacter);
         }
 
         /// <summary>
@@ -108,17 +108,17 @@ namespace GameBook.Server.Managers
         /// </summary>
         /// <param name="id">Id postavy, kterou chceme smazat</param>
         /// <returns>
-        /// <see cref="CharacterDto"/> objekt reprezentujcí smazanou postavu; pokud id neexistuje <c>null</c>"/>
+        /// <see cref="Character"/> objekt reprezentujcí smazanou postavu; pokud id neexistuje <c>null</c>"/>
         /// </returns>
 
-        public CharacterDto? DeleteCharacter(int id)
+        public async Task<Character?> DeleteCharacter(int id)
         {
-            if (!_characterRepository.IsExist(id))
+            if (! await _characterRepository.IsExist(id))
             {
                 return null;
             }
-            Character character = _characterRepository.GetById(id);
-            CharacterDto characterDto = _mapper.Map<CharacterDto>(character);
+            Character character = await _characterRepository.GetById(id);
+            Character characterDto = _mapper.Map<Character>(character);
 
             _characterRepository.Delete(id);
             return characterDto;

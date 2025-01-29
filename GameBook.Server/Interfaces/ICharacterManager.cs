@@ -4,10 +4,10 @@ namespace GameBook.Server.Interfaces
 {
     public interface ICharacterManager
     {
-        IList<CharacterDto> GetAllCharacters();
-        CharacterDto? GetCharacterById(int id);
-        CharacterDto? CreateCharacter(CharacterDto characterDto, IFormFile file);
-        CharacterDto UpdateCharacter(int id, CharacterDto characterDto);
-        CharacterDto? DeleteCharacter(int id);
+        Task<IList<Character>> GetAllCharacters();
+        Task<Character?> GetCharacterById(int id);
+        Task<Character?> CreateCharacter(Character characterDto, IFormFile file);
+        Task<Character> UpdateCharacter(int id, Character characterDto);
+        Task<Character?> DeleteCharacter(int id);
     }
 }

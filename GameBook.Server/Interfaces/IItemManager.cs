@@ -4,10 +4,10 @@ namespace GameBook.Server.Interfaces
 {
     public interface IItemManager
     {
-        IList<ItemDto> GetAllItems();
-        ItemDto? GetItemById(int id);
-        ItemDto? CreateItem(ItemDto itemDto, IFormFile file);
-        ItemDto UpdateItem(int id, ItemDto itemDto);
-        ItemDto? DeleteItem(int id);
+        Task<IList<Item>> GetAllItems();
+        Task<Item?> GetItemById(int id);
+        Task<Item?> CreateItem(Item item, IFormFile file);
+        Task<Item> UpdateItem(int id, Item item);
+        Task<Item?> DeleteItem(int id);
     }
 }

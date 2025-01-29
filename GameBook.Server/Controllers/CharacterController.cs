@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using GameBook.Server.Models;
+using Microsoft.EntityFrameworkCore;
 namespace GameBook.Server.Controllers
 {
     [Route("api/[controller]")]
@@ -16,16 +17,16 @@ namespace GameBook.Server.Controllers
         }
 
         [HttpGet("characters")]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var characters = _context.Characters.ToList();
+            var characters = _context.Characters.ToListAsync();
             return Ok(characters);
         }
 
         [HttpGet("characters/{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var character = _context.Characters.FirstOrDefault(c => c.CharacterId == id);
+            var character = _context.Characters.FirstOrDefaultAsync(c => c.CharacterId == id);
             if (character == null)
             {
                 return NotFound();
@@ -34,7 +35,7 @@ namespace GameBook.Server.Controllers
         }
 
         [HttpPut("characters/{id}")]
-        public IActionResult Update(Character character) {
+        public async Task<IActionResult> Update(Character character) {
             var characterToUpdate = _context.Characters.FirstOrDefault(c => c.CharacterId == character.CharacterId);
             if (characterToUpdate == null)
             {
@@ -43,7 +44,7 @@ namespace GameBook.Server.Controllers
             characterToUpdate.Name = character.Name;
             characterToUpdate.Bio = character.Bio;
             characterToUpdate.CharImg = character.CharImg;
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return Ok(characterToUpdate);
         }
 
