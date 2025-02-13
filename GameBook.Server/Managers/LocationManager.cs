@@ -4,7 +4,7 @@ using GameBook.Server.Models;
 
 namespace GameBook.Server.Managers
 {
-    public class LocationManager
+    public class LocationManager: ILocationManager
     {
 
         /// <summary>
