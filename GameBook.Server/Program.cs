@@ -33,6 +33,10 @@ builder.Services.AddScoped<IBaseRepository<Item>, ItemRepository>();
 builder.Services.AddScoped<ILocationManager, LocationManager>();
 builder.Services.AddScoped<ILocationRepository, LocationRepository>();
 builder.Services.AddScoped<IBaseRepository<Location>, LocationRepository>();
+//Character services
+builder.Services.AddScoped<ICharacterManager, CharacterManager>();
+builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+builder.Services.AddScoped<IBaseRepository<Character>, CharacterRepository>();
 
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(

@@ -11,6 +11,8 @@
 
 
         //cizí klíč
+        public Location? location { get; set; }
+        public int? locationId { get; set; }
         public Character? Character { get; set; }
         public int? CharacterId { get; set; }
     }

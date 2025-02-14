@@ -6,7 +6,6 @@ import Continue from "../../components/Button/Continue";
 import React, { useState } from "react";
 import Location from "../../components/Location/Location";
 import { RoomType } from "../../types";
-import Location from "../../components/Location/Location";
 
 
 type RoomWithDialogProps = {
