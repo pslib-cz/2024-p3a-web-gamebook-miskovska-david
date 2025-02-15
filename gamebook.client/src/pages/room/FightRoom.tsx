@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import classes from "./FightRoom.module.css";
 import FightButton from "../../components/FightButtons/FightButton";
-import { ItemType, RoomType } from "../../types";
+import { CharacterType, ItemType, PlayerType, RoomType } from "../../types";
 
 const FightRoom: React.FC= () => {
     
@@ -13,7 +13,8 @@ const FightRoom: React.FC= () => {
     const {data: RoomData} = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
     const {data: AtkData} = useFetch<ItemType>(`/api/Item/items/100`);
     const {data: DefData} = useFetch<ItemType>(`/api/Item/items/101`);
-
+    const {data: enemy} = useFetch<CharacterType>(`/api/Character/characters/1`);
+    const {data: player} = useFetch<PlayerType>(`/api/Character/characters/2`);
 
 
     const RandomSpawn = () => {
@@ -37,6 +38,8 @@ const FightRoom: React.FC= () => {
 
   return(
     <div style={{ backgroundImage: `url(/${RoomData?.background})` }} className={classes.container}>
+      <p className={classes.player}>Maxim</p>
+      <p className={classes.enemy}>{enemy?.name}</p>
         {RandomSpawn()}
     </div>
   );

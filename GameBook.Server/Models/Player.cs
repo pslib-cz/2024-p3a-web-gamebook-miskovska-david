@@ -3,9 +3,9 @@
     public class Player
     {
         public Guid PlayerId { get; set; }
-        public int Coin { get; set; }
-        public int Damage { get; set; }
-        public int Defence { get; set; }
+        public int Coin { get; set; } = 10;
+        public int Damage { get; set; } = 10;
+        public int Defence { get; set; } = 10;
         public int hp { get; set; } = 100;
 
         //cizí klíč

@@ -5,4 +5,5 @@ export type RoomType = {
     dialogs: Array<string>;
     roomType: string
     locationId: number;
+    characterId: number
 }
