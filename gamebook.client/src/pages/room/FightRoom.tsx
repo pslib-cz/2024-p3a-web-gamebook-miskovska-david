@@ -20,8 +20,8 @@ const FightRoom: React.FC= () => {
     const RandomSpawn = () => {
         const screenWith = window.innerWidth;
         const screenHeigh = window.innerHeight;
-        const randomTop = Math.floor(Math.random() * (screenHeigh - 50));
-        const randomLeft = Math.floor(Math.random() * (screenWith-50));
+        const randomTop = Math.floor(Math.random() * (screenHeigh - 150));
+        const randomLeft = Math.floor(Math.random() * (screenWith-150));
 
         const random = Math.round(Math.random() * 2);
         if(random === 0)
@@ -35,11 +35,14 @@ const FightRoom: React.FC= () => {
     }
 
   
-
+    console.log(enemy)
   return(
     <div style={{ backgroundImage: `url(/${RoomData?.background})` }} className={classes.container}>
       <p className={classes.player}>Maxim</p>
-      <p className={classes.enemy}>{enemy?.name}</p>
+      <div className={classes.enemy}>
+        <p >{enemy?.name}</p>
+        <div></div>
+      </div>
         {RandomSpawn()}
     </div>
   );
