@@ -37,7 +37,10 @@ builder.Services.AddScoped<IBaseRepository<Location>, LocationRepository>();
 builder.Services.AddScoped<ICharacterManager, CharacterManager>();
 builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
 builder.Services.AddScoped<IBaseRepository<Character>, CharacterRepository>();
-
+//Player services
+builder.Services.AddScoped<IPlayerManager, PlayerManager>();
+builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
+builder.Services.AddScoped<IBaseRepository<Player>, PlayerRepository>();
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(
     options =>

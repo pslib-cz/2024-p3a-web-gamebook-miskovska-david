@@ -2,7 +2,7 @@
 
 namespace GameBook.Server.Interfaces
 {
-    public interface IPlayerRepository : IBaseRepository<User>
+    public interface IPlayerRepository : IBaseRepository<Player>
     {
     }
 }

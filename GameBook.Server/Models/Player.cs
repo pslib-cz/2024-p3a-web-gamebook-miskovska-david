@@ -1,4 +1,7 @@
-﻿namespace GameBook.Server.Models
+﻿using GameBook.Server.Migrations;
+using Microsoft.AspNetCore.Identity;
+
+namespace GameBook.Server.Models
 {
     public class Player
     {
@@ -9,7 +12,7 @@
         public int hp { get; set; } = 100;
 
         //cizí klíč
-        public User? User { get; set; }
-        public Guid UserId { get; set; }
+        public IdentityUser? User { get; set; }
+        public string Id { get; set; }
     }
 }
