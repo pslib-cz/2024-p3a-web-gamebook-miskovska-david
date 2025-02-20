@@ -1,7 +1,6 @@
 using GameBook.Server;
 using GameBook.Server.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.FileProviders;
 using GameBook.Server.Interfaces;
 using GameBook.Server.Managers;
 using GameBook.Server.Models;
@@ -30,6 +29,14 @@ builder.Services.AddScoped<IBaseRepository<Room>, RoomRepository>();
 builder.Services.AddScoped<IItemManager, ItemManager>();
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
 builder.Services.AddScoped<IBaseRepository<Item>, ItemRepository>();
+//Location services
+builder.Services.AddScoped<ILocationManager, LocationManager>();
+builder.Services.AddScoped<ILocationRepository, LocationRepository>();
+builder.Services.AddScoped<IBaseRepository<Location>, LocationRepository>();
+//Character services
+builder.Services.AddScoped<ICharacterManager, CharacterManager>();
+builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+builder.Services.AddScoped<IBaseRepository<Character>, CharacterRepository>();
 
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(

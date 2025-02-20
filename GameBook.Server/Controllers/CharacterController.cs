@@ -31,7 +31,7 @@ namespace GameBook.Server.Controllers
 
         
 
-        [HttpGet("character/{id}")]
+        [HttpGet("characters/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             Character? character = await _characterManager.GetCharacterById(id);

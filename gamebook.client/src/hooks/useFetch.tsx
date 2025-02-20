@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { ItemType, RoomType } from '../types';
 
 /*
     Tento hook slouží k načtení dat z API.

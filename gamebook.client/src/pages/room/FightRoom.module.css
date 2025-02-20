@@ -4,3 +4,22 @@
     background-size: cover;
     position: relative;
 }
+
+.player{
+    position: absolute;
+
+    left: 5%;
+}
+
+.enemy{
+    position: absolute;
+    right: 5%;
+}
+
+.enemy::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: red;
+}

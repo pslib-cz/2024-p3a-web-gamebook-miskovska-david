@@ -68,6 +68,13 @@ export default defineConfig({
                     target,
                     secure: false
                 },
+                '^/api/Location/location': {
+                    target,
+                    secure: false
+                },'^/api/Character/characters': {
+                    target,
+                    secure: false
+                },
             },
         
 

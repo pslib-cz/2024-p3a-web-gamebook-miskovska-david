@@ -3,10 +3,11 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import React, { useState } from "react";
 import LocationBtn from "../../assets/location/location.svg";
-import { RoomType } from "../../types";
+import { LocationType, RoomType } from "../../types";
 const Location: React.FC = () => {
   const id = useParams().id;
   const { data } = useFetch<RoomType>(`/api/Room/rooms/${id}`);
+  const {data: locationData} = useFetch<LocationType>(`/api/Location/locations/${data?.locationId}`);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,15 +17,15 @@ const Location: React.FC = () => {
       <img
         onClick={toggleMenu}
         src={LocationBtn}
-        alt={data?.locationName}
+        alt={locationData?.locationName}
         className={`${style.btn} ${isOpen ? style.btn__open : ""}`}
       />
       {isOpen && (
         <div className={style.menuContent}>
-          <h3>{data?.locationName}</h3>
+          <h3>{locationData?.locationName}</h3>
           <div className={style.location__content}>
-              <img src={data?.location} alt={data?.locationName} />
-              <p>{data?.locationDescription}</p>
+              <img src={locationData?.locationImg} alt={locationData?.locationName} />
+              <p>{locationData?.locationDescription}</p>
           </div>
         </div>
       )}

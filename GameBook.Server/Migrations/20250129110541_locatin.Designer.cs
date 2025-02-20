@@ -3,6 +3,7 @@ using System;
 using GameBook.Server.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GameBook.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250129110541_locatin")]
+    partial class locatin
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.11");
@@ -23,9 +26,6 @@ namespace GameBook.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Attack")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Bio")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -34,12 +34,12 @@ namespace GameBook.Server.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Hp")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("hp")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("CharacterId");
 
@@ -100,9 +100,9 @@ namespace GameBook.Server.Migrations
 
             modelBuilder.Entity("GameBook.Server.Models.Player", b =>
                 {
-                    b.Property<int>("PlayerId")
+                    b.Property<Guid>("PlayerId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("Coin")
                         .HasColumnType("INTEGER");
@@ -152,14 +152,9 @@ namespace GameBook.Server.Migrations
                     b.Property<string>("SpecialItem")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("locationId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("RoomId");
 
                     b.HasIndex("CharacterId");
-
-                    b.HasIndex("locationId");
 
                     b.ToTable("Rooms");
                 });
@@ -401,13 +396,7 @@ namespace GameBook.Server.Migrations
                         .WithMany()
                         .HasForeignKey("CharacterId");
 
-                    b.HasOne("GameBook.Server.Models.Location", "location")
-                        .WithMany()
-                        .HasForeignKey("locationId");
-
                     b.Navigation("Character");
-
-                    b.Navigation("location");
                 });
 
             modelBuilder.Entity("GameBook.Server.Models.User", b =>
