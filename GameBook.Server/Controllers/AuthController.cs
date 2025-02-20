@@ -1,4 +1,5 @@
-﻿using GameBook.Server.Models;
+﻿using GameBook.Server.Interfaces;
+using GameBook.Server.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 namespace GameBook.Server.Controllers
@@ -9,7 +10,7 @@ namespace GameBook.Server.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
-
+        private readonly IPlayerManager _playerManager;
         public AuthController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             _signInManager = signInManager;
@@ -44,6 +45,7 @@ namespace GameBook.Server.Controllers
             {
                 IdentityUser newUser = await _userManager.FindByEmailAsync(loginDto.Email) ?? throw new Exception("Uživatel nebyl nalezen");
                 UserDto userDto = await ConvertToUserDto(newUser);
+                await _playerManager.CreatePlayer(new Player() );
                 return Ok(userDto);
             }
 
