@@ -19,11 +19,11 @@ import CityStreight from './pages/room/CityStreightStreet';
 import Interier1 from './pages/room/RoomInterier1';
 import Interier2 from './pages/room/RoomInterier2';
 
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import DragAndDrop from './pages/room/DragAndDrop';
 
-
- const router = createBrowserRouter([
- 
-  
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -42,7 +42,7 @@ import Interier2 from './pages/room/RoomInterier2';
   },
   { 
     path: "/rooms",
-     children: [
+    children: [
       { 
         path: ":id",
         element: <RoomWithDialog />
@@ -70,37 +70,39 @@ import Interier2 from './pages/room/RoomInterier2';
   {
     path: "/shopdialog",
     element: <ObchodDialog />,
-   },
-
-   {
+  },
+  {
     path: "/city-cross",
     element: <CityCross />,
-   },
-   {
+  },
+  {
     path: "/city-streight",
     element: <CityStreight />,
-   },
-   {
+  },
+  {
     path: "/interier1",
     element: <Interier1 />,
-   },
-   {
+  },
+  {
     path: "/interier2",
     element: <Interier2 />,
-   },
-   {
+  },
+  {
     path: "/shop",
-    element: <Shop/>,
-   },
-
-
- ]); 
+    element: <Shop />,
+  },
+  {
+    path: "/dnd",
+    element: <DragAndDrop />,
+  }
+]);
 
 function App() {
-    return (
+  return (
+    <DndProvider backend={HTML5Backend}>
       <RouterProvider router={router} />
-
-    )
+    </DndProvider>
+  );
 }
 
 export default App;
