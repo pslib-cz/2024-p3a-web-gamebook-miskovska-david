@@ -3,18 +3,18 @@ import { useDrop, useDrag } from 'react-dnd';
 import { RoomType } from "../../types";
 import useFetch from "../../hooks/useFetch";
 import style from "./DragAndDrop.module.css";
-import dnd1 from "../../assets/draganddrop/dnd_1.jpg";
-import dnd2 from "../../assets/draganddrop/dnd_2.jpg";
-import dnd3 from "../../assets/draganddrop/dnd_3.jpg";
-import dnd4 from "../../assets/draganddrop/dnd_4.jpg";
-import dnd5 from "../../assets/draganddrop/dnd_5.jpg";
-import dnd6 from "../../assets/draganddrop/dnd_6.jpg";
-import dnd7 from "../../assets/draganddrop/dnd_7.jpg";
-import dnd8 from "../../assets/draganddrop/dnd_8.jpg";
-import dnd9 from "../../assets/draganddrop/dnd_9.jpg";
-import dnd10 from "../../assets/draganddrop/dnd_10.jpg";
-import dnd11 from "../../assets/draganddrop/dnd_11.jpg";
-import dnd12 from "../../assets/draganddrop/dnd_12.jpg";
+import dnd1 from "../../assets/draganddrop/segment_12_0_0.png";
+import dnd2 from "../../assets/draganddrop/segment_12_0_1.png";
+import dnd3 from "../../assets/draganddrop/segment_12_0_2.png";
+import dnd4 from "../../assets/draganddrop/segment_12_0_3.png";
+import dnd5 from "../../assets/draganddrop/segment_12_1_0.png";
+import dnd6 from "../../assets/draganddrop/segment_12_1_1.png";
+import dnd7 from "../../assets/draganddrop/segment_12_1_2.png";
+import dnd8 from "../../assets/draganddrop/segment_12_1_3.png";
+import dnd9 from "../../assets/draganddrop/segment_12_2_0.png";
+import dnd10 from "../../assets/draganddrop/segment_12_2_1.png";
+import dnd11 from "../../assets/draganddrop/segment_12_2_2.png";
+import dnd12 from "../../assets/draganddrop/segment_12_2_3.png";
 
 const initialImages = [
     { id: 1, src: dnd1 },
@@ -54,12 +54,15 @@ const DragAndDrop = () => {
         }),
     }));
     console.log(isOver)
+   
+   
 
     const moveImageToScreen = (id: number, x: number, y: number) => {
         const imageToMove = images.find(image => image.id === id) || droppedImages.find(image => image.id === id);
         if (imageToMove) {
             setDroppedImages((prev) => [...prev.filter((image) => image.id !== id), { id, src: imageToMove.src, x, y }]);
             setImages((prev) => prev.filter((image) => image.id !== id));
+
         }
     };
 
@@ -71,9 +74,13 @@ const DragAndDrop = () => {
         }
     };
 
+   
+    
+
+
     return (
         <div ref={screenRef} className={style.room__screen} style={{ backgroundImage: `url(/${rooms?.background})` }}>
-            <div ref={drop} className={style.room__screen}>
+            <div ref={drop} className={`${style.room__screen} ${style.dropArea}`}>
                 {droppedImages.map((image) => (
                     <DraggableImage
                         key={image.id}
@@ -120,6 +127,7 @@ const DraggableImage = ({ id, src, x, y, moveImageBackToContainer, moveImageToSc
             moveImageBackToContainer(id);
         }
     };
+    
 
     return (
         <img
