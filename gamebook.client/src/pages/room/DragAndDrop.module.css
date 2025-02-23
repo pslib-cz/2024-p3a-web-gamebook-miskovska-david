@@ -1,4 +1,4 @@
-.room__screen{
+.room__screen {
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -8,47 +8,50 @@
     overflow: hidden;
 }
 
-
 .grid__container {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden; /* Skrytí svislého scrollbar */
     gap: 10px;
     padding-bottom: 10px;
     max-width: 100%;
     height: 100px;
     align-items: center; 
-    scrollbar-width: none;
+    scrollbar-width: thin; /* Show scrollbar (for Firefox) */
+    scrollbar-color: #888 transparent; /* Customize scrollbar color */
     align-self: self-end;
 }
 
-.grid__item {
-    height: 50%; 
-    width: auto; 
-}
-
-/* Skrytí scrollbarů */
-/* .grid__container::-webkit-scrollbar {
-    height: 8px;
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+.grid__container::-webkit-scrollbar {
+    height: 5px; /* Smaller height of the horizontal scrollbar */
 }
 
 .grid__container::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners */
 }
 
 .grid__container::-webkit-scrollbar-track {
-    background: transparent;
-} */
+    background: transparent; /* Color of the scrollbar track */
+}
+
+.grid__item {
+    height: auto; 
+
+    cursor: grab;
+}
 
 @media (min-width: 1024px) {
     .grid__container {
-        overflow-x: hidden;
-        flex-wrap: wrap;
+        overflow-x: hidden; /* Disable horizontal scrolling on larger screens */
+        flex-wrap: wrap; /* Wrap items into multiple rows */
         justify-content: center;
-        height: auto; 
+        height: auto; /* Allow container to grow based on content */
     }
+
     .grid__item {
         height: auto;
-        max-height: 100px;
+        max-height: 100px; /* Limit image height */
     }
 }

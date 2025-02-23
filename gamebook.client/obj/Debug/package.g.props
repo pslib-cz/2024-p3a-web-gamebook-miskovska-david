@@ -13,6 +13,8 @@
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^18.3.1</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDnd Condition="$(PackageJsonDependenciesReactDnd) == ''">^16.0.1</PackageJsonDependenciesReactDnd>
     <PackageJsonDependenciesReactDndHtml5Backend Condition="$(PackageJsonDependenciesReactDndHtml5Backend) == ''">^16.0.1</PackageJsonDependenciesReactDndHtml5Backend>
+    <PackageJsonDependenciesReactDndMultiBackend Condition="$(PackageJsonDependenciesReactDndMultiBackend) == ''">^9.0.0</PackageJsonDependenciesReactDndMultiBackend>
+    <PackageJsonDependenciesReactDndTouchBackend Condition="$(PackageJsonDependenciesReactDndTouchBackend) == ''">^16.0.1</PackageJsonDependenciesReactDndTouchBackend>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^18.3.1</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesReactIcons Condition="$(PackageJsonDependenciesReactIcons) == ''">^5.4.0</PackageJsonDependenciesReactIcons>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.0.2</PackageJsonDependenciesReactRouterDom>
