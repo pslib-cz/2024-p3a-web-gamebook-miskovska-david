@@ -7,5 +7,5 @@ export type ItemType = {
     demage: number;
     defense: number;
     dialogs: Array<string>;
-    roomType: string;
+    Type: string;
 }
