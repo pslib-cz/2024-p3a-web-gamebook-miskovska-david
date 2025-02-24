@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useDrop, useDrag } from 'react-dnd';
-import { RoomType } from "../../types";
-import useFetch from "../../hooks/useFetch";
 import style from "./DragAndDrop.module.css";
+
+// Import obrázků
 import dnd1 from "../../assets/draganddrop/segment_12_0_0.png";
 import dnd2 from "../../assets/draganddrop/segment_12_0_1.png";
 import dnd3 from "../../assets/draganddrop/segment_12_0_2.png";
@@ -31,13 +31,15 @@ const initialImages = [
     { id: 12, src: dnd12 }
 ];
 
+const GRID_ROWS = 3; // Počet řádků mřížky
+const GRID_COLUMNS = 4; // Počet sloupců mřížky
+
 const DragAndDrop = () => {
-    const { data: rooms } = useFetch<RoomType>("api/Room/rooms/47");
-    const screenRef = useRef<HTMLDivElement>(null);
-
+    const screenRef = useRef<HTMLDivElement | null>(null);
     const [images, setImages] = useState(initialImages);
-    const [droppedImages, setDroppedImages] = useState<{ id: number; src: string; x: number; y: number }[]>([]);
+    const [droppedImages, setDroppedImages] = useState<{ id: number; src: string; row: number; col: number }[]>([]);
 
+    // useDrop pro mřížku
     const [{ isOver }, drop] = useDrop(() => ({
         accept: 'image',
         drop: (item: { id: number }, monitor) => {
@@ -46,105 +48,123 @@ const DragAndDrop = () => {
                 const { left, top } = screenRef.current.getBoundingClientRect();
                 const x = offset.x - left;
                 const y = offset.y - top;
-                moveImageToScreen(item.id, x, y);
+
+                // Vypočítáme řádek a sloupec na základě pozice myši
+                const col = Math.floor(x / (screenRef.current.offsetWidth / GRID_COLUMNS));
+                const row = Math.floor(y / (screenRef.current.offsetHeight / GRID_ROWS));
+
+                // Najdeme obrázek na cílové pozici
+                const targetImage = droppedImages.find(image => image.row === row && image.col === col);
+
+                // Přesuneme obrázek na cílovou pozici nebo vyměníme pozice
+                if (targetImage) {
+                    setDroppedImages(prev => prev.map(image => {
+                        if (image.id === item.id) {
+                            return { ...image, row: targetImage.row, col: targetImage.col };
+                        } else if (image.id === targetImage.id) {
+                            return { ...image, row, col };
+                        }
+                        return image;
+                    }));
+                } else {
+                    moveImageToScreen(item.id, row, col);
+                }
             }
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
         }),
     }));
-    console.log(isOver)
-   
-   
 
-    const moveImageToScreen = (id: number, x: number, y: number) => {
+    console.log(isOver);
+
+    // Sloučení refů pro drop oblast
+    const mergedRef = (node: HTMLDivElement) => {
+        screenRef.current = node;
+        drop(node);
+    };
+
+    // Funkce pro přesun obrázku do mřížky
+    const moveImageToScreen = (id: number, row: number, col: number) => {
         const imageToMove = images.find(image => image.id === id) || droppedImages.find(image => image.id === id);
         if (imageToMove) {
-            setDroppedImages((prev) => [...prev.filter((image) => image.id !== id), { id, src: imageToMove.src, x, y }]);
+            setDroppedImages((prev) => [...prev.filter((image) => image.id !== id), { id, src: imageToMove.src, row, col }]);
             setImages((prev) => prev.filter((image) => image.id !== id));
-
         }
     };
 
-    const moveImageBackToContainer = (id: number) => {
-        const imageToMove = droppedImages.find((image) => image.id === id);
-        if (imageToMove) {
-            setImages((prev) => [...prev, { id: Date.now(), src: imageToMove.src }]);
-            setDroppedImages((prev) => prev.filter((image) => image.id !== id));
-        }
+    // Komponenta DraggableImage (nyní uvnitř DragAndDrop)
+    const DraggableImage = ({ id, src, moveImageToScreen }: { id: number; src: string; moveImageToScreen: (id: number, row: number, col: number) => void }) => {
+        const [{ isDragging }, drag] = useDrag(() => ({
+            type: 'image',
+            item: { id },
+            end: (item, monitor) => {
+                const offset = monitor.getClientOffset();
+                if (offset && moveImageToScreen) {
+                    const sourceOffset = monitor.getSourceClientOffset();
+                    if (sourceOffset) {
+                        const gridRect = screenRef.current?.getBoundingClientRect();
+                        if (gridRect) {
+                            const row = Math.floor((offset.y - gridRect.top) / (gridRect.height / GRID_ROWS));
+                            const col = Math.floor((offset.x - gridRect.left) / (gridRect.width / GRID_COLUMNS));
+                            moveImageToScreen(id, row, col);
+                        }
+                    }
+                }
+            },
+            collect: (monitor) => ({
+                isDragging: !!monitor.isDragging(),
+            }),
+        }));
+
+        return (
+            <img
+                ref={drag}
+                src={src}
+                alt={`dnd${id}`}
+                className={`${style.gridItem} ${isDragging ? style.dragging : ''}`}
+                style={{
+                    opacity: isDragging ? 0.5 : 1,
+                    cursor: 'grab',
+                    width: '100%',
+                    height: '100%',
+                }}
+            />
+        );
     };
-
-   
-    
-
 
     return (
-        <div ref={screenRef} className={style.room__screen} style={{ backgroundImage: `url(/${rooms?.background})` }}>
-            <div ref={drop} className={`${style.room__screen} ${style.dropArea}`}>
-                {droppedImages.map((image) => (
-                    <DraggableImage
-                        key={image.id}
-                        id={image.id}
-                        src={image.src}
-                        x={image.x}
-                        y={image.y}
-                        moveImageBackToContainer={moveImageBackToContainer}
-                        moveImageToScreen={moveImageToScreen}
-                    />
+        <div className={style.container}>
+            <div ref={mergedRef} className={style.dropArea}>
+                {/* Mřížka */}
+                {Array.from({ length: GRID_ROWS * GRID_COLUMNS }).map((_, index) => {
+                    const rowIndex = Math.floor(index / GRID_COLUMNS);
+                    const colIndex = index % GRID_COLUMNS;
+                    const image = droppedImages.find(img => img.row === rowIndex && img.col === colIndex);
+                    return (
+                        <div
+                            key={index}
+                            className={style.gridCell}
+                        >
+                            {image && (
+                                <DraggableImage
+                                    id={image.id}
+                                    src={image.src}
+                                    moveImageToScreen={moveImageToScreen}
+                                />
+                            )}
+                        </div>
+                    );
+                })}
+            </div>
+
+            {/* Obrázky k přetažení */}
+            <div className={style.imageList}>
+                {images.map((image) => (
+                    <DraggableImage key={image.id} id={image.id} src={image.src} moveImageToScreen={moveImageToScreen} />
                 ))}
-                <div className={style.grid__container}>
-                    {images.map((image) => (
-                        <DraggableImage key={image.id} id={image.id} src={image.src} moveImageToScreen={moveImageToScreen} />
-                    ))}
-                </div>
             </div>
         </div>
-    );
-};
-
-const DraggableImage = ({ id, src, x, y, moveImageBackToContainer, moveImageToScreen }: { id: number, src: string, x?: number, y?: number, moveImageBackToContainer?: (id: number) => void, moveImageToScreen?: (id: number, x: number, y: number) => void }) => {
-    const [{ isDragging }, drag] = useDrag(() => ({
-        type: 'image',
-        item: { id },
-        end: (item, monitor) => {
-            const offset = monitor.getClientOffset();
-            if (offset && moveImageToScreen) {
-                const sourceOffset = monitor.getSourceClientOffset();
-                if (sourceOffset) {
-                    const x = offset.x - sourceOffset.x;
-                    const y = offset.y - sourceOffset.y;
-                    moveImageToScreen(id, x, y);
-                }
-            }
-        },
-        collect: (monitor) => ({
-            isDragging: !!monitor.isDragging(),
-        }),
-    }));
-
-    const handleDoubleClick = () => {
-        if (moveImageBackToContainer) {
-            moveImageBackToContainer(id);
-        }
-    };
-    
-
-    return (
-        <img
-            ref={drag}
-            src={src}
-            alt={`dnd${id}`}
-            className={`${style.grid__item} ${isDragging ? style.dragging : ''}`}
-            style={{
-                opacity: isDragging ? 0.5 : 1,
-                left: x !== undefined ? `${x}px` : 'auto',
-                top: y !== undefined ? `${y}px` : 'auto',
-                position: x !== undefined && y !== undefined ? 'absolute' : 'static',
-                cursor: 'grab',
-                zIndex: x !== undefined && y !== undefined ? 1 : 'auto',
-            }}
-            onDoubleClick={handleDoubleClick}
-        />
     );
 };
 
