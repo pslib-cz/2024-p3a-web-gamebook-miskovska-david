@@ -4,7 +4,7 @@ import style from "./Item.module.css";
 import coins from "../../assets/coins/coins.png";
 import Buy from "../../components/Button/Buy";
 
-interface ItemProps {
+type ItemProps = {
     item: ItemType;
 }
 

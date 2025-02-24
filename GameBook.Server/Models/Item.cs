@@ -9,5 +9,13 @@
         public int? Price { get; set; }
         public int? Damage { get; set; }
         public int? Defence { get; set; }
+        public required string Type { get; set; }
+    }
+
+    public enum ItemType
+    {
+        Weapon,
+        Potions,
+        Special
     }
 }
