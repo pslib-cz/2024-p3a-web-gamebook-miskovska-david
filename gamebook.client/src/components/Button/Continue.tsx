@@ -22,6 +22,9 @@ const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId,
         if(roomId === 11){
             route = "/city-cross"
         }
+        if(roomId === 47){
+            route = "/dnd"
+        }
         else if(type === "dialog"){
             route = "/rooms/" + roomId
         }else if(type === "fight"){

@@ -1,0 +1,48 @@
+.room__screen {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid__container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    gap: 10px;
+    padding-bottom: 5rem;
+    max-width: 100%;
+    height: calc(10vh - 10px);
+    align-items: center; 
+    scrollbar-width: none; 
+    align-self: self-end;
+}
+
+.grid__item {
+    height: auto;
+    max-height: 50px;
+    cursor: grab;
+}
+
+.dropArea {
+    border: 2px dashed #ffffff;
+    width: 80%; 
+    height: 80%; 
+    margin: auto;
+}
+
+
+@media (min-width: 768px) {
+    .grid__container {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .grid__item {
+        height: auto;
+        max-height: 100px; 
+    }
+}
