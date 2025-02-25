@@ -20,8 +20,8 @@ import Interier1 from './pages/room/RoomInterier1';
 import Interier2 from './pages/room/RoomInterier2';
 
 import { DndProvider } from 'react-dnd';
-import { MultiBackend, createTransition } from 'react-dnd-multi-backend';
-import {HTML5Backend} from 'react-dnd-html5-backend';
+import { MultiBackend, TouchTransition, MouseTransition } from 'react-dnd-multi-backend';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 import { TouchBackend } from 'react-dnd-touch-backend';
 import DragAndDrop from './pages/room/DragAndDrop';
 
@@ -29,12 +29,13 @@ const HTML5toTouch = {
   backends: [
     {
       backend: HTML5Backend,
-      transition: createTransition('touchstart', (event) => (event as TouchEvent).touches != null),
+      transition: MouseTransition,
     },
     {
       backend: TouchBackend,
       options: { enableMouseEvents: true },
       preview: true,
+      transition: TouchTransition,
     },
   ],
 };

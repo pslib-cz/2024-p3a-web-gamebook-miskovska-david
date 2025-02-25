@@ -1,20 +1,21 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useDrop, useDrag } from 'react-dnd';
 import style from "./DragAndDrop.module.css";
+import Continue from '../../components/Button/LinkButton'; // Import tlačítka Continue
 
 // Import obrázků
-import dnd1 from "../../assets/draganddrop/segment_12_0_0.png";
-import dnd2 from "../../assets/draganddrop/segment_12_0_1.png";
-import dnd3 from "../../assets/draganddrop/segment_12_0_2.png";
-import dnd4 from "../../assets/draganddrop/segment_12_0_3.png";
-import dnd5 from "../../assets/draganddrop/segment_12_1_0.png";
-import dnd6 from "../../assets/draganddrop/segment_12_1_1.png";
-import dnd7 from "../../assets/draganddrop/segment_12_1_2.png";
-import dnd8 from "../../assets/draganddrop/segment_12_1_3.png";
-import dnd9 from "../../assets/draganddrop/segment_12_2_0.png";
-import dnd10 from "../../assets/draganddrop/segment_12_2_1.png";
-import dnd11 from "../../assets/draganddrop/segment_12_2_2.png";
-import dnd12 from "../../assets/draganddrop/segment_12_2_3.png";
+import dnd1 from "../../assets/draganddrop/tile_0_0.webp";
+import dnd2 from "../../assets/draganddrop/tile_0_1.webp";
+import dnd3 from "../../assets/draganddrop/tile_0_2.webp";
+import dnd4 from "../../assets/draganddrop/tile_0_3.webp";
+import dnd5 from "../../assets/draganddrop/tile_1_0.webp";
+import dnd6 from "../../assets/draganddrop/tile_1_1.webp";
+import dnd7 from "../../assets/draganddrop/tile_1_2.webp";
+import dnd8 from "../../assets/draganddrop/tile_1_3.webp";
+import dnd9 from "../../assets/draganddrop/tile_2_0.webp";
+import dnd10 from "../../assets/draganddrop/tile_2_1.webp";
+import dnd11 from "../../assets/draganddrop/tile_2_2.webp";
+import dnd12 from "../../assets/draganddrop/tile_2_3.webp";
 
 const initialImages = [
     { id: 1, src: dnd1 },
@@ -31,13 +32,23 @@ const initialImages = [
     { id: 12, src: dnd12 }
 ];
 
+// Funkce pro zamíchání pole
+const shuffleArray = (array: { id: number; src: string }[]) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+};
+
 const GRID_ROWS = 3; // Počet řádků mřížky
 const GRID_COLUMNS = 4; // Počet sloupců mřížky
 
 const DragAndDrop = () => {
     const screenRef = useRef<HTMLDivElement | null>(null);
-    const [images, setImages] = useState(initialImages);
+    const [images, setImages] = useState(shuffleArray([...initialImages])); // Zamíchání obrázků při inicializaci
     const [droppedImages, setDroppedImages] = useState<{ id: number; src: string; row: number; col: number }[]>([]);
+    const [allCorrect, setAllCorrect] = useState(false);
 
     // useDrop pro mřížku
     const [{ isOver }, drop] = useDrop(() => ({
@@ -69,14 +80,13 @@ const DragAndDrop = () => {
                 } else {
                     moveImageToScreen(item.id, row, col);
                 }
+                checkImagesPlacement(); // Kontrola umístění obrázků po každém přetažení
             }
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
         }),
     }));
-
-    console.log(isOver);
 
     // Sloučení refů pro drop oblast
     const mergedRef = (node: HTMLDivElement) => {
@@ -92,6 +102,43 @@ const DragAndDrop = () => {
             setImages((prev) => prev.filter((image) => image.id !== id));
         }
     };
+
+    // Funkce pro vrácení obrázku zpět do scrollbar
+    const returnImageToScrollBar = (id: number) => {
+        const imageToReturn = droppedImages.find(image => image.id === id);
+        if (imageToReturn) {
+            setImages((prev) => [...prev, { id: imageToReturn.id, src: imageToReturn.src }]);
+            setDroppedImages((prev) => prev.filter((image) => image.id !== id));
+        }
+    };
+
+    // Funkce pro kontrolu správného umístění obrázků
+    const checkImagesPlacement = () => {
+        let allCorrect = true;
+        droppedImages.forEach(image => {
+            const correctRow = Math.floor((image.id - 1) / GRID_COLUMNS);
+            const correctCol = (image.id - 1) % GRID_COLUMNS;
+            const isCorrect = image.row === correctRow && image.col === correctCol;
+            console.log(`Image ${image.id} is ${isCorrect ? 'correctly' : 'incorrectly'} placed.`);
+            if (!isCorrect) {
+                allCorrect = false;
+            }
+        });
+        setAllCorrect(allCorrect);
+    };
+
+    useEffect(() => {
+        // Kontrola, zda jsou všechny obrázky správně umístěny
+        const allImagesPlacedCorrectly = initialImages.every(image => {
+            const correctRow = Math.floor((image.id - 1) / GRID_COLUMNS);
+            const correctCol = (image.id - 1) % GRID_COLUMNS;
+            const droppedImage = droppedImages.find(img => img.id === image.id);
+            return droppedImage && droppedImage.row === correctRow && droppedImage.col === correctCol;
+        });
+
+        // Nastavíme stav allCorrect na true, pouze pokud jsou všechny obrázky správně umístěny
+        setAllCorrect(allImagesPlacedCorrectly);
+    }, [droppedImages]);
 
     // Komponenta DraggableImage (nyní uvnitř DragAndDrop)
     const DraggableImage = ({ id, src, moveImageToScreen }: { id: number; src: string; moveImageToScreen: (id: number, row: number, col: number) => void }) => {
@@ -111,11 +158,14 @@ const DragAndDrop = () => {
                         }
                     }
                 }
+                checkImagesPlacement(); // Kontrola umístění obrázků po každém přetažení
             },
             collect: (monitor) => ({
                 isDragging: !!monitor.isDragging(),
             }),
         }));
+
+        console.log(isOver);
 
         return (
             <img
@@ -129,6 +179,7 @@ const DragAndDrop = () => {
                     width: '100%',
                     height: '100%',
                 }}
+                onDoubleClick={() => returnImageToScrollBar(id)} // Přidání funkce pro dvojklik
             />
         );
     };
@@ -144,6 +195,7 @@ const DragAndDrop = () => {
                     return (
                         <div
                             key={index}
+                            id={`cell-${rowIndex}-${colIndex}`}
                             className={style.gridCell}
                         >
                             {image && (
@@ -164,6 +216,9 @@ const DragAndDrop = () => {
                     <DraggableImage key={image.id} id={image.id} src={image.src} moveImageToScreen={moveImageToScreen} />
                 ))}
             </div>
+
+            {/* Tlačítko Continue */}
+            {allCorrect && <Continue to="/room-with-text/48">Continue</Continue>}
         </div>
     );
 };
