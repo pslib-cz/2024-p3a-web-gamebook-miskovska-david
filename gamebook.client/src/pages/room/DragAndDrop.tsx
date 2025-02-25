@@ -41,7 +41,7 @@ const shuffleArray = (array: { id: number; src: string }[]) => {
     return array;
 };
 
-const GRID_ROWS = 3; // Počet řádků mřížky
+const GRID_ROWS = 3; 
 const GRID_COLUMNS = 4; // Počet sloupců mřížky
 
 const DragAndDrop = () => {
