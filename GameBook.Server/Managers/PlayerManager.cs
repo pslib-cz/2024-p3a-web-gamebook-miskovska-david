@@ -6,11 +6,11 @@ namespace GameBook.Server.Managers
     public class PlayerManager : IPlayerManager
     {
         
-        private readonly IBaseRepository<Player> _playerRepository;
+        private readonly IPlayerRepository _playerRepository;
         
         private readonly IMapper _mapper;
         
-        public PlayerManager(IBaseRepository<Player> playerRepository, IMapper mapper)
+        public PlayerManager(IPlayerRepository playerRepository, IMapper mapper)
         {
             _playerRepository = playerRepository;
             _mapper = mapper;
@@ -36,7 +36,16 @@ namespace GameBook.Server.Managers
             return _mapper.Map<Player>(player);
         }
 
-        
+        public async Task<Player?> GetPlayerByUserId(string userId)
+        {
+            Player? player = await _playerRepository.GetPlayerByUserId(userId);
+            if (player == null)
+            {
+                return null;
+            }
+            return _mapper.Map<Player>(player);
+        }
+
 
         public async Task<Player?> CreatePlayer(Player playerDto)
         {
@@ -76,5 +85,9 @@ namespace GameBook.Server.Managers
             _playerRepository.Delete(id);
             return playerDto;
         }
+
+
+
+       
     }
 }

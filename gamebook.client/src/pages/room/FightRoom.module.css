@@ -7,8 +7,15 @@
 
 .player{
     position: absolute;
-
     left: 5%;
+}
+
+.player_health{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: blue;
 }
 
 .enemy{
@@ -16,10 +23,10 @@
     right: 5%;
 }
 
-.enemy::after{
+.enemy_health{
     content: '';
     position: absolute;
-    width: 50px;
+    width: 100%;
     height: 20px;
     background-color: red;
 }

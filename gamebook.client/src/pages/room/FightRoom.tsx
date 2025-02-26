@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import classes from "./FightRoom.module.css";
-import FightButton from "../../components/FightButtons/FightButton";
+import FightButton from "../../components/fightButtons/FightButton";
 import { CharacterType, ItemType, PlayerType, RoomType } from "../../types";
 
 const FightRoom: React.FC= () => {
@@ -14,7 +14,7 @@ const FightRoom: React.FC= () => {
     const {data: AtkData} = useFetch<ItemType>(`/api/Item/items/100`);
     const {data: DefData} = useFetch<ItemType>(`/api/Item/items/101`);
     const {data: enemy} = useFetch<CharacterType>(`/api/Character/characters/1`);
-    const {data: player} = useFetch<PlayerType>(`/api/Character/characters/2`);
+    const {data: player} = useFetch<PlayerType>(`/api/Player/players/${localStorage.getItem("UserId")}`);
 
 
     const RandomSpawn = () => {
@@ -34,14 +34,17 @@ const FightRoom: React.FC= () => {
       
     }
 
-  
-    console.log(enemy)
+
+
   return(
     <div style={{ backgroundImage: `url(/${RoomData?.background})` }} className={classes.container}>
-      <p className={classes.player}>Maxim</p>
+      <div className={classes.player}>
+        <p>Maxim</p>
+        <div className={classes.player_health}></div>
+      </div>
       <div className={classes.enemy}>
-        <p >{enemy?.name}</p>
-        <div></div>
+        <p>{enemy?.name}</p>
+        <div className={classes.enemy_health}></div>
       </div>
         {RandomSpawn()}
     </div>
