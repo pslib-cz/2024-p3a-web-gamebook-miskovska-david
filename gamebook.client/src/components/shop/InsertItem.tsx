@@ -1,8 +1,5 @@
 import Item from "./Item";
 
-
-
-
 const InsertItem: React.FC = () => {
 
 

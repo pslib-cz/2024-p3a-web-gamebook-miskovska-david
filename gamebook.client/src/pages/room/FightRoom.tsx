@@ -16,6 +16,15 @@ const FightRoom: React.FC= () => {
     const {data: enemy} = useFetch<CharacterType>(`/api/Character/characters/1`);
     const {data: player} = useFetch<PlayerType>(`/api/Player/players/${localStorage.getItem("UserId")}`);
 
+    const Attack = (playerAtk: number | undefined, enemyHp: number | undefined) => {
+      enemyHp -= playerAtk;
+    }
+
+
+    const Defend = (defence: number | undefined, hp: number | undefined, enemyAtk: number | undefined) => {
+      hp -= (enemyAtk - defence);
+    }
+
 
     const RandomSpawn = () => {
         const screenWith = window.innerWidth;
@@ -25,15 +34,13 @@ const FightRoom: React.FC= () => {
 
         const random = Math.round(Math.random() * 2);
         if(random === 0)
-           return <FightButton top={randomTop} left={randomLeft} path={`/${DefData?.background}`}  />;
+           return <FightButton top={randomTop} left={randomLeft} path={`/${DefData?.background}`} OnClick={()=> Defend(player?.defense, player?.hp, enemy?.attack)}  />;
         else
-          return <FightButton top={randomTop} left={randomLeft} path={`/${AtkData?.background}`}  />;
+          return <FightButton top={randomTop} left={randomLeft} path={`/${AtkData?.background}`} OnClick={()=> Attack(player?.attack, enemy?.hp)} />;
     }
 
-    const FightHandler = (hp: number, enemyHp: number) => {
-      
-    }
-
+    
+    
 
 
   return(
