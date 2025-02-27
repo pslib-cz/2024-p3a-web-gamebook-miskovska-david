@@ -17,12 +17,14 @@ const FightRoom: React.FC= () => {
     const {data: player} = useFetch<PlayerType>(`/api/Player/players/${localStorage.getItem("UserId")}`);
 
     const Attack = (playerAtk: number | undefined, enemyHp: number | undefined) => {
-      enemyHp -= playerAtk;
+      if(playerAtk && enemyHp)
+        enemyHp -= playerAtk;
     }
 
 
     const Defend = (defence: number | undefined, hp: number | undefined, enemyAtk: number | undefined) => {
-      hp -= (enemyAtk - defence);
+      if(defence && hp && enemyAtk)
+        hp -= (enemyAtk - defence);
     }
 
 
