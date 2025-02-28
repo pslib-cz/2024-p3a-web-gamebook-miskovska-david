@@ -33,8 +33,8 @@ const Login: React.FC<LoginProps> = ({ title }) => {
 
         if(response.status === 200){
             response.json().then(data => {
+                console.log(data)
                 localStorage.setItem("UserId", data.userId)
-                localStorage.setItem("gold", data.coin)
             });
             navigate("/menu");
             

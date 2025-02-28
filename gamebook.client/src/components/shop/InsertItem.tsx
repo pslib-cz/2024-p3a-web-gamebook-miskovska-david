@@ -8,11 +8,9 @@ type InsertItemProps = {
 
 const InsertItem: React.FC<InsertItemProps> = ({itemType}) => {
 
-    const {data, error} = useFetch<ItemType[]>("/api/Item/items");
-    console.log(data);
-    console.log(error);
+    const {data} = useFetch<ItemType[]>("/api/Item/items");
+
     const items = data?.filter(item => item.type === itemType);
-    console.log(items)
     return (
         <div>
             {items?.map(item => (
