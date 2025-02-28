@@ -17,12 +17,11 @@ const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId,
 
         let route = ""
         if(roomId === 12){
-            route = "/city-cross/"
-        }
-        if(roomId === 11){
             route = "/city-cross"
+        }else if(roomId === 13){
+            route = "/rooms/18"
         }
-        if(roomId === 47){
+        else if(roomId === 45){
             route = "/dnd"
         }
         else if(type === "dialog"){

@@ -27,8 +27,8 @@ const FightRoom: React.FC = () => {
   const Attack = (
     playerAtk: number,
   ) => {
-    RandomSpawn();
     setStartEnemyHp((prevHp) => prevHp - playerAtk)
+    RandomSpawn();
   };
 
   const Defend = (
@@ -36,20 +36,11 @@ const FightRoom: React.FC = () => {
     enemyAtk: number
   ) => {
      setStartPlayerHp((prevHp) => prevHp - (enemyAtk - defence));
+    
     RandomSpawn();
   };
 
   const RandomSpawn = () => {
-
-    if(playerStartHp <= 0){
-      navigate("room-with-text/8");
-      return;
-    }
-
-    if(enemyStartHp <= 0){
-      navigate("room-with-text/7");
-      return;
-    }
 
     const screenWith = window.innerWidth;
     const screenHeigh = window.innerHeight;
@@ -86,8 +77,22 @@ const FightRoom: React.FC = () => {
     setStartPlayerHp(player?.hp ? player.hp : 100);
   }, []);
 
+  useEffect(() => {
+    if(playerStartHp <= 0){
+      navigate(`/room-with-text/${idNumber+2}`);
+      return;
+    }
+
+    if(enemyStartHp <= 0){
+      navigate(`/room-with-text/${idNumber+2}`);
+      return;
+    }
+  }
+  , [enemyStartHp, playerStartHp, navigate]);
+
   console.log(enemyStartHp);
   console.log(playerStartHp);
+  console.log(RoomData)
 
   return (
     <div
