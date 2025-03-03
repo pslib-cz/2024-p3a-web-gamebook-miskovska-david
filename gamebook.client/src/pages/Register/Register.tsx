@@ -25,7 +25,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
     e.preventDefault();
     if (CheckPassword(password, confrimPassword)) {
         const data = { username, email, password};
-     fetch("/api/Auth/register", {
+      fetch("/api/Auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

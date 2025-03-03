@@ -1,6 +1,6 @@
 import style from "./Login.module.css";
 import Input from "../../components/input/Input";
-import Button from "../../components/Button/ButtonLB";
+import Button from "../../components/button/ButtonLB";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiAlertCircle } from "react-icons/fi";
@@ -27,10 +27,17 @@ const Login: React.FC<LoginProps> = ({ title }) => {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
-        });
+        })
 
-        if(response.ok){
+        
+
+        if(response.status === 200){
+            response.json().then(data => {
+                console.log(data)
+                localStorage.setItem("UserId", data.userId)
+            });
             navigate("/menu");
+            
         }else{
             setIncorectLogin(true);
         }

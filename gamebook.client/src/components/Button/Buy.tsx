@@ -5,9 +5,9 @@ type ButtonProps = {
     onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({btnText}) =>{
+const Button: React.FC<ButtonProps> = ({btnText, onClick}) =>{
     return (
-        <button className={style.btn}>{btnText}</button>
+        <button className={style.btn} onClick={onClick}>{btnText}</button>
     )
 }
 export default Button;

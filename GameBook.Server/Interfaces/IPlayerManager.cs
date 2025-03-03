@@ -6,6 +6,7 @@ namespace GameBook.Server.Interfaces
     {
         Task<IList<Player>> GetAllPlayers();
         Task<Player?> GetPlayerById(int id);
+        Task<Player?> GetPlayerByUserId(string userId);
         Task<Player?> CreatePlayer(Player playerDto);
         Task<Player> UpdatePlayer(int id, Player playerDto);
         Task<Player?> DeletePlayer(int id);

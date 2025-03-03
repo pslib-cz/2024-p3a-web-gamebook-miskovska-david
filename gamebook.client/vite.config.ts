@@ -74,7 +74,10 @@ export default defineConfig({
                 },'^/api/Character/characters': {
                     target,
                     secure: false
-                },
+                },'^/api/Player/players': {
+                    target,
+                    secure: false
+                }
             },
         
 

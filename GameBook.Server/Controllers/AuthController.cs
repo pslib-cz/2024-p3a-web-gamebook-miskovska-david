@@ -37,6 +37,7 @@ namespace GameBook.Server.Controllers
         {
             var user = new IdentityUser
             {
+                Id = Guid.NewGuid().ToString(),
                 UserName = loginDto.Email,
                 Email = loginDto.Email
             };
