@@ -3,21 +3,26 @@ import style from "./Shop.module.css";
 import InsertItem from "../../components/shop/InsertItem";
 
 const Room07: React.FC = () => {
+
+
+    
+
+
     return (
         <div className={style.room__screen}>
             <h2>Obchod</h2>
             <div className={style.container}>
                 <section> 
                    <p className={style.category}>Zbraně</p>
-                   <InsertItem filterCondition={(item) => item.itemId === 1 || item.itemId === 2} />
+                   <InsertItem itemType="Weapon" />
                 </section>
                 <section> 
                     <p className={style.category}>Lektvary</p>
-                    <InsertItem filterCondition={(item) => item.itemId >= 3 && item.itemId <= 5} />
+                    <InsertItem itemType="Potions" />
                 </section>
                 <section> 
                     <p className={style.category}>Speciální předměty</p>
-                    <InsertItem filterCondition={(item) => item.itemId === 6 || item.itemId === 7} />
+                    <InsertItem itemType="Special" />
                 </section>
             </div>
         </div>

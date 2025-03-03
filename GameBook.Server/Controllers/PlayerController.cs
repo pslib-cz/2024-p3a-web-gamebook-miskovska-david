@@ -27,10 +27,12 @@ namespace GameBook.Server.Controllers
 
 
 
-        [HttpGet("players/{id}")]
-        public async Task<IActionResult> GetById(int id)
+        
+
+        [HttpGet("players/{userId}")]
+        public async Task<IActionResult> GetById(string userId)
         {
-            Player? player = await _playerManager.GetPlayerById(id);
+            Player? player = await _playerManager.GetPlayerByUserId(userId);
             if (player == null)
             {
                 return NotFound();

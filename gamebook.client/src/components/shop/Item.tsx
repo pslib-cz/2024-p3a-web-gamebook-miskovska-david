@@ -1,14 +1,27 @@
 import React from "react";
-import { ItemType } from "../../types/";
+import { ItemType, PlayerType } from "../../types/";
 import style from "./Item.module.css";
 import coins from "../../assets/coins/coins.png";
-import Buy from "../../components/Button/Buy";
+import Buy from "../../components/button/Buy";
+import useFetch from "../../hooks/useFetch";
 
 type ItemProps = {
     item: ItemType;
 }
 
 const Item: React.FC<ItemProps> = ({ item }) => {
+
+    const {data} = useFetch<PlayerType>(`/api/Player/players/${localStorage.getItem("UserId")}`);
+
+    console.log(data);
+    const buyHandler = () => {
+        if(parseInt(localStorage.getItem("gold")) >= item.price){
+        const newGold = data!.coin - item.price;
+        localStorage.setItem("gold", JSON.stringify(newGold));
+        localStorage.setItem("item", JSON.stringify(item));        
+    }
+    }
+
 
     return (
         <div className={style.item}>
@@ -22,10 +35,11 @@ const Item: React.FC<ItemProps> = ({ item }) => {
                     <p className={style.price}>{item.price} </p>
                     <img src={coins} alt="coins" className={style.coins} />
                 </div>
-                <Buy btnText="Koupit" />
+                <Buy btnText="Koupit" onClick={buyHandler} />
             </div>
         </div>
     );
+    
 };
 
 export default Item;

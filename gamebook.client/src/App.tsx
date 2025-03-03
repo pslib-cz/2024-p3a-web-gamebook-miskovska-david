@@ -4,13 +4,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Login from "./pages/Login/Login";
-import Register from "./pages/Register/Register"; 
-import Home from "./pages/Home/Home";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register"; 
+import Home from "./pages/home/Home";
 import RoomWithDialog from "./pages/room/RoomWithDialog";
 import RoomWithText from './pages/room/RoomWithText';
 import FightRoom from './pages/room/FightRoom';
-import Menu from './pages/Menu/Menu';
+import Menu from './pages/menu/Menu';
 import ObchodDialog from './pages/room/ShopDialog';
 import Shop from './pages/room/Shop';
 

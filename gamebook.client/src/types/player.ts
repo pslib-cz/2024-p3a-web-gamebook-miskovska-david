@@ -1,7 +1,7 @@
 export type PlayerType = {
     playerId: string;
     hp: number;
-    attack: number;
+    damage: number;
     defense: number;
-    gold: number;
+    coin: number;
 };

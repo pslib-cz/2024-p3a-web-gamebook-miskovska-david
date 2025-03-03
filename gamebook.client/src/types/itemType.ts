@@ -6,6 +6,5 @@ export type ItemType = {
     price: number;
     demage: number;
     defense: number;
-    dialogs: Array<string>;
-    Type: string;
+    type: "Weapon" | "Potions" | "Special";
 }
