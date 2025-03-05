@@ -9,7 +9,7 @@ namespace GameBook.Server.Managers
         /// <summary>
         /// přístup k <see cref="Item"/> entitě v databázi
         /// </summary>
-        private readonly IBaseRepository<Room> _roomRepository;
+        private readonly IRoomRepository _roomRepository;
         /// <summary>
         /// Mapper pro mapování (convertovaní) mezi entitami a DTO.
         /// </summary>
@@ -18,7 +18,7 @@ namespace GameBook.Server.Managers
         /// Cesta ke složce, kde se ukládají obrázky.
         /// </summary>
         private const string _folder = "wwwroot/uploads/";
-        public RoomManager(IBaseRepository<Room> roomRepository, IMapper mapper)
+        public RoomManager(IRoomRepository roomRepository, IMapper mapper)
         {
             _roomRepository = roomRepository;
             _mapper = mapper;

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Input from "../../components/input/Input";
 import { FiAlertCircle } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
+
 
 type RegisterProps = {
   title: string;
@@ -14,7 +16,7 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
   const [password, setPassword] = useState<string>("");
   const [confrimPassword, setConfirmPassword] = useState<string>("");
   const [incorectPassword, setIncorectPassword] = useState<boolean>(false);
-
+  const navigate = useNavigate();
   /*
     Funkce pro odeslání formuláře
     Spustí funkci CheckPassword
@@ -29,8 +31,15 @@ const Register: React.FC<RegisterProps> = ({ title }) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
+      }).then(response => {
+        if (response.status === 201 || response.status === 200) {
+          navigate("/login");
+        } else {
+          console.log("Chyba");
+      }
       });
-    }
+
+      }
   };
 
   /*

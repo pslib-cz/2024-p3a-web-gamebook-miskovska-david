@@ -9,7 +9,7 @@ namespace GameBook.Server.Managers
         /// <summary>
         /// Přístup k <see cref="Item"/> entitě v databázi.
         /// </summary>
-        private readonly IBaseRepository<Item> _itemRepository;
+        private readonly IItemRepository _itemRepository;
         /// <summary>
         /// Mapper pro mapování (convertovaní) mezi entitami a DTO.
         /// </summary>
@@ -19,7 +19,7 @@ namespace GameBook.Server.Managers
         /// </summary>
         private const string _folder = "wwwroot/uploads/";
 
-        public ItemManager(IBaseRepository<Item> itemRepository, IMapper mapper)
+        public ItemManager(IItemRepository itemRepository, IMapper mapper)
         {
             _itemRepository = itemRepository;
             _mapper = mapper;

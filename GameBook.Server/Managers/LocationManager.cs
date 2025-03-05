@@ -10,7 +10,7 @@ namespace GameBook.Server.Managers
         /// <summary>
         /// přístup k <see cref="LocationManager"/> entitě v databázi
         /// </summary>
-        private readonly IBaseRepository<Location> _locationRepository;
+        private readonly ILocationRepository _locationRepository;
         /// <summary>
         /// Mapper pro mapování (convertovaní) mezi entitami.
         /// </summary>
@@ -19,7 +19,7 @@ namespace GameBook.Server.Managers
         /// Cesta ke složce, kde se ukládají obrázky.
         /// </summary>
         private const string _folder = "wwwroot/uploads/";
-        public LocationManager(IBaseRepository<Location> locationRepository, IMapper mapper)
+        public LocationManager(ILocationRepository locationRepository, IMapper mapper)
         {
             _locationRepository = locationRepository;
             _mapper = mapper;
