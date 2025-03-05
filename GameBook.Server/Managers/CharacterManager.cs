@@ -8,7 +8,7 @@ namespace GameBook.Server.Managers
         /// <summary>
         /// přístup k <see cref="CharacterManager"/> entitě v databázi
         /// </summary>
-        private readonly IBaseRepository<Character> _characterRepository;
+        private readonly ICharacterRepository _characterRepository;
         /// <summary>
         /// Mapper pro mapování (convertovaní) mezi entitami.
         /// </summary>
@@ -17,7 +17,7 @@ namespace GameBook.Server.Managers
         /// Cesta ke složce, kde se ukládají obrázky.
         /// </summary>
         private const string _folder = "wwwroot/uploads/";
-        public CharacterManager(IBaseRepository<Character> characterRepository, IMapper mapper)
+        public CharacterManager(ICharacterRepository characterRepository, IMapper mapper)
         {
             _characterRepository = characterRepository;
             _mapper = mapper;
