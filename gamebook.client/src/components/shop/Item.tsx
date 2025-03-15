@@ -15,7 +15,8 @@ const Item: React.FC<ItemProps> = ({ item }) => {
 
     console.log(data);
     const buyHandler = () => {
-        if(parseInt(localStorage.getItem("gold")) >= item.price){
+        const gold = localStorage.getItem("gold");
+        if(gold !== null && parseInt(gold) >= item.price){
         const newGold = data!.coin - item.price;
         localStorage.setItem("gold", JSON.stringify(newGold));
         localStorage.setItem("item", JSON.stringify(item));        

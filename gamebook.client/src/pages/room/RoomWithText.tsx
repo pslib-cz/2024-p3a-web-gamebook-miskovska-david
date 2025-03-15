@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import Typewriter from 'typewriter-effect'
 import { RoomType } from "../../types";
 import { useParams } from "react-router-dom";
-import Continue from "../../components/Button/Continue";
+import Continue from "../../components/button/Continue";
 
 const RoomWithText: React.FC= () => {
     

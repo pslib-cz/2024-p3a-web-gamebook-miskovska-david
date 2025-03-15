@@ -32,7 +32,7 @@ console.log(data?.dialogs.length)
       style={{ backgroundImage: `url(/${data?.background})` }}
     >
       <div className={style.room__container}>
-        <p style={{ display: dialogIndex <= data?.dialogs.length ? "block" : "none" }}>
+        <p style={{ display: dialogIndex <= data!.dialogs.length ? "block" : "none" }}>
           <Typewriter
             options={{
               strings: dialog,
@@ -51,7 +51,7 @@ console.log(data?.dialogs.length)
         )}
 
         <button
-          style={{ display: dialogIndex <= data?.dialogs.length ? "block" : "none" }}
+          style={{ display: dialogIndex <= data!.dialogs.length ? "block" : "none" }}
           className={style.continueButton}
           onClick={() => nextDialog(data?.dialogs, dialogIndex)}
         >
