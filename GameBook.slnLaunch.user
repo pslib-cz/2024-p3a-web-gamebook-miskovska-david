@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "GameBook.Server\\GameBook.Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "gamebook.client\\gamebook.client.esproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -6,6 +6,8 @@ using GameBook.Server.Managers;
 using GameBook.Server.Models;
 using GameBook.Server.Repository;
 using Microsoft.AspNetCore.Identity;
+
+
 var builder = WebApplication.CreateBuilder();
 
 // Add services to the container.
@@ -66,9 +68,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseAuthentication();
 
 app.UseHttpsRedirection();
+
 
 app.UseAuthentication();
 app.UseAuthorization();
