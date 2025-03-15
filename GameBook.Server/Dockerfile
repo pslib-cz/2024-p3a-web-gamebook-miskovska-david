@@ -17,6 +17,7 @@ COPY ["gamebook.client/gamebook.client.esproj", "gamebook.client/"]
 RUN dotnet restore "./GameBook.Server/GameBook.Server.csproj"
 COPY . .
 WORKDIR "/src/GameBook.Server"
+RUN dotnet restore "./GameBook.Server.csproj"
 RUN dotnet build "./GameBook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
