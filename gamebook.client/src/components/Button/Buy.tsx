@@ -1,4 +1,4 @@
-import style from "./Buy.module.css";
+import style from "@/Buy.module.css";
 
 type ButtonProps = {
     btnText: string;

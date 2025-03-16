@@ -1,4 +1,4 @@
-import style from "./ShopDialog.module.css";
+import style from "@/ShopDialog.module.css";
 import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 import useFetch from "../../hooks/useFetch";

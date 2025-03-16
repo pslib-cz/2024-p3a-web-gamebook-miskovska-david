@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Shop.module.css";
+import style from "@/Shop.module.css";
 import InsertItem from "../../components/shop/InsertItem";
 
 const Room07: React.FC = () => {

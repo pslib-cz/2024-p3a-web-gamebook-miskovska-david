@@ -1,4 +1,4 @@
-import style from "./CityCrossStreet.module.css";
+import style from "@/CityCrossStreet.module.css";
 
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";

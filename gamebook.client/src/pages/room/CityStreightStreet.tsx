@@ -1,4 +1,4 @@
-import style from "./CityStreightStreet.module.css";
+import style from "@/CityStreightStreet.module.css";
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
 import { Link } from "react-router-dom";

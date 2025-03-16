@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import style from "./LinkButton.module.css"
+import style from "@/LinkButton.module.css"
 import { Link } from "react-router-dom"
 
 type LinkButtonProps = {

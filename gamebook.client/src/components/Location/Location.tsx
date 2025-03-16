@@ -1,4 +1,4 @@
-import style from "./Location.module.css";
+import style from "@/Location.module.css";
 import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import React, { useState } from "react";
