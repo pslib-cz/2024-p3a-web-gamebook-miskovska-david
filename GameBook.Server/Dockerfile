@@ -13,7 +13,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 RUN apt update && apt install nodejs npm -y
 WORKDIR /src
-RUN npm install
+RUN npm install --legacy-peer-deps
 COPY ["GameBook.Server/GameBook.Server.csproj", "GameBook.Server/"]
 COPY ["gamebook.client/gamebook.client.esproj", "gamebook.client/"]
 RUN dotnet restore "./GameBook.Server/GameBook.Server.csproj"
