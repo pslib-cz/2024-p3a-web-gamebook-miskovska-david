@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useDrop, useDrag } from 'react-dnd';
 import style from "./DragAndDrop.module.css";
 import Continue from '../../components/button/LinkButton'; 
@@ -159,6 +159,7 @@ const DragAndDrop = () => {
                     }
                 }
                 checkImagesPlacement(); // Kontrola umístění obrázků po každém přetažení
+                console.log(item)
             },
             collect: (monitor) => ({
                 isDragging: !!monitor.isDragging(),
@@ -166,7 +167,6 @@ const DragAndDrop = () => {
         }));
 
         console.log(isOver);
-
         return (
             <img
                 ref={drag}
