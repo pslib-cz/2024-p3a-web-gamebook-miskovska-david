@@ -1,6 +1,8 @@
-# Stage 1: Build React app
+# Stage 1: Build React app using official Node.js 20 image
 FROM node:20 AS node-build
 WORKDIR /app/ClientApp
+
+# Kopíruj package.json a package-lock.json pro instalaci závislostí
 COPY ClientApp/package.json ClientApp/package-lock.json ./
 RUN npm install
 RUN npm run build
@@ -8,20 +10,20 @@ RUN npm run build
 # Stage 2: Build .NET app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
-RUN apt update && apt install nodejs npm -y
 WORKDIR /src
+
+# Kopíruj .csproj soubory pro .NET projekt
 COPY ["GameBook.Server/GameBook.Server.csproj", "GameBook.Server/"]
-# Ujisti se, že máš správné soubory
 COPY ["gamebook.client/gamebook.client.esproj", "gamebook.client/"]
-RUN dotnet restore "./GameBook.Server/GameBook.Server.csproj"
+
+# Obnovení .NET závislostí
+RUN dotnet restore "./GameBook.Server.csproj"
 COPY . .
 WORKDIR "/src/GameBook.Server"
 RUN dotnet build "./GameBook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Stage 3: Publish the app
+# Stage 3: Publish .NET app
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./GameBook.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # Final Stage: Run app
