@@ -19,6 +19,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
+  }, "paths": {
+    "@components/*": ["components/*"],
+    "@pages/*": ["pages/*"]
   },
   "include": ["vite.config.ts"]
 }
