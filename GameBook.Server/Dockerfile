@@ -6,7 +6,7 @@ EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
-RUN apt update && apt install nodejs npm@latest -y
+RUN apt update && apt install nodejs npm@lastes -y
 WORKDIR /src
 COPY ["GameBook.Server/GameBook.Server.csproj", "GameBook.Server/"]
 COPY ["gamebook.client/gamebook.client.esproj", "gamebook.client/"]
