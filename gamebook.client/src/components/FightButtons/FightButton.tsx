@@ -1,4 +1,4 @@
-import classes from "@/FightButton.module.css";
+import classes from "./FightButton.module.css";
 
 type FightButtonProps = {
     top: number;

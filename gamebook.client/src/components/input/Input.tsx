@@ -1,4 +1,4 @@
-import style from "@/Input.module.css";
+import style from "./Input.module.css";
 import { useId } from "react";
 
 type InputProps = {

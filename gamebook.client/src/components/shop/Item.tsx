@@ -1,6 +1,6 @@
 import React from "react";
 import { ItemType, PlayerType } from "../../types/";
-import style from "@/Item.module.css";
+import style from "./Item.module.css";
 import coins from "../../assets/coins/coins.png";
 import Buy from "../../components/button/Buy";
 import useFetch from "../../hooks/useFetch";
