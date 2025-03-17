@@ -1,4 +1,4 @@
-import style from "@/RoomWithText.module.css"
+import style from "./RoomWithText.module.css"
 import useFetch from "../../hooks/useFetch";
 import Typewriter from 'typewriter-effect'
 import { RoomType } from "../../types";

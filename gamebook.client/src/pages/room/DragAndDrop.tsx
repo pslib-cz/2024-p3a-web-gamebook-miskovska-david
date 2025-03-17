@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useDrop, useDrag } from 'react-dnd';
-import style from "@/DragAndDrop.module.css";
+import style from "./DragAndDrop.module.css";
 import Continue from '../../components/button/LinkButton'; 
 
 // Import obrázků

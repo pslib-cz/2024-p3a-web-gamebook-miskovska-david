@@ -1,4 +1,4 @@
-import style from "@/RoomWithDialog.module.css";
+import style from "./RoomWithDialog.module.css";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import Typewriter from 'typewriter-effect'

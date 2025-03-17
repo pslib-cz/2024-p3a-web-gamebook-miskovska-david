@@ -1,5 +1,5 @@
 import LinkButton from "../../components/button/LinkButton";
-import style from "@/Menu.module.css";
+import style from "./Menu.module.css";
 
 
 const Menu: React.FC = () => {

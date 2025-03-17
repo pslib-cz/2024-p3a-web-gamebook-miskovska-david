@@ -1,4 +1,4 @@
-import style from "@/RoomInterier2.module.css";
+import style from "./RoomInterier2.module.css";
 import useFetch from "../../hooks/useFetch";
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";

@@ -1,6 +1,6 @@
 import {useNavigate, useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
-import classes from "@/FightRoom.module.css";
+import classes from "./FightRoom.module.css";
 import FightButton from "../../components/fightButtons/FightButton";
 import { CharacterType, ItemType, PlayerType, RoomType } from "../../types";
 import { useEffect, useState } from "react";
