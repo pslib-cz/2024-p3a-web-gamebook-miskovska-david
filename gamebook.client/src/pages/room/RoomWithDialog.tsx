@@ -2,7 +2,7 @@ import style from "./RoomWithDialog.module.css";
 import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import Typewriter from 'typewriter-effect'
-import Continue from "../../components/button/Continue";
+import Continue from "../../components/Button/Continue";
 import React, { useState } from "react";
 import Location from "../../components/Location/Location";
 import { RoomType } from "../../types";

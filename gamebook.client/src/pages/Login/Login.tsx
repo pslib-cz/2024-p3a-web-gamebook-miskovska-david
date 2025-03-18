@@ -1,6 +1,6 @@
 import style from "./Login.module.css";
 import Input from "../../components/input/Input";
-import Button from "../../components/button/ButtonLB";
+import Button from "../../components/Button/ButtonLB";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiAlertCircle } from "react-icons/fi";

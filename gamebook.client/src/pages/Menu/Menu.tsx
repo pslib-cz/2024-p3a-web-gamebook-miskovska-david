@@ -1,4 +1,4 @@
-import LinkButton from "../../components/button/LinkButton";
+import LinkButton from "../../components/Button/LinkButton";
 import style from "./Menu.module.css";
 
 
