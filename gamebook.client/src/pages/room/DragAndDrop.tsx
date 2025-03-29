@@ -218,7 +218,7 @@ const DragAndDrop = () => {
             </div>
 
             {/* Tlačítko Continue */}
-            {allCorrect && <Continue route={"/text/36"} >Pokračovat...</Continue>}
+            {allCorrect && <Continue route={"/text/32"} >Pokračovat...</Continue>}
         </div>
     );
 };
