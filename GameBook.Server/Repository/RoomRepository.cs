@@ -13,7 +13,7 @@ namespace GameBook.Server.Repository
 
         public async Task<string> GetRoomRoute(string type, int id)
         {
-            if (id == 11)
+            if (id == 10)
                 return string.Format("/city-cross");
             if (id == 31)
                 return string.Format("/dnd");
