@@ -15,7 +15,7 @@ namespace GameBook.Server.Repository
         {
             if (id == 11)
                 return string.Format("/city-cross");
-            if (id == 34)
+            if (id == 31)
                 return string.Format("/dnd");
 
             return string.Format($"/{type}/{id}");
