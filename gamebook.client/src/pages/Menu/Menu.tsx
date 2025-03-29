@@ -6,7 +6,7 @@ const Menu: React.FC = () => {
     return (
         <div className={style.homeScreen}>
             <div className={style.container}>
-                <LinkButton to="/room-with-text/1">Hrát</LinkButton>
+                <LinkButton to="/text/1">Hrát</LinkButton>
             </div>
         </div>
     );
