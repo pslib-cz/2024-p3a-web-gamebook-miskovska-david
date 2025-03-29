@@ -1,6 +1,6 @@
 import style from "./Home.module.css";
 import React from "react";
-import LinkButton from "../../components/button/LinkButton";
+import LinkButton from "../../components/Button/LinkButton";
 const Home: React.FC = () => {
     
 

@@ -2,7 +2,7 @@ import style from "./RoomWithText.module.css"
 import useFetch from "../../hooks/useFetch";
 import { RoomType } from "../../types";
 import { useParams } from "react-router-dom";
-import Continue from "../../components/button/Continue";
+import Continue from "../../components/Button/Continue";
 
 const RoomWithText: React.FC= () => {
     
