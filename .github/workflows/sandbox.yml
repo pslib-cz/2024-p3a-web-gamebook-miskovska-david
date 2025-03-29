@@ -24,6 +24,6 @@ jobs:
           context: . # změň cestu podle toho, kde se nachází složka s řešením (soubor .sln)
           file: ./Dockerfile # změň cestu podle toho, kde se nachází Dockerfile
           push: true
-          tags: registry.pslib.cloud/sandbox/app-38:latest
+          tags: registry.pslib.cloud/sandbox/app-81:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
