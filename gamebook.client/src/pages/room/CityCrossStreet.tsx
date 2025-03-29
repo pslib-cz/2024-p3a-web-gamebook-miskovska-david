@@ -1,5 +1,4 @@
 import style from "./CityCrossStreet.module.css";
-
 import { RoomType } from "../../types";
 import arrowStraight from "../../assets/arrows/arrow-straight.png";
 import arrowLeft from "../../assets/arrows/arrow-left.png";

@@ -1,11 +1,15 @@
 ﻿using AutoMapper;
 using GameBook.Server.Interfaces;
 using GameBook.Server.Models;
+using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 
 namespace GameBook.Server.Managers
 {
     public class RoomManager : IRoomManager
     {
+
+
         /// <summary>
         /// přístup k <see cref="Item"/> entitě v databázi
         /// </summary>
@@ -48,6 +52,11 @@ namespace GameBook.Server.Managers
         public async Task<Room?> GetRoomById(int id)
         {
             Room? room =  await _roomRepository.GetById(id);
+            Room? nextRoom = await _roomRepository.GetById(id+1);
+            if(nextRoom is not null)
+                room.Route = await _roomRepository.GetRoomRoute(nextRoom.RoomType, nextRoom.RoomId);
+            else
+                room.Route = "";
             if (room == null)
             {
                 return null;

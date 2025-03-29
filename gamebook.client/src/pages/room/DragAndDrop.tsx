@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useDrop, useDrag } from 'react-dnd';
 import style from "./DragAndDrop.module.css";
-import Continue from '../../components/Button/LinkButton'; 
+import Continue from "../../components/button/Continue";
 
 // Import obrázků
 import dnd1 from "../../assets/draganddrop/tile_0_0.webp";
@@ -218,7 +218,7 @@ const DragAndDrop = () => {
             </div>
 
             {/* Tlačítko Continue */}
-            {allCorrect && <Continue to="/room-with-text/48">Continue</Continue>}
+            {allCorrect && <Continue route={"/text/36"} >Pokračovat...</Continue>}
         </div>
     );
 };

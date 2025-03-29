@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Shop.module.css";
 import InsertItem from "../../components/shop/InsertItem";
+import { Link } from "react-router-dom";
 
 const Room07: React.FC = () => {
 
@@ -25,6 +26,7 @@ const Room07: React.FC = () => {
                     <InsertItem itemType="Special" />
                 </section>
             </div>
+            <Link to="/city-cross" className={style.button}>Odejít</Link>
         </div>
     );
 };

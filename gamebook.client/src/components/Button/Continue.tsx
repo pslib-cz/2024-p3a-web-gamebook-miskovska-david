@@ -1,11 +1,10 @@
 
 import { PropsWithChildren } from "react";
 type ContinueProps = {
-    roomId: number;
-    type: string | undefined;
+    route?: string;
 }
 
-const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId, type="dialog"}) => {
+const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children,route}) => {
 
 
     /*
@@ -13,30 +12,10 @@ const Continue :React.FC<PropsWithChildren<ContinueProps>> = ({children, roomId,
         načte další data z api
     */
 
-    const SetRoute = (type: string): string => {
 
-        let route = ""
-        if(roomId === 12){
-            route = "/city-cross"
-        }else if(roomId === 13){
-            route = "/rooms/18"
-        }
-        else if(roomId === 45){
-            route = "/dnd"
-        }
-        else if(type === "dialog"){
-            route = "/rooms/" + roomId
-        }else if(type === "fight"){
-            route = "/fight/" + roomId
-        }else if(type === "text"){
-            route = "/room-with-text/" + roomId
-        }
-
-        return route
-    }
 
     return(
-        <a href={SetRoute(type)} >{children}</a>
+        <a href={route} >{children}</a>
     )
 }
 

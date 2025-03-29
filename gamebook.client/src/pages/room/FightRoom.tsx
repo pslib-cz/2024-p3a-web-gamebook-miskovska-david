@@ -1,8 +1,8 @@
 import {useNavigate, useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import classes from "./FightRoom.module.css";
-import FightButton from "../../components/FightButtons/FightButton";
-import { CharacterType, ItemType, PlayerType, RoomType } from "../../types";
+import FightButton from "../../components/fightButtons/FightButton";
+import { CharacterType, PlayerType, RoomType } from "../../types";
 import { useEffect, useState } from "react";
 
 const FightRoom: React.FC = () => {
@@ -13,8 +13,6 @@ const FightRoom: React.FC = () => {
   const [enemyStartHp, setStartEnemyHp] = useState<number>(100);
   const [playerStartHp, setStartPlayerHp] = useState<number>(100);
   const { data: RoomData } = useFetch<RoomType>(`/api/Room/rooms/${idNumber}`);
-  const { data: AtkData } = useFetch<ItemType>(`/api/Item/items/100`);
-  const { data: DefData } = useFetch<ItemType>(`/api/Item/items/101`);
   const { data: enemy } = useFetch<CharacterType>(
     `/api/Character/characters/1`
   );
@@ -53,7 +51,7 @@ const FightRoom: React.FC = () => {
         <FightButton
           top={randomTop}
           left={randomLeft}
-          path={`/${DefData?.background}`}
+          path={`/uploads/ikona_obrany-removebg-preview.webp`}
           OnClick={() => Defend(player?.defense ? player.defense : 0, enemy?.attack ? enemy.attack : 10)}
         />
       );
@@ -62,7 +60,7 @@ const FightRoom: React.FC = () => {
         <FightButton
           top={randomTop}
           left={randomLeft}
-          path={`/${AtkData?.background}`}
+          path={`/uploads/ikona_boje-removebg-preview.webp`}
           OnClick={() => Attack(player?.damage ? player.damage : 10)}
         />
       );
@@ -79,12 +77,12 @@ const FightRoom: React.FC = () => {
 
   useEffect(() => {
     if(playerStartHp <= 0){
-      navigate(`/room-with-text/${idNumber+2}`);
+      navigate(`/text/${idNumber+1}`);
       return;
     }
 
     if(enemyStartHp <= 0){
-      navigate(`/room-with-text/${idNumber+2}`);
+      navigate(`/text/${idNumber+1}`);
       return;
     }
   }

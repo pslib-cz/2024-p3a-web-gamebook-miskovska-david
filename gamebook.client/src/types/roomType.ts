@@ -6,4 +6,5 @@ export type RoomType = {
     roomType: string
     locationId: number;
     characterId: number
+    route: string;
 }

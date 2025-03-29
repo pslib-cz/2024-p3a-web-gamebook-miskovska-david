@@ -8,6 +8,7 @@
         public string? SpecialItem { get; set; }
         public bool? IsLocked { get; set; }
         public required string RoomType { get; set; }
+        public string? Route { get; set; }
 
 
         //cizí klíč

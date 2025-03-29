@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const RoomInterier1: React.FC= () => {
     
-    const {data: rooms} = useFetch<RoomType>("api/Room/rooms/14");
+    const {data: rooms} = useFetch<RoomType>("api/Room/rooms/100");
 
     return (
         <div
